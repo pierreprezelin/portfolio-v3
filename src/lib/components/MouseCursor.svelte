@@ -12,26 +12,32 @@
 	let isPointer = $state(false);
 	let isVisible = $state(false);
 
-	function updateHoverState(e: MouseEvent) {
-    const target = e.target as Element;
-		if (!target) return;
-    isPointer = !!target.closest('a, button, input, select, textarea, [role="button"]');
-  }
+	function handleCursorMove(e: MouseEvent) {
+    const isAtEdge = 
+      e.clientX <= 1 || 
+      e.clientY <= 1 || 
+      e.clientX >= window.innerWidth - 1 || 
+      e.clientY >= window.innerHeight - 1;
 
-	function handleMouseMove(e: MouseEvent) {
-		if (!isVisible) isVisible = true;
-		trail.target = { x: e.clientX, y: e.clientY };
-	}
+    if (isAtEdge) {
+      isVisible = false;
+    } else {
+      isVisible = true;
+      trail.target = { x: e.clientX, y: e.clientY };
+    }
+
+    const target = e.target as Element;
+    isPointer = !!target?.closest('a, button, input, select, textarea, [role="button"]');
+  }
 </script>
 
-<svelte:window
-	on:mousemove={handleMouseMove}
-	on:mouseover={updateHoverState}
-  on:mouseenter={() => isVisible = true}
-	on:mouseleave={() => isVisible = false}
+<svelte:document
+  on:mousemove={handleCursorMove}
+  on:mouseleave={() => (isVisible = false)}
+  on:mouseenter={() => (isVisible = true)}
 />
 
-<svg class="cursor" style:opacity={isVisible ? 1 : 0}>
+<svg class="cursor" style:display={isVisible ? 'block' : 'none'}>
   <g transform="translate({trail.current.x}, {trail.current.y})">
     {#if isPointer}
       <path
