@@ -4,7 +4,8 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [vitePreprocess(), mdsvex()],
+	extensions: ['.svelte', '.svx'],
+	preprocess: [mdsvex(), vitePreprocess()],
 	kit: {
 		adapter: adapter({
 			config: undefined,
@@ -14,13 +15,9 @@ const config = {
 				persist: undefined
 			},
 			fallback: 'plaintext',
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']
-			}
+			routes: { include: ['/*'], exclude: ['<all>'] }
 		})
 	},
-	extensions: ['.svelte', '.svx']
 };
 
 export default config;
