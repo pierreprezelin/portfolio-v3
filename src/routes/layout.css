@@ -1,3 +1,45 @@
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-*: 			initial;
+  --breakpoint-tablet: 	60rem;
+
+	--color-pp-beige: 		oklch(from #FCFBF4 l c h / 1);
+	--color-pp-black: 		oklch(from #302D2D l c h / 1);
+	--color-pp-blue: 			oklch(from #48A7A9 l c h / 1);
+	--color-pp-brown: 		oklch(from #726153 l c h / 1);
+	--color-pp-red: 			oklch(from #F0784D l c h / 1);
+	--color-pp-yellow: 		oklch(from #F3BD4F l c h / 1);
+
+	--font-sans: 					"Libre Franklin Variable", ui-sans-serif, sans-serif;
+  --font-serif: 				"ITC Souvenir Std", ui-serif, serif;
+  --font-mono: 					"JetBrains Mono Variable", ui-monospace, monospace;
+
+	/* Major Third (1.250) */
+	--text-xs: 						initial;
+	--text-sm: 						0.8rem;
+	--text-lg: 						1.25rem;
+	--text-xl: 						1.5625rem;
+	--text-2xl: 					2.439375rem;
+	--text-3xl: 					3.051875rem;
+	--text-4xl: 					3.815rem;
+	--text-5xl: 					initial;
+	--text-6xl: 					initial;
+	--text-7xl: 					initial;
+	--text-8xl: 					initial;
+	--text-9xl: 					initial;
+}
+
+.dark {
+	--color-pp-beige: 		oklch(from #282828 l c h / 1);
+	--color-pp-black: 		oklch(from #FBF1C7 l c h / 1);
+	--color-pp-blue: 			oklch(from #458588 l c h / 1);
+	--color-pp-brown: 		oklch(from #98971A l c h / 1);
+	--color-pp-red: 			oklch(from #CC241D l c h / 1);
+	--color-pp-yellow: 		oklch(from #D79921 l c h / 1);
+}
