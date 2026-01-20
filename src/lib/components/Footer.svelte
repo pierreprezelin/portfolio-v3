@@ -10,7 +10,7 @@
 		<div class="py-9 text-sm text-center">
 			Pierre Prézelin © {year}
 		</div>
-		<div class="flex justify-center">
+		<div class="patterns flex justify-center">
 			<span class="pattern bg-pp-blue first:rounded-tl-md"></span>
 			<span class="pattern bg-pp-brown"></span>
 			<span class="pattern bg-pp-yellow"></span>

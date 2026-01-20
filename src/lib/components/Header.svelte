@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { Sun, Moon } from '@lucide/svelte';
-	import { mode, toggleMode } from 'mode-watcher';
+	import { toggleMode } from 'mode-watcher';
 </script>
 
-<header class="flex items-center justify-between p-4">
+<header class="fixed top-0 w-full flex items-center justify-between p-4">
 	<nav class="flex w-full">
 		<ul>
 			<li><a href="/works">Works</a></li>
