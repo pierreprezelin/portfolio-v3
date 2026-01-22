@@ -20,7 +20,7 @@
 				Download my CV
 			</a>
 		</p>
-		<p class="text-right text-pp-black-light italic">
+		<p class="text-right text text-pp-black/60 text-opa italic">
 			(don’t worry, your cursor is working just fine)
 		</p>
 	</div>

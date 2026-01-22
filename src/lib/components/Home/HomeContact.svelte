@@ -12,15 +12,21 @@
 					target="_blank"
 					title={social.label}
 					aria-label={social.label}
-					class="flex items-center justify-center rounded-lg border"
-					style="background-color: oklch(from var(--{social.color}, l c h / 0.05 )); border-color: var(--{social.color});"
+					class="flex flex-col rounded-lg border p-6 transition-transform hover:-translate-y-1"
+					style="
+						background-color: oklch(from var(--color-{social.color}) l c h / 0.05); 
+						border-color: var(--color-{social.color});
+					"
 				>
 					<svelte:component
 						this={social.icon}
 						size="24"
 						strokeWidth="1"
-						color="var(--{social.color})"
+						style="color: var(--color-{social.color});"
+						class="mt-1 mb-4"
 					/>
+					<h3 class="h6 serif">{social.label}</h3>
+					<span>{social.pseudo}</span>
 				</a>
 			</li>
 		{/each}

@@ -21,14 +21,17 @@
 						target="_blank"
 						title={social.label}
 						aria-label={social.label}
-						class="flex h-10 items-center justify-center rounded-lg border"
-						style="background-color: oklch(from var(--{social.color}) l c h / 0.05); border-color: var(--{social.color});"
+						class="flex h-10 items-center justify-center rounded-lg border transition-transform hover:-translate-y-0.5"
+						style="
+							background-color: oklch(from var(--color-{social.color}) l c h / 0.05); 
+							border-color: var(--color-{social.color});
+						"
 					>
 						<svelte:component
 							this={social.icon}
 							size="24"
 							strokeWidth="1"
-							color="var(--{social.color})"
+							style="color: var(--color-{social.color});"
 						/>
 					</a>
 				</li>
