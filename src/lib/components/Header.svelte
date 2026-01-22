@@ -3,7 +3,7 @@
 	import { toggleMode } from 'mode-watcher';
 </script>
 
-<header class="fixed top-0 w-full flex items-center justify-between p-4">
+<header class="fixed z-10 top-0 w-full flex items-center justify-between p-4">
 	<nav class="flex w-full">
 		<ul>
 			<li><a href="/works">Works</a></li>

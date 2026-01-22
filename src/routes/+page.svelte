@@ -12,7 +12,7 @@
 <h1 class="mb-8">Hi, I'm {name}!</h1>
 
 <div class="grid grid-cols-4 gap-5">
-	<div class="sticky top-5 col-span-1">
+	<div class="sticky top-5 z-1 col-span-1">
 		<ul class="grid grid-cols-3 gap-2.5 pr-20">
 			{#each socials as social}
 				<li class="first:col-span-2">
