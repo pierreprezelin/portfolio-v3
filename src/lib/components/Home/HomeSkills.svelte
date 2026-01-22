@@ -1,6 +1,6 @@
 <section id="skills" class="mt-20">
 	<h2 class="h4 mb-6">What I worked with:</h2>
-	<div class="grid grid-cols-3 gap-5">
+	<div class="grid mobile:grid-cols-3 gap-6 mobile:gap-5">
 		<div>
 			<h3 class="h6 mb-3">Web Development</h3>
 			<ul>

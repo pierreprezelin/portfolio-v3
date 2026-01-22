@@ -15,6 +15,7 @@
 /* Scale used for font sizes is Major Third (1.250) */
 @theme {
   --breakpoint-*: 					initial;
+  --breakpoint-mobile: 			40rem;
   --breakpoint-tablet: 			61.5rem;
 
 	--color-pp-beige: 				oklch(from #FCFBF4 l c h / 1);

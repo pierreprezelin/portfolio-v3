@@ -39,7 +39,7 @@
 <div class="layout">
 	<Header />
 	<main class="container mx-auto">
-		<div class="patterns flex justify-center mb-20">
+		<div class="patterns flex justify-center mb-24">
 			<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
 			<span class="pattern bg-pp-brown"></span>
 			<span class="pattern bg-pp-yellow"></span>
@@ -73,6 +73,7 @@
 
 	:global(h1, .h1) {
 		font-size: var(--text-5xl);
+		line-height: var(--leading-tight);
 	}
 	:global(h2, .h2) {
 		font-size: var(--text-4xl);

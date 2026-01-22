@@ -6,10 +6,10 @@
 	<h2 class="h4 mb-6">What I worked on:</h2>
 	<ul>
 		{#each timeline as time}
-			<li class="mb-7 grid grid-cols-3 gap-5">
+			<li class="mb-7 grid grid-cols-2 mobile:grid-cols-3 gap-2.5 mobile:gap-5">
 				<span class="font-serif text-lg">{time.year}</span>
-				{time.name}
-				<span class="text-right font-medium">
+				<span class="flex mobile:block items-center justify-end mobile:text-left">{time.name}</span>
+				<span class="mobile:text-right font-medium">
 					{time.roles[0]}
 					{#if time.roles.length > 1}
 						<br />
