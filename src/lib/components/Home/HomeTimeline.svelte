@@ -17,11 +17,11 @@
 					{/if}
 					{#if time.note}
 						<br />
-						<em class="text-pp-black-light italic">({time.note})</em>
+						<em class="text-pp-black/60 italic">({time.note})</em>
 					{/if}
 				</span>
 			</li>
 		{/each}
 	</ul>
-	<p class="text-pp-black-light italic">And multiple personal or school projects...</p>
+	<p class="text-pp-black/60 italic">And multiple personal or school projects...</p>
 </section>

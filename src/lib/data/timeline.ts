@@ -1,13 +1,13 @@
 export const timeline = [
-	{
-		year: '2026',
-		name: 'Ongoing Project 1',
-		roles: ['Mobile Developer'],
-		note: 'as Freelance'
-	},
+	// {
+	// 	year: '2026',
+	// 	name: 'Ongoing Project',
+	// 	roles: ['Mobile Developer'],
+	// 	note: 'as Freelance'
+	// },
 	{
 		year: '2025 · now',
-		name: 'Ongoing Project 2',
+		name: 'Ongoing Project',
 		roles: ['UI Designer'],
 		note: 'as Freelance'
 	},
