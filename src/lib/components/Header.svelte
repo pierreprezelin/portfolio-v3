@@ -3,14 +3,28 @@
 	import { Sun, Moon } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 
-	const isActiveLink = (path: string) => page.url.pathname.startsWith(path);
+	const isActiveLink = (path: string) => {
+		if (path === '/') {
+      return page.url.pathname === '/';
+    }
+    return page.url.pathname.startsWith(path);
+	};
 </script>
 
-<header class="fixed top-5 z-10 flex w-full items-center justify-between px-48">
+<header class="fixed top-5 z-10 flex w-full items-center justify-between tablet:px-32">
 	<nav
 		class="relative flex h-18 w-full items-center justify-between rounded-xl bg-pp-beige/5 px-4 backdrop-blur-[6px]"
 	>
 		<ul>
+			<li>
+				<a
+					href="/"
+					class:active={isActiveLink('/')}
+					aria-current={page.url.pathname === '/'}
+				>
+					About
+				</a>
+			</li>
 			<li>
 				<a
 					href="/works"
@@ -18,15 +32,6 @@
 					aria-current={page.url.pathname === '/works'}
 				>
 					Works
-				</a>
-			</li>
-			<li>
-				<a
-					href="/about"
-					class:active={isActiveLink('/about')}
-					aria-current={page.url.pathname === '/about'}
-				>
-					About
 				</a>
 			</li>
 			<li>
@@ -41,8 +46,8 @@
 		</ul>
 		<a
 			href="/"
-			title="Home"
-			aria-label="Home"
+			title="Home · About"
+			aria-label="Home · About"
 			aria-current={page.url.pathname === '/'}
 			class="absolute top-0 left-[50%] -translate-x-[50%] rounded-full border-4 border-pp-beige"
 		>
@@ -101,13 +106,8 @@
 
 		&:first-of-type {
 			li {
-				a,
-				button {
-					&.active {
-						&::after {
-							transform: rotate(45deg) scale(1);
-						}
-					}
+				a.active::after {
+					transform: rotate(45deg) scale(1);
 				}
 			}
 		}
