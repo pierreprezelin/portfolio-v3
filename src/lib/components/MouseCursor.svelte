@@ -37,7 +37,7 @@
   on:mouseenter={() => (isVisible = true)}
 />
 
-<svg class="cursor" style:display={isVisible ? 'block' : 'none'}>
+<svg class="cursor hidden tablet:block" style:display={isVisible ? 'block' : 'none'}>
   <g transform="translate({trail.current.x}, {trail.current.y})">
     {#if isPointer}
       <path
