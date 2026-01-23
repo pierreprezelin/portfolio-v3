@@ -1,5 +1,8 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import { ModeWatcher } from 'mode-watcher';
+
+	import { afterNavigate, disableScrollHandling } from '$app/navigation';
 
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -7,23 +10,42 @@
 
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import image from '$lib/assets/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/css/fonts.css';
 
-	let { children } = $props();
+	const title = 'Pierre Prézelin · Front-end Developer & UI Designer';
+	const description =
+		'Front-end Developer and UI Designer from France, currently based in Montréal, QC, Canada.';
+
+	afterNavigate(() => {
+		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away
+	});
+
+	let { children, data } = $props();
 </script>
 
 <svelte:head>
-	<title>Pierre Prézelin · Portfolio</title>
-	<link rel="icon" href={favicon} />
-	<link
-		rel="preload"
-		as="font"
-		href="/fonts/itc-souvenir-std-light.woff2"
-		type="font/woff2"
-		crossorigin="anonymous"
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta
+		name="keywords"
+		content="Pierre, Prézelin, portfolio, blog, france, front-end, developer, dev, development, ui, ux, webdesign"
 	/>
+
+	<meta name="og:site_name" content="Pierre Prézelin" />
+	<meta name="og:title" content={title} />
+	<meta name="og:description" content={description} />
+	<meta name="og:image" content={image} />
+
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={image} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@prezelin21995" />
+
+	<link rel="icon" href={favicon} />
 	<link
 		rel="preload"
 		as="font"
@@ -38,15 +60,21 @@
 
 <div class="layout">
 	<Header />
-	<main class="container mx-auto">
-		<div class="patterns flex justify-center mb-24">
-			<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
-			<span class="pattern bg-pp-brown"></span>
-			<span class="pattern bg-pp-yellow"></span>
-			<span class="pattern bg-pp-red last:rounded-br-md"></span>
-		</div>
-		{@render children()}
-	</main>
+	{#key data.currentRoute}
+		<main
+			class="container mx-auto"
+			in:fade={{ duration: 150, delay: 150 }}
+			out:fade={{ duration: 150 }}
+		>
+			<div class="patterns mb-24 flex justify-center">
+				<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
+				<span class="pattern bg-pp-brown"></span>
+				<span class="pattern bg-pp-yellow"></span>
+				<span class="pattern bg-pp-red last:rounded-br-md"></span>
+			</div>
+			{@render children()}
+		</main>
+	{/key}
 	<Footer />
 </div>
 
@@ -62,7 +90,7 @@
 		color: var(--color-pp-black);
 		font-family: 'Libre Franklin Variable', sans-serif;
 		font-weight: 400;
-		letter-spacing: .02em;
+		letter-spacing: 0.02em;
 		line-height: 1.6;
 		background-color: var(--color-pp-beige);
 	}
@@ -94,7 +122,7 @@
 	:global(pre, code) {
 		font-family: 'JetBrains Mono Variable', monospace;
 	}
-	
+
 	:global(p > a) {
 		font-weight: 600;
 		text-decoration: underline;
