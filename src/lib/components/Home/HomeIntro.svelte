@@ -15,7 +15,7 @@
 	</p>
 	<div class="flex flex-col justify-between gap-5 mobile:flex-row">
 		<p>
-			<a href="/docs/cv_pierre-prezelin_fr.pdf" download class="flex items-center gap-2">
+			<a href="/docs/cv_pierre-prezelin_fr.pdf" download class="flex items-center gap-2.5">
 				<FileDown size="24" strokeWidth="1" color="var(--color-pp-black)" />
 				Download my CV (FR)
 			</a>

@@ -15,7 +15,7 @@
 	const links = [
 		{ href: '/', label: 'About', disabled: false },
 		{ href: '/works', label: 'Works', disabled: true },
-		{ href: '/blog', label: 'Blog', disabled: true }
+		{ href: '/blog', label: 'Blog', disabled: false }
 	];
 </script>
 

@@ -7,6 +7,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import MouseCursor from '$lib/components/MouseCursor.svelte';
+	import Pattern from '$lib/components/Pattern.svelte';
 
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
@@ -46,13 +47,6 @@
 	<meta name="twitter:creator" content="@prezelin21995" />
 
 	<link rel="icon" href={favicon} />
-	<link
-		rel="preload"
-		as="font"
-		href="/fonts/itc-souvenir-std-medium.woff2"
-		type="font/woff2"
-		crossorigin="anonymous"
-	/>
 </svelte:head>
 
 <MouseCursor />
@@ -67,12 +61,7 @@
 			out:fade={{ duration: 150 }}
 		>
 			<main class="container mx-auto grow">
-				<div class="patterns mb-24 flex justify-center">
-					<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
-					<span class="pattern bg-pp-brown"></span>
-					<span class="pattern bg-pp-yellow"></span>
-					<span class="pattern bg-pp-red last:rounded-br-md"></span>
-				</div>
+				<Pattern position="top" />
 				{@render children()}
 			</main>
 			<Footer />
@@ -141,8 +130,9 @@
 		padding: 0 1.25rem;
 	}
 
-	.pattern {
-		width: 1.25rem;
-		height: 8.25rem;
+	.btn:hover {
+		svg {
+			color: var(--text-pp-beige);
+		}
 	}
 </style>

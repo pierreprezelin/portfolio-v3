@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'ITC Souvenir Std';
 	src:
-		url('./fonts/itc-souvenir-std-medium.woff2') format('woff2'),
-		url('./fonts/itc-souvenir-std-medium.woff') format('woff');
+		url('../assets/fonts/itc-souvenir-std-medium.woff2') format('woff2'),
+		url('../assets/fonts/itc-souvenir-std-medium.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;

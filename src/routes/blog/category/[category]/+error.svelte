@@ -5,5 +5,5 @@
 <div class="text-center">
 	<h1>{page.status}</h1>
 	<p class="mt-6 mb-12">{page.error?.message}</p>
-	<a href="/" class="btn">Back To Home</a>
+	<a href="/blog/category" class="btn">Back To Categories</a>
 </div>

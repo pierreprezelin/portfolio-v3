@@ -54,3 +54,9 @@
 	--color-pp-red: 					oklch(from #CC241D l c h / 1);
 	--color-pp-yellow: 				oklch(from #D79921 l c h / 1);
 }
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-3 rounded border border-pp-black px-4 py-3 hover:bg-pp-black hover:text-pp-beige transition-colors;
+  }
+}

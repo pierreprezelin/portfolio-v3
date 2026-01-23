@@ -1,15 +1,15 @@
 <script lang="ts">
-	import { FolderSearch } from '@lucide/svelte';
-	import { formatDate } from '$lib/utils.js';
+	import { ArrowLeft, FolderSearch } from '@lucide/svelte';
+	import { capitalize, formatDate } from '$lib/utils.js';
 
 	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>Blog · Pierre Prézelin</title>
+	<title>Category "{capitalize(data.category)}" · Blog · Pierre Prézelin</title>
 </svelte:head>
 
-<h1 class="mb-16 text-center">Blog</h1>
+<h1 class="mb-16 text-center">{capitalize(data.category)}</h1>
 
 {#if data.posts}
 	<ul class="flex flex-col gap-10 mobile:gap-8">
@@ -41,5 +41,14 @@
 		{/each}
 	</ul>
 {:else}
-	<p class="text-center">There are currently no posts.</p>
+	<p class="text-center">There are currently no posts for this category.</p>
 {/if}
+
+<a href="/blog" class="btn group mt-12">
+	<ArrowLeft
+		size="24"
+		strokeWidth="1"
+		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
+	/>
+	Back to Posts
+</a>

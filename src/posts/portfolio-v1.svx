@@ -1,0 +1,20 @@
+---
+title: Portfolio v1 - Origins
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosque lorem ipsum dolor sit amet.
+date: '2026-01-21'
+hour: '17:39'
+categories:
+  - dev
+  - design
+published: true
+---
+
+## Markdown
+
+Hey friends! 👋
+
+```ts
+function greet(name: string) {
+ console.log(`Hey ${name}! 👋`)
+}
+```
