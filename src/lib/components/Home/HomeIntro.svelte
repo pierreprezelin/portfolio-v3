@@ -17,7 +17,7 @@
 		<p>
 			<a href="/docs/cv_pierre-prezelin_fr.pdf" download class="flex items-center gap-2">
 				<FileDown size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				Download my CV
+				Download my CV (FR)
 			</a>
 		</p>
 		<p class="text-pp-black/60 mobile:text-right italic">

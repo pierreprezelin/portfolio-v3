@@ -13,9 +13,9 @@
 	};
 
 	const links = [
-		{ href: '/', label: 'About' },
-		{ href: '/works', label: 'Works' },
-		{ href: '/blog', label: 'Blog' }
+		{ href: '/', label: 'About', disabled: false },
+		{ href: '/works', label: 'Works', disabled: true },
+		{ href: '/blog', label: 'Blog', disabled: true }
 	];
 </script>
 
@@ -39,6 +39,7 @@
 					<li>
 						<a
 							href={link.href}
+							class="{link.disabled ? 'pointer-events-none opacity-50' : ''}"
 							class:active={isActiveLink(link.href)}
 							aria-current={page.url.pathname === link.href}
 							onclick={() => (isMenuShown = false)}
@@ -49,9 +50,9 @@
 				{/each}
 			</ul>
 			<ul class="z-2">
-				<li>
+				<!-- <li>
 					<button type="button">FR</button>
-				</li>
+				</li> -->
 				<li>
 					<button
 						type="button"
