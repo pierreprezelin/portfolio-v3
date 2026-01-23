@@ -61,21 +61,23 @@
 <div class="layout">
 	<Header />
 	{#key data.currentRoute}
-		<main
-			class="container mx-auto"
+		<div
+			class="flex min-h-dvh flex-col"
 			in:fade={{ duration: 150, delay: 150 }}
 			out:fade={{ duration: 150 }}
 		>
-			<div class="patterns mb-24 flex justify-center">
-				<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
-				<span class="pattern bg-pp-brown"></span>
-				<span class="pattern bg-pp-yellow"></span>
-				<span class="pattern bg-pp-red last:rounded-br-md"></span>
-			</div>
-			{@render children()}
-		</main>
+			<main class="container mx-auto grow">
+				<div class="patterns mb-24 flex justify-center">
+					<span class="pattern bg-pp-blue first:rounded-bl-md"></span>
+					<span class="pattern bg-pp-brown"></span>
+					<span class="pattern bg-pp-yellow"></span>
+					<span class="pattern bg-pp-red last:rounded-br-md"></span>
+				</div>
+				{@render children()}
+			</main>
+			<Footer />
+		</div>
 	{/key}
-	<Footer />
 </div>
 
 <style lang="scss">

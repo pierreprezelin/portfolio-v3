@@ -2,9 +2,9 @@
 	const year = new Date().getFullYear();
 </script>
 
-<footer class="flex justify-center items-center">
+<footer class="flex justify-center items-center mt-24">
 	<div class="container mx-auto">
-		<div class="relative w-full h-0.5 mt-24 mb-6 bg-pp-black rounded-full">
+		<div class="relative w-full h-0.5 mb-6 bg-pp-black rounded-full">
 			<span class="absolute top-[50%] left-[50%] w-4 h-4 block bg-pp-black border-4 border-pp-beige rounded-md rotate-45 -translate-1/2"></span>
 		</div>
 		<div class="py-9 text-sm text-center">
