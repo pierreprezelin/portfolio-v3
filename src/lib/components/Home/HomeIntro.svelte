@@ -1,5 +1,5 @@
 <script>
-	import { FileDown } from "@lucide/svelte";
+	import { FileDown } from '@lucide/svelte';
 </script>
 
 <section id="intro">
@@ -13,14 +13,14 @@
 		running, climbing) and good food.<br />
 		These days, I’m learning how to ice-skate!
 	</p>
-	<div class="flex flex-col mobile:flex-row justify-between gap-5">
+	<div class="flex flex-col justify-between gap-5 mobile:flex-row">
 		<p>
 			<a href="/docs/cv_pierre-prezelin_fr.pdf" download class="flex items-center gap-2">
 				<FileDown size="24" strokeWidth="1" color="var(--color-pp-black)" />
 				Download my CV (FR)
 			</a>
 		</p>
-		<p class="text-pp-black/60 mobile:text-right italic">
+		<p class="hidden text-pp-black/60 italic mobile:text-right tablet:inline-flex">
 			(don’t worry, your cursor is working just fine)
 		</p>
 	</div>
