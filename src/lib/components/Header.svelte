@@ -1,82 +1,90 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { Sun, Moon } from '@lucide/svelte';
+	import { BarChart2, Moon, Sun } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
+
+	let isMenuShown = false;
 
 	const isActiveLink = (path: string) => {
 		if (path === '/') {
-      return page.url.pathname === '/';
-    }
-    return page.url.pathname.startsWith(path);
+			return page.url.pathname === '/';
+		}
+		return page.url.pathname.startsWith(path);
 	};
+
+	const links = [
+		{ href: '/', label: 'About' },
+		{ href: '/works', label: 'Works' },
+		{ href: '/blog', label: 'Blog' }
+	];
 </script>
 
-<header class="fixed top-5 z-10 flex w-full items-center justify-between tablet:px-32">
+<header
+	class="fixed top-2.5 z-10 flex w-full items-center justify-between px-2.5 tablet:top-5 tablet:px-32"
+>
 	<nav
-		class="relative flex h-18 w-full items-center justify-between rounded-xl bg-pp-beige/5 px-4 backdrop-blur-[6px]"
+		class="h-18 w-full rounded-xl bg-pp-beige/5 px-2.5 backdrop-blur-[6px] transition-[height] tablet:px-4"
+		class:show={isMenuShown}
 	>
-		<ul>
-			<li>
-				<a
-					href="/"
-					class:active={isActiveLink('/')}
-					aria-current={page.url.pathname === '/'}
-				>
-					About
-				</a>
-			</li>
-			<li>
-				<a
-					href="/works"
-					class:active={isActiveLink('/works')}
-					aria-current={page.url.pathname === '/works'}
-				>
-					Works
-				</a>
-			</li>
-			<li>
-				<a
-					href="/blog"
-					class:active={isActiveLink('/blog')}
-					aria-current={page.url.pathname === '/blog'}
-				>
-					Blog
-				</a>
-			</li>
-		</ul>
+		<div class="relative flex h-18 w-full items-center justify-between">
+			<button
+				type="button"
+				class="z-2 flex -scale-x-100 rotate-90 items-center justify-center p-2.5 transition-transform tablet:hidden"
+				onclick={() => (isMenuShown = !isMenuShown)}
+			>
+				<BarChart2 size="24" color="var(--color-pp-black)" />
+			</button>
+			<ul class="{isMenuShown ? 'opacity-100' : 'opacity-0'} z-1 tablet:opacity-100">
+				{#each links as link}
+					<li>
+						<a
+							href={link.href}
+							class:active={isActiveLink(link.href)}
+							aria-current={page.url.pathname === link.href}
+							onclick={() => (isMenuShown = false)}
+						>
+							{link.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+			<ul class="z-2">
+				<li>
+					<button type="button">FR</button>
+				</li>
+				<li>
+					<button
+						type="button"
+						onclick={toggleMode}
+						aria-label="Toggle theme"
+						class="theme-toggle flex items-center"
+					>
+						<span class="theme-toggle-sun">
+							<Sun size="24" color="var(--color-pp-black)" />
+						</span>
+						<span class="theme-toggle-moon">
+							<Moon size="24" color="var(--color-pp-black)" />
+						</span>
+					</button>
+				</li>
+			</ul>
+		</div>
 		<a
 			href="/"
 			title="Home · About"
 			aria-label="Home · About"
 			aria-current={page.url.pathname === '/'}
-			class="absolute top-0 left-[50%] -translate-x-[50%] rounded-full border-4 border-pp-beige"
+			class="absolute top-0 left-[50%] z-2 -translate-x-[50%] rounded-full border-4 border-pp-beige"
+			onclick={() => (isMenuShown = false)}
 		>
 			<enhanced:img src="$lib/assets/logo.svg" alt="Logo" />
 		</a>
-		<ul>
-			<li>
-				<button type="button">FR</button>
-			</li>
-			<li>
-				<button
-					type="button"
-					onclick={toggleMode}
-					aria-label="Toggle theme"
-					class="theme-toggle flex items-center"
-				>
-					<span class="theme-toggle-sun">
-						<Sun size="24" color="var(--color-pp-black)" />
-					</span>
-					<span class="theme-toggle-moon">
-						<Moon size="24" color="var(--color-pp-black)" />
-					</span>
-				</button>
-			</li>
-		</ul>
 	</nav>
 </header>
 
 <style lang="scss">
+	$breakpoint-tablet: 61.5rem; // Tailwind `--breakpoint-tablet` seems unreachable here
+
 	.theme-toggle {
 		&-moon {
 			display: none;
@@ -93,6 +101,56 @@
 			}
 			&-moon {
 				display: block;
+			}
+		}
+	}
+
+	nav {
+		&.show {
+			height: calc(100vh - 1.25rem);
+
+			@media (max-width: $breakpoint-tablet) {
+				ul:first-of-type {
+					position: absolute;
+					top: 0;
+					left: 0.625rem;
+					height: calc(100vh - 1.25rem);
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+
+					@media (orientation: landscape) {
+						justify-content: flex-end;
+					}
+
+					li {
+						a {
+							display: flex;
+							padding: 0.75rem 0;
+							font-size: var(--text-4xl);
+
+							@media (orientation: landscape) {
+								padding-top: 0.333rem;
+								padding-bottom: 0.333rem;
+							}
+
+							&.active {
+								padding-left: 2.5rem;
+
+								&::after {
+									top: 50%;
+									bottom: auto;
+									left: 0;
+									width: 0.625rem;
+									height: 0.625rem;
+									margin-top: -0.3125rem;
+									margin-left: 0;
+									border-radius: 3px;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -119,11 +177,15 @@
 				padding: 1rem;
 				font-family: var(--font-serif);
 
+				@media (max-width: $breakpoint-tablet) {
+					padding: 0.625rem;
+				}
+
 				&::after {
 					position: absolute;
 					content: '';
-					left: 50%;
 					bottom: 0.25rem;
+					left: 50%;
 					width: 0.25rem;
 					height: 0.25rem;
 					margin-left: -0.125rem;
@@ -134,9 +196,11 @@
 						var(--default-transition-timing-function);
 				}
 
-				&:hover {
-					&::after {
-						transform: rotate(45deg) scale(1);
+				@media (min-width: $breakpoint-tablet) {
+					&:hover {
+						&::after {
+							transform: rotate(45deg) scale(1);
+						}
 					}
 				}
 			}
