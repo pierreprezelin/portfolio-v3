@@ -1,6 +1,6 @@
 ---
 title: Portfolio v3 - A New Dawn
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosque lorem ipsum dolor sit amet.
+description: 10 years after v2 and it's way overdue for a change, with a light 70s-inspired graphic direction. Time for JAMStack and some fun with Svelte.
 date: '2026-01-23'
 hour: '17:41'
 categories:
@@ -8,7 +8,3 @@ categories:
   - design
 published: true
 ---
-
-## Svelte
-
-Media inside the **static** folder is served from `/`.

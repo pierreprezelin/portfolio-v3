@@ -44,7 +44,9 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={image} />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@prezelin21995" />
 	<meta name="twitter:creator" content="@prezelin21995" />
+	<meta name="twitter:widgets:new-embed-design" content="on" />
 
 	<link rel="icon" href={favicon} />
 </svelte:head>

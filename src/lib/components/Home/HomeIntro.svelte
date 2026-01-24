@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { FileDown } from '@lucide/svelte';
 </script>
 

@@ -1,11 +1,12 @@
-export type Categories = 'dev' | 'design'
+export type Categories = 'design' | 'dev';
 
 export type Post = {
-	title: string
-	slug: string
-	description: string
-	date: string
-	hour: string
-	categories: Categories[]
-	published: boolean
-}
+	title: string;
+	slug: string;
+	description: string;
+	date: string;
+	hour: string;
+	banner: string;
+	categories: Categories[];
+	published: boolean;
+};

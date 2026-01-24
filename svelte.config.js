@@ -10,8 +10,8 @@ const mdsvexOptions = {
 	extensions: ['.svx'],
 	highlight: {
 		highlighter: async (code, lang) => {
-			const highlighter = await getSingletonHighlighter({ themes: ["gruvbox-dark-hard"], langs: [lang] })
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang: lang, theme: "gruvbox-dark-hard" }))
+			const highlighter = await getSingletonHighlighter({ themes: ["gruvbox-dark-medium"], langs: [lang] })
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang: lang, theme: "gruvbox-dark-medium" }))
 			return `{@html \`${html}\`}`
 		}
 	},
