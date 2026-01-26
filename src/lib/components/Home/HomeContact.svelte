@@ -18,8 +18,7 @@
 						border-color: var(--color-{social.color});
 					"
 				>
-					<svelte:component
-						this={social.icon}
+					<social.icon
 						size="24"
 						strokeWidth="1"
 						style="color: var(--color-{social.color});"
