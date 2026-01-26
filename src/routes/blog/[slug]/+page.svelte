@@ -1,6 +1,9 @@
 <script lang="ts">
-	import { ArrowLeft } from '@lucide/svelte';
+	import { page } from '$app/state'
+	import { shares } from '$lib/data/shares';
 	import { capitalize, formatDate } from '$lib/utils';
+
+	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
 </script>
@@ -24,6 +27,29 @@
 		<h1 class="mb-1.5">{data.meta.title}</h1>
 		<p class="font-medium">Posted on: {formatDate(data.meta.date)}, {data.meta.hour}</p>
 	</hgroup>
+	<ul class="mt-2.5 flex gap-2.5">
+		{#each shares as share}
+			<li>
+				<a
+					href={share.href + page.url}
+					target="_blank"
+					title={share.label}
+					aria-label={share.label}
+					class="flex w-10 h-10 items-center justify-center rounded-lg border transition-transform tablet:hover:-translate-y-0.5"
+					style="
+						background-color: oklch(from var(--color-{share.color}) l c h / 0.05); 
+						border-color: var(--color-{share.color});
+					"
+				>
+					<share.icon
+						size="24"
+						strokeWidth="1"
+						style="color: var(--color-{share.color});"
+					/>
+				</a>
+			</li>
+		{/each}
+	</ul>
 	{#if data.meta.categories.length}
 		<ul class="mt-2.5 flex gap-2.5">
 			{#each data.meta.categories as category}
@@ -42,13 +68,22 @@
 	<hr />
 	<div class="mt-10">
 		{#if data.meta.banner}
-			<enhanced:img
-				src={data.meta.banner}
-				alt=""
-				class="mx-auto mb-10 h-full w-full max-w-200 rounded-xl object-cover"
-			/>
+			<figure class="mx-auto mb-10 h-full w-full max-w-200">
+				<enhanced:img
+					src={`/images/blog/${data.meta.banner}`}
+					alt=""
+					class="rounded-xl border border-pp-black object-cover"
+				/>
+				{#if data.meta.caption}
+					<figcaption class="mt-5 text-center text-pp-black/60 italic">
+						{data.meta.caption}
+					</figcaption>
+				{/if}
+			</figure>
 		{/if}
-		<data.content />
+		<div class="prose">
+			<data.content />
+		</div>
 	</div>
 </article>
 
@@ -63,6 +98,8 @@
 
 <style lang="scss">
 	:where(h2, h3, h4, h5, h6) {
+		color: var(--color-pp-black);
+
 		.icon-link {
 			position: relative;
 

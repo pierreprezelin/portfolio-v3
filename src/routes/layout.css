@@ -7,6 +7,8 @@
 
 /* As they are used in socials.ts and no templates, they are purged by Tailwind if defined in @theme */
 :root {
+  --color-social-facebook: 	oklch(from #1877F2 l c h / 1);
+  --color-social-twitter: 	oklch(from #1DA1F2 l c h / 1);
   --color-social-linkedin: 	oklch(from #0A66C2 l c h / 1);
   --color-social-github: 		oklch(from #08872B l c h / 1);
   --color-social-dribbble: 	oklch(from #EA4C89 l c h / 1);
@@ -24,6 +26,8 @@
 	--color-pp-brown: 				oklch(from #726153 l c h / 1);
 	--color-pp-red: 					oklch(from #F0784D l c h / 1);
 	--color-pp-yellow: 				oklch(from #F3BD4F l c h / 1);
+	--color-social-facebook:  var(--color-social-facebook);
+	--color-social-twitter:  	var(--color-social-twitter);
 	--color-social-linkedin:  var(--color-social-linkedin);
 	--color-social-github:  	var(--color-social-github);
 	--color-social-dribbble:  var(--color-social-dribbble);
