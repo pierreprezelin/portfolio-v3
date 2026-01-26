@@ -1,30 +1,34 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
+import relativeImages from 'mdsvex-relative-images';
 import { getSingletonHighlighter } from 'shiki';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.svx'],
+	extensions: ['.svx', '.md'],
 	highlight: {
 		highlighter: async (code, lang) => {
-			const highlighter = await getSingletonHighlighter({ themes: ["gruvbox-dark-medium"], langs: [lang] })
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang: lang, theme: "gruvbox-dark-medium" }))
-			return `{@html \`${html}\`}`
+			const highlighter = await getSingletonHighlighter({
+				themes: ['gruvbox-dark-medium'],
+				langs: [lang]
+			});
+			const html = escapeSvelte(
+				highlighter.codeToHtml(code, { lang: lang, theme: 'gruvbox-dark-medium' })
+			);
+			return `{@html \`${html}\`}`;
 		}
 	},
+	remarkPlugins: [relativeImages],
 	rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
 };
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', '.svx', '.md'],
-	preprocess: [
-		mdsvex(mdsvexOptions),
-		vitePreprocess()
-	],
+	preprocess: [mdsvex(mdsvexOptions), vitePreprocess()],
 	kit: {
 		adapter: adapter({
 			config: undefined,

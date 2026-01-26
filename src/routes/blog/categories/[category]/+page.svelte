@@ -19,7 +19,7 @@
 					class="h-56 w-full shrink-0 overflow-hidden rounded-xl border mobile:aspect-square mobile:h-full mobile:w-1/3 tablet:aspect-auto tablet:w-75"
 				>
 					<enhanced:img
-						src="$lib/assets/background-fallback.webp"
+						src="$lib/assets/images/background-fallback.webp"
 						alt=""
 						class="h-full w-full object-cover"
 					/>

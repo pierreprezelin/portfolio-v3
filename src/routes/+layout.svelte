@@ -11,7 +11,7 @@
 
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import image from '$lib/assets/og-image.webp';
+	import image from '$lib/assets/images/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/css/fonts.css';

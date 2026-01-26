@@ -13,10 +13,10 @@
 	>
 		<a href={`/blog/${post.slug}`} title="Go to Post" aria-label="Go to Post">
 			{#if post.banner}
-				<enhanced:img src={post.banner} alt="" class="h-full w-full object-cover" />
+				<enhanced:img src={`/images/blog/${post.banner}`} alt="" class="h-full w-full object-cover" />
 			{:else}
 				<enhanced:img
-					src="$lib/assets/background-fallback.webp"
+					src="$lib/assets/images/background-fallback.webp"
 					alt=""
 					class="h-full w-full object-cover"
 				/>
