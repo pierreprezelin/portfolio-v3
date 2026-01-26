@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-	<title>Category "{capitalize(data.category)}" · Blog · Pierre Prézelin</title>
+	<title>Category "{capitalize(data.tag)}" · Blog · Pierre Prézelin</title>
 </svelte:head>
 
-<h1 class="mb-16 text-center">{capitalize(data.category)}</h1>
+<h1 class="mb-16 text-center">{capitalize(data.tag)}</h1>
 
 {#if data.posts}
 	<ul class="flex flex-col gap-10 mobile:gap-8">

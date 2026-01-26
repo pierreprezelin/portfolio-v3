@@ -3,7 +3,7 @@ title: Portfolio v2 - The Story
 description: The next version, but 2 years later and without the pressure of deadlines. A simple one-page with lots of jQuery.
 date: '2026-01-22'
 banner: 'portfolio-v2.webp'
-categories:
+tags:
   - dev
   - design
 published: true

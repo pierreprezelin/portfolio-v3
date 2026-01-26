@@ -2,7 +2,7 @@
 title: Portfolio v1 - Origins
 description: Straight from 2013, as a school exam project. Made with simple HTML, CSS and JS, sprinkled with a bit of PHP.
 date: '2026-01-21'
-categories:
+tags:
   - dev
   - design
 published: true

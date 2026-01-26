@@ -28,15 +28,15 @@
 		<h1 class="mb-1.5">{data.meta.title}</h1>
 		<p class="font-medium">Posted on: {formatDate(data.meta.date)}</p>
 	</hgroup>
-	{#if data.meta.categories.length}
+	{#if data.meta.tags.length}
 		<ul class="mt-2.5 flex gap-2.5">
-			{#each data.meta.categories as category}
+			{#each data.meta.tags as tag}
 				<li>
 					<a
-						href="/blog/categories/{category}"
+						href="/blog/categories/{tag}"
 						class="rounded border px-1.5 py-1 text-sm transition-colors hover:border-pp-black hover:bg-pp-black hover:text-pp-beige"
 					>
-						{capitalize(category)}
+						{capitalize(tag)}
 					</a>
 				</li>
 			{/each}

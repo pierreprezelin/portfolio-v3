@@ -4,7 +4,7 @@ description: 10 years after v2 and it's way overdue for a change, with a light 7
 date: '2026-01-23'
 banner: 'portfolio-v3.webp'
 caption: 'A site in the site!'
-categories:
+tags:
   - dev
   - design
 published: true
