@@ -13,9 +13,9 @@
 	};
 
 	const links = [
-		{ href: '/', label: 'About', disabled: false },
-		{ href: '/works', label: 'Works', disabled: true },
-		{ href: '/blog', label: 'Blog', disabled: false }
+		{ href: '/', label: 'About' },
+		{ href: '/works', label: 'Works' },
+		{ href: '/blog', label: 'Blog' }
 	];
 </script>
 
@@ -23,7 +23,7 @@
 	class="fixed top-2.5 z-10 flex w-full items-center justify-between px-2.5 tablet:top-5 tablet:px-32"
 >
 	<nav
-		class="h-18 w-full rounded-xl bg-pp-beige/5 px-2.5 backdrop-blur-[6px] transition-[height] tablet:px-4"
+		class="h-18 w-full rounded-xl bg-pp-beige/5 px-2.5 backdrop-blur-[6px] tablet:px-4"
 		class:show={isMenuShown}
 	>
 		<div class="relative flex h-18 w-full items-center justify-between">
@@ -39,7 +39,6 @@
 					<li>
 						<a
 							href={link.href}
-							class="{link.disabled ? 'pointer-events-none opacity-50' : ''}"
 							class:active={isActiveLink(link.href)}
 							aria-current={page.url.pathname === link.href}
 							onclick={() => (isMenuShown = false)}

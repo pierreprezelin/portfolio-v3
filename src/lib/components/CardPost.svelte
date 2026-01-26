@@ -22,7 +22,7 @@
 			{/if}
 		</a>
 	</figure>
-	<div class="flex flex-col mobile:py-4">
+	<div class="flex flex-col">
 		<span class="mb-1.5 flex font-serif text-sm">{formatDate(post.date)}</span>
 		<h2 class="h5 mb-0.5">
 			<a href={`/blog/${post.slug}`}>{post.title}</a>

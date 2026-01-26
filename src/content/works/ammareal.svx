@@ -1,0 +1,11 @@
+---
+title: Ammareal
+date: '2022 · 2026'
+banner: 'ammareal.webp'
+caption: 'ammareal.fr'
+logo: 'ammareal.svg'
+slug: 'https://www.ammareal.fr'
+skills: ['Mobile Dev', 'Front-end Dev', 'UI Design']
+tools: ['Next.js', 'React', 'React Native', 'Expo', 'PrestaShop', 'Figma']
+published: true
+---
