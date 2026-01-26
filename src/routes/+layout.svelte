@@ -14,7 +14,7 @@
 	import image from '$lib/assets/images/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
-	import '$lib/css/fonts.css';
+	import '$lib/styles/fonts.css';
 
 	const title = 'Pierre Prézelin · Front-end Developer & UI Designer';
 	const description =

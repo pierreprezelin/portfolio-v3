@@ -2,9 +2,13 @@
 title: Portfolio v1 - Origins
 description: Straight from 2013, as a school exam project. Made with simple HTML, CSS and JS, sprinkled with a bit of PHP.
 date: '2026-01-21'
-hour: '17:39'
 categories:
   - dev
   - design
 published: true
 ---
+
+## Disclaimer
+
+It can be seen at [https://v1.pierreprezelin.com/](https://v1.pierreprezelin.com/), but the images were sadly lost.<br>
+As I currently don't have any access to my backup data, that's all I can show at the moment.

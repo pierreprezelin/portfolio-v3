@@ -1,0 +1,48 @@
+$breakpoint-tablet: 61.5rem; // Tailwind `--breakpoint-tablet` seems unreachable here
+
+.prose {
+	* {
+		color: var(--color-pp-black);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 1em;
+		margin-bottom: 1rem;
+		font-weight: 400;
+
+		@media (min-width: $breakpoint-tablet) {
+			.icon-link {
+				position: relative;
+
+				&::before {
+					content: '#';
+					position: absolute;
+					left: -1.2ch;
+					top: 50%;
+					opacity: 0;
+					transform: translateY(-50%);
+					transition: opacity 0.2s ease;
+				}
+			}
+
+			&:hover .icon-link::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	p {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	img {
+		border: 1px solid var(--color-pp-black);
+		border-radius: var(--radius-xl);
+	}
+}

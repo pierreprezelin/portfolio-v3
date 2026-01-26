@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { page } from '$app/state'
+	import { page } from '$app/state';
 	import { shares } from '$lib/data/shares';
 	import { capitalize, formatDate } from '$lib/utils';
+	import '$lib/styles/prose.scss';
 
 	import { ArrowLeft } from '@lucide/svelte';
 
@@ -25,31 +26,8 @@
 <article>
 	<hgroup>
 		<h1 class="mb-1.5">{data.meta.title}</h1>
-		<p class="font-medium">Posted on: {formatDate(data.meta.date)}, {data.meta.hour}</p>
+		<p class="font-medium">Posted on: {formatDate(data.meta.date)}</p>
 	</hgroup>
-	<ul class="mt-2.5 flex gap-2.5">
-		{#each shares as share}
-			<li>
-				<a
-					href={share.href + page.url}
-					target="_blank"
-					title={share.label}
-					aria-label={share.label}
-					class="flex w-10 h-10 items-center justify-center rounded-lg border transition-transform tablet:hover:-translate-y-0.5"
-					style="
-						background-color: oklch(from var(--color-{share.color}) l c h / 0.05); 
-						border-color: var(--color-{share.color});
-					"
-				>
-					<share.icon
-						size="24"
-						strokeWidth="1"
-						style="color: var(--color-{share.color});"
-					/>
-				</a>
-			</li>
-		{/each}
-	</ul>
 	{#if data.meta.categories.length}
 		<ul class="mt-2.5 flex gap-2.5">
 			{#each data.meta.categories as category}
@@ -64,6 +42,25 @@
 			{/each}
 		</ul>
 	{/if}
+	<ul class="mt-5 flex gap-2.5">
+		{#each shares as share}
+			<li>
+				<a
+					href={share.href + page.url}
+					target="_blank"
+					title={share.label}
+					aria-label={share.label}
+					class="flex h-10 w-10 items-center justify-center rounded-lg border transition-transform tablet:hover:-translate-y-0.5"
+					style="
+						background-color: oklch(from var(--color-{share.color}) l c h / 0.05); 
+						border-color: var(--color-{share.color});
+					"
+				>
+					<share.icon size="24" strokeWidth="1" style="color: var(--color-{share.color});" />
+				</a>
+			</li>
+		{/each}
+	</ul>
 	<p class="mt-8 mb-8">{data.meta.description}</p>
 	<hr />
 	<div class="mt-10">
@@ -81,7 +78,7 @@
 				{/if}
 			</figure>
 		{/if}
-		<div class="prose">
+		<div class="prose max-w-none">
 			<data.content />
 		</div>
 	</div>
@@ -95,27 +92,3 @@
 	/>
 	Back to Posts
 </a>
-
-<style lang="scss">
-	:where(h2, h3, h4, h5, h6) {
-		color: var(--color-pp-black);
-
-		.icon-link {
-			position: relative;
-
-			&::before {
-				content: '#';
-				position: absolute;
-				left: -1ch;
-				top: 0;
-				line-height: 1;
-				opacity: 0;
-				text-decoration: underline;
-			}
-		}
-
-		&:hover .icon-link::before {
-			opacity: 1;
-		}
-	}
-</style>

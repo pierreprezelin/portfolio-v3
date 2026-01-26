@@ -9,5 +9,3 @@ categories:
   - design
 published: true
 ---
-
-![Banner](../lib/assets/images/blog/portfolio-v3.webp)
