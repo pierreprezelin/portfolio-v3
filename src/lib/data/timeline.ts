@@ -1,13 +1,13 @@
 export const timeline = [
 	// {
-	// 	year: '2026',
+	// 	year: '2026 · now',
 	// 	name: 'Ongoing Project',
 	// 	roles: ['Mobile Developer'],
 	// 	note: 'as Freelance'
 	// },
 	{
 		year: '2025 · now',
-		name: 'Ongoing Project',
+		name: '<ongoing project>',
 		roles: ['UI Designer'],
 		note: 'as Freelance'
 	},
@@ -18,15 +18,15 @@ export const timeline = [
 		note: 'as Freelance'
 	},
 	{
-		year: '2024 · now',
+		year: '2024 · 2026',
 		name: 'Ammareal',
-		roles: ['Mobile Developer'],
+		roles: ['Mobile Developer', 'Front-end Developer', 'UI Designer'],
 		note: 'as Freelance'
 	},
 	{
-		year: '2022 · 2025',
+		year: '2022 · 2024',
 		name: 'Ammareal',
-		roles: ['Front-end Developer', 'UI Designer']
+		roles: ['Front-end Developer', 'UI Designer'],
 	},
 	{
 		year: '2016 · 2022',
@@ -40,19 +40,9 @@ export const timeline = [
 		note: 'as Intern'
 	},
 	{
-		year: '2015',
-		name: 'Portfolio v2',
-		roles: ['Front-end Developer', 'UI Designer']
-	},
-	{
 		year: '2014',
 		name: 'BRANDMARKE',
 		roles: ['Front-end Developer'],
 		note: 'as Intern'
 	},
-	{
-		year: '2013',
-		name: 'Portfolio v1',
-		roles: ['Front-end Developer', 'UI Designer']
-	}
 ];
