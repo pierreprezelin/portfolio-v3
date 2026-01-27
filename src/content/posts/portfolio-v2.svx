@@ -4,7 +4,7 @@ description: La version suivante, mais 2 ans plus tard et sans la pression de d√
 date: '2026-01-02'
 banner: 'portfolio-v2.webp'
 tags:
-  - D√©veloppement
-  - Design
+  - dev
+  - design
 published: true
 ---

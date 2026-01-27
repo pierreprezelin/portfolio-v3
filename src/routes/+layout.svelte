@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { page } from '$app/state';
+	import { afterNavigate, disableScrollHandling } from '$app/navigation';
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { fade } from 'svelte/transition';
 	import { ModeWatcher } from 'mode-watcher';
 
-	import { afterNavigate, disableScrollHandling } from '$app/navigation';
-
+	import Canonical from '$lib/components/Canonical.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import MouseCursor from '$lib/components/MouseCursor.svelte';
@@ -49,6 +51,7 @@
 	<meta name="twitter:widgets:new-embed-design" content="on" />
 
 	<link rel="icon" href={favicon} />
+	<Canonical />
 </svelte:head>
 
 <MouseCursor />
@@ -56,19 +59,25 @@
 
 <div class="layout">
 	<Header />
+
 	{#key data.currentRoute}
 		<div
 			class="flex min-h-dvh flex-col"
 			in:fade={{ duration: 150, delay: 150 }}
 			out:fade={{ duration: 150 }}
 		>
-			<main class="container mx-auto grow">
-				<Pattern position="top" />
-				{@render children()}
-			</main>
+			<main class="container mx-auto grow"><Pattern position="top" />{@render children()}</main>
 			<Footer />
 		</div>
 	{/key}
+</div>
+
+<div style="display:none">
+	{#each locales as locale}
+		<a href={localizeHref(page.url.pathname, { locale })}>
+			{locale}
+		</a>
+	{/each}
 </div>
 
 <style lang="scss">
@@ -96,18 +105,23 @@
 		font-size: var(--text-5xl);
 		line-height: var(--leading-tight);
 	}
+
 	:global(h2, .h2) {
 		font-size: var(--text-4xl);
 	}
+
 	:global(h3, .h3) {
 		font-size: var(--text-3xl);
 	}
+
 	:global(h4, .h4) {
 		font-size: var(--text-2xl);
 	}
+
 	:global(h5, .h5) {
 		font-size: var(--text-xl);
 	}
+
 	:global(h6, .h6) {
 		font-size: var(--text-lg);
 	}
@@ -123,6 +137,7 @@
 		transition: text-decoration var(--default-transition-duration)
 			var(--default-transition-timing-function);
 	}
+
 	:global(p > a:hover) {
 		text-decoration-color: transparent;
 	}

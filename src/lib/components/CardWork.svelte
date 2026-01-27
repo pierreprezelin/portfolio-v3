@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { FolderSearch } from '@lucide/svelte';
 	import type { Work } from '$lib/types';
+	import { m } from '$lib/paraglide/messages';
 
 	let { work }: { work: Work } = $props();
 </script>
@@ -9,7 +10,7 @@
 	<figure
 		class="h-56 w-full shrink-0 overflow-hidden rounded-xl border mobile:aspect-square mobile:h-full mobile:w-1/3 tablet:aspect-auto tablet:w-75"
 	>
-		<a href={`/works/${work.slug}`} title="Aller au projet" aria-label="Aller au projet">
+		<a href={`/works/${work.slug}`} title={m.go_to_project()} aria-label={m.go_to_project()}>
 			{#if work.banner}
 				<enhanced:img
 					src={`/images/works/${work.banner}`}
@@ -37,7 +38,7 @@
 		<p>
 			<a href={`/works/${work.slug}`} class="flex items-center gap-2.5">
 				<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				Voir le projet
+				{m.view_project()}
 			</a>
 		</p>
 	</div>

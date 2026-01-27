@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+	import { m } from '$lib/paraglide/messages';
 	import { shares } from '$lib/data/shares';
-	import { formatDate } from '$lib/utils';
+	import { capitalize, formatDate } from '$lib/utils';
 	import '$lib/styles/prose.scss';
-
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
@@ -26,17 +27,17 @@
 <article>
 	<hgroup>
 		<h1 class="mb-1.5">{data.meta.title}</h1>
-		<p class="font-medium">Publié le : {formatDate(data.meta.date)}</p>
+		<p class="font-medium">{m.posted_on({date: formatDate(data.meta.date, "medium", getLocale())})}</p>
 	</hgroup>
 	{#if data.meta.tags.length}
 		<ul class="mt-2.5 flex gap-2.5">
 			{#each data.meta.tags as tag}
 				<li>
 					<a
-						href="/blog/categories/{tag}"
+						href={localizeHref(`/blog/categories/${tag}`, { locale: getLocale() })}
 						class="rounded border px-1.5 py-1 text-sm transition-colors hover:border-pp-black hover:bg-pp-black hover:text-pp-beige"
 					>
-						{tag}
+						{capitalize(tag)}
 					</a>
 				</li>
 			{/each}
@@ -84,11 +85,11 @@
 	</div>
 </article>
 
-<a href="/blog" class="btn group mt-12">
+<a href={localizeHref('/blog', { locale: getLocale() })} class="btn group mt-12">
 	<ArrowLeft
 		size="24"
 		strokeWidth="1"
 		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
 	/>
-	Retour aux articles
+	{m.back_to_posts()}
 </a>

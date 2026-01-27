@@ -3,8 +3,8 @@ title: Portfolio v1 - Origines
 description: Venant tout droit de 2013, en tant que projet étudiant. Crée avec du simple HTML, CSS, JS et un peu de PHP.
 date: '2026-01-01'
 tags:
-  - Développement
-  - Design
+  - dev
+  - design
 published: true
 ---
 

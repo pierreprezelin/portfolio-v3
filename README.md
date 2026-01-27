@@ -6,16 +6,18 @@
 
 ## Made with
 
-- 🧡 [SvelteKit](https://github.com/sveltejs/kit) - SSG, file-based routing, etc.
+- 🧡 [SvelteKit](https://github.com/sveltejs/kit) · SSG, file-based routing, etc.
   
-- ⚡️ [Vite](https://github.com/vitejs/vite) - Instant HMR for lightning-fast development.
+- ⚡️ [Vite](https://github.com/vitejs/vite) · Instant HMR for lightning-fast development.
 
-- 🌊 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - On-demand atomic CSS engine.
+- 🦾 [TypeScript](https://github.com/microsoft/TypeScript) · Type safety for Javascript.
 
-- 🍥 [Lucide Icons](https://carbondesignsystem.com/elements/icons/library/) - Open-source librabry forked from Feather Icons.
+- 🌊 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) · On-demand atomic CSS engine.
 
-- 📰 [Decap CMS](https://github.com/decaporg/decap-cms) - Framework-agnostic Git-based CMS for Static Site Generators.
+- 🍥 [Lucide Icons](https://carbondesignsystem.com/elements/icons/library/) · Open-source librabry forked from Feather Icons.
 
-- 🦾 [TypeScript](https://github.com/microsoft/TypeScript) - Type safety for Javascript.
+- 🪂 [Paraglide JS](https://inlang.com/m/gerre34r/library-inlang-paraglideJs/) · Compiler-based i18n library for easy tree-shakable translations
 
-- 🏎 [Cloudflare Pages](https://pages.cloudflare.com/) - Easy hosting and deployments.
+- 📰 [Sveltia CMS](https://sveltiacms.app/) · Framework-agnostic Git-based CMS for Static Site Generators.
+
+- 🏎 [Cloudflare Pages](https://pages.cloudflare.com/) · Easy hosting and deployments.

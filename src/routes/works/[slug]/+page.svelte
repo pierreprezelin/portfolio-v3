@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '$lib/styles/prose.scss';
-
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+	import { m } from '$lib/paraglide/messages';
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
@@ -18,7 +19,7 @@
 				<span class="h6 -translate-y-0.5 pb-2 font-serif">{data.meta.date}</span>
 			</div>
 			{#if data.meta.logo}
-				<a href={data.meta.slug} title="Aller au site" aria-label="Aller au site" target="_blank">
+				<a href={data.meta.slug} title={m.go_to_website()} aria-label={m.go_to_website()} target="_blank">
 					<enhanced:img src={`/images/works/logos/${data.meta.logo}`} alt="" class="max-w-52" />
 				</a>
 			{/if}
@@ -51,11 +52,11 @@
 	</div>
 </article>
 
-<a href="/works" class="btn group mt-12">
+<a href={localizeHref('/works', { locale: getLocale() })} class="btn group mt-12">
 	<ArrowLeft
 		size="24"
 		strokeWidth="1"
 		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
 	/>
-	Retour aux projets
+	{m.back_to_works()}
 </a>
