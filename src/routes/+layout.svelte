@@ -18,7 +18,7 @@
 
 	const title = 'Pierre Prézelin · Front-end Developer & UI Designer';
 	const description =
-		'Front-end Developer and UI Designer from France, currently based in Montréal, QC, Canada.';
+		'Front-end Developer & UI Designer from France, currently based in Montréal, QC, Canada.';
 
 	afterNavigate(() => {
 		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away

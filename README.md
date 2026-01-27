@@ -14,7 +14,7 @@
 
 - 🍥 [Lucide Icons](https://carbondesignsystem.com/elements/icons/library/) - Open-source librabry forked from Feather Icons.
 
-- 📰 [Decap CMS](https://github.com/decaporg/decap-cms) - Framework-agnostic Git-based CMS for Static Site Generators.
+- 📰 [Sveltia](https://github.com/sveltia/sveltia-cms) - Framework-agnostic Git-based headless CMS for Static Site Generators.
 
 - 🦾 [TypeScript](https://github.com/microsoft/TypeScript) - Type safety for Javascript.
 
