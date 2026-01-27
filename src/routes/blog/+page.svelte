@@ -17,5 +17,5 @@
 		{/each}
 	</ul>
 {:else}
-	<p class="text-center">There are currently no posts.</p>
+	<p class="text-center">Il n'y a actuellement aucun article.</p>
 {/if}

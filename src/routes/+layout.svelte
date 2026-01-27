@@ -16,9 +16,9 @@
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/styles/fonts.css';
 
-	const title = 'Pierre Prézelin · Front-end Developer & UI Designer';
+	const title = 'Pierre Prézelin · Développeur Front-end & UI Designer';
 	const description =
-		'Front-end Developer and UI Designer from France, currently based in Montréal, QC, Canada.';
+		'Développeur Front-end et UI Designer français, actuellement basé à Montréal, QC, Canada.';
 
 	afterNavigate(() => {
 		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away
@@ -132,9 +132,7 @@
 		padding: 0 1.25rem;
 	}
 
-	.btn:hover {
-		svg {
-			color: var(--text-pp-beige);
-		}
+	:global(.btn:hover svg) {
+		color: var(--text-pp-beige);
 	}
 </style>

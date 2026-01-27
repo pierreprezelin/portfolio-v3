@@ -10,7 +10,7 @@
 	<figure
 		class="h-56 w-full shrink-0 overflow-hidden rounded-xl border mobile:aspect-square mobile:h-full mobile:w-1/3 tablet:aspect-auto tablet:w-75"
 	>
-		<a href={`/blog/${post.slug}`} title="Go to Post" aria-label="Go to Post">
+		<a href={`/blog/${post.slug}`} title="Aller à l'article" aria-label="Aller à l'article">
 			{#if post.banner}
 				<enhanced:img src={`/images/blog/${post.banner}`} alt="" class="h-full w-full object-cover" />
 			{:else}
@@ -31,7 +31,7 @@
 		<p>
 			<a href={`/blog/${post.slug}`} class="flex items-center gap-2.5">
 				<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				Read More
+				Lire la suite
 			</a>
 		</p>
 	</div>

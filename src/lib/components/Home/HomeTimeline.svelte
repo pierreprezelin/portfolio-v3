@@ -3,7 +3,7 @@
 </script>
 
 <section id="projects" class="mt-20">
-	<h2 class="h4 mb-6">Who I worked with:</h2>
+	<h2 class="h4 mb-6">Avec qui j'ai travaillé :</h2>
 	<ul>
 		{#each timeline as time}
 			<li class="mb-7 grid grid-cols-2 gap-2.5 mobile:grid-cols-3 mobile:gap-5">
@@ -22,5 +22,5 @@
 			</li>
 		{/each}
 	</ul>
-	<p class="text-pp-black/60 italic">And multiple personal or school projects...</p>
+	<p class="text-pp-black/60 italic">Ainsi que de multiples projets personnels ou étudiants...</p>
 </section>

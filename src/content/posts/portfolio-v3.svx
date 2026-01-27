@@ -1,11 +1,11 @@
 ---
-title: Portfolio v3 - A New Dawn
-description: 10 years after v2 and it's way overdue for a change, with a light 70s-inspired graphic direction. Time for JAMStack and some fun with Svelte!
-date: '2026-01-23'
+title: Portfolio v3 - Un jour nouveau
+description: 10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du JAMStack et d'un peu de fun avec Svelte !
+date: '2026-01-03'
 banner: 'portfolio-v3.webp'
-caption: 'A site in the site!'
+caption: 'Un site dans le site !'
 tags:
-  - dev
-  - design
+  - Développement
+  - Design
 published: true
 ---

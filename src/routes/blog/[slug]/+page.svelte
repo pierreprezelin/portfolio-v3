@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { shares } from '$lib/data/shares';
-	import { capitalize, formatDate } from '$lib/utils';
+	import { formatDate } from '$lib/utils';
 	import '$lib/styles/prose.scss';
 
 	import { ArrowLeft } from '@lucide/svelte';
@@ -26,7 +26,7 @@
 <article>
 	<hgroup>
 		<h1 class="mb-1.5">{data.meta.title}</h1>
-		<p class="font-medium">Posted on: {formatDate(data.meta.date)}</p>
+		<p class="font-medium">Publié le : {formatDate(data.meta.date)}</p>
 	</hgroup>
 	{#if data.meta.tags.length}
 		<ul class="mt-2.5 flex gap-2.5">
@@ -36,7 +36,7 @@
 						href="/blog/categories/{tag}"
 						class="rounded border px-1.5 py-1 text-sm transition-colors hover:border-pp-black hover:bg-pp-black hover:text-pp-beige"
 					>
-						{capitalize(tag)}
+						{tag}
 					</a>
 				</li>
 			{/each}
@@ -90,5 +90,5 @@
 		strokeWidth="1"
 		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
 	/>
-	Back to Posts
+	Retour aux articles
 </a>

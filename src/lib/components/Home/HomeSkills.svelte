@@ -1,8 +1,8 @@
 <section id="skills" class="mt-20">
-	<h2 class="h4 mb-6">What I worked with:</h2>
-	<div class="grid mobile:grid-cols-3 gap-6 mobile:gap-5">
+	<h2 class="h4 mb-6">Avec quoi j'ai travaillé :</h2>
+	<div class="grid gap-6 mobile:grid-cols-3 mobile:gap-5">
 		<div>
-			<h3 class="h6 mb-3">Web Development</h3>
+			<h3 class="h6 mb-3">Développement Web</h3>
 			<ul>
 				<li>HTML</li>
 				<li>CSS / SCSS / LESS</li>
@@ -29,7 +29,7 @@
 			<ul>
 				<li>React Native / Expo</li>
 			</ul>
-			<h3 class="h6 mt-6">Systems</h3>
+			<h3 class="h6 mt-6 mb-3">Systèmes</h3>
 			<ul>
 				<li>Windows</li>
 				<li>macOS</li>
@@ -39,8 +39,8 @@
 		<div>
 			<h3 class="h6 mb-3">Design</h3>
 			<ul>
-				<li>UX/UI Design</li>
-				<li>Accessibility</li>
+				<li>UX/UI</li>
+				<li>Accessibilité</li>
 				<li>Figma</li>
 				<li>Photoshop</li>
 				<li>Illustrator</li>

@@ -18,7 +18,7 @@
 				<span class="h6 -translate-y-0.5 pb-2 font-serif">{data.meta.date}</span>
 			</div>
 			{#if data.meta.logo}
-				<a href={data.meta.slug} title="Go to website" aria-label="Go to website" target="_blank">
+				<a href={data.meta.slug} title="Aller au site" aria-label="Aller au site" target="_blank">
 					<enhanced:img src={`/images/works/logos/${data.meta.logo}`} alt="" class="max-w-52" />
 				</a>
 			{/if}
@@ -57,5 +57,5 @@
 		strokeWidth="1"
 		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
 	/>
-	Back to Works
+	Retour aux projets
 </a>

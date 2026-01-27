@@ -1,10 +1,10 @@
 ---
-title: Portfolio v2 - The Story
-description: The next version, but 2 years later and without the pressure of deadlines. A simple one-page with lots of jQuery.
-date: '2026-01-22'
+title: Portfolio v2 - L'histoire
+description: La version suivante, mais 2 ans plus tard et sans la pression de délais à tenir. Un simple "one-page" avec beaucoup de jQuery.
+date: '2026-01-02'
 banner: 'portfolio-v2.webp'
 tags:
-  - dev
-  - design
+  - Développement
+  - Design
 published: true
 ---

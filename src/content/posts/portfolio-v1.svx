@@ -1,14 +1,14 @@
 ---
-title: Portfolio v1 - Origins
-description: Straight from 2013, as a school exam project. Made with simple HTML, CSS and JS, sprinkled with a bit of PHP.
-date: '2026-01-21'
+title: Portfolio v1 - Origines
+description: Venant tout droit de 2013, en tant que projet étudiant. Crée avec du simple HTML, CSS, JS et un peu de PHP.
+date: '2026-01-01'
 tags:
-  - dev
-  - design
+  - Développement
+  - Design
 published: true
 ---
 
-## Disclaimer
+## Avant-propos
 
-It can be seen at [https://v1.pierreprezelin.com/](https://v1.pierreprezelin.com/), but the images were sadly lost.<br>
-As I currently don't have any access to my backup data, that's all I can show at the moment.
+Il peut être parcouru sur [https://v1.pierreprezelin.com/](https://v1.pierreprezelin.com/), mais les images ont malheureusement été perdues.<br>
+Vu que je n'ai actuellement aucun accès à mes sauvegardes, c'est tout ce que je peux en montrer pour le moment.

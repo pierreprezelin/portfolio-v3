@@ -4,24 +4,23 @@
 
 <section id="intro">
 	<p class="mb-4">
-		A Front-end Developer and UI Designer from France,<br />
-		currently based in Montréal, QC, Canada.
+		Un Développeur Front-end et UI Designer français,<br />
+		basé actuellement à Montréal, QC, Canada.
 	</p>
-	<p class="mb-4">I’m always eager to work on cool projects with positive people.</p>
+	<p class="mb-4">J'apprécie l'idée de travailler sur des projets cools avec des gens positifs.</p>
 	<p class="mb-5 tablet:pr-48">
-		Otherwise, I’m fond of video games, making and playing music, anime, sports (kickboxing,
-		running, climbing) and good food.<br />
-		These days, I’m learning how to ice-skate!
+		Sinon, j'adore les jeux vidéo, créer et jouer de la musique, les animes, faire du sport (kickboxing,
+		running, escalade) et la bonne gastronomie. Ces temps-ci, j'apprends le patin à glace !
 	</p>
 	<div class="flex flex-col justify-between gap-5 mobile:flex-row">
 		<p>
-			<a href="/docs/cv_pierre-prezelin_fr.pdf" download class="flex items-center gap-2.5">
+			<a href="/docs/cv_pierre-prezelin.pdf" download class="flex items-center gap-2.5">
 				<FileDown size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				Download my CV (FR)
+				Télécharger mon CV
 			</a>
 		</p>
 		<p class="hidden text-pp-black/60 italic mobile:text-right tablet:inline-flex">
-			(don’t worry, your cursor is working just fine)
+			(pas de panique, le curseur fonctionne très bien)
 		</p>
 	</div>
 </section>

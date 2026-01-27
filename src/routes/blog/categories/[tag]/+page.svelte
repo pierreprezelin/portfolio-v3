@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { capitalize } from '$lib/utils.js';
 	import { ArrowLeft } from '@lucide/svelte';
 	import CardPost from '$lib/components/CardPost.svelte';
 
@@ -7,10 +6,10 @@
 </script>
 
 <svelte:head>
-	<title>Category "{capitalize(data.tag)}" · Blog · Pierre Prézelin</title>
+	<title>Categorie "{data.tag}" · Blog · Pierre Prézelin</title>
 </svelte:head>
 
-<h1 class="mb-16 text-center">{capitalize(data.tag)}</h1>
+<h1 class="mb-16 text-center">{data.tag}</h1>
 
 {#if data.posts}
 	<ul class="flex flex-col gap-10 mobile:gap-8">
@@ -19,7 +18,7 @@
 		{/each}
 	</ul>
 {:else}
-	<p class="text-center">There are currently no posts for this category.</p>
+	<p class="text-center">Il n'y a actuellement aucun article pour cette catégorie.</p>
 {/if}
 
 <a href="/blog" class="btn group mt-12">
@@ -28,5 +27,5 @@
 		strokeWidth="1"
 		class="color:text-pp-black transition-colors group-hover:text-pp-beige"
 	/>
-	Back to Posts
+	Retour aux articles
 </a>

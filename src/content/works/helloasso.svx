@@ -5,7 +5,7 @@ banner: 'helloasso.webp'
 caption: 'helloasso.com'
 logo: 'helloasso.svg'
 slug: 'https://www.helloasso.com'
-skills: ['Front-end Dev', 'UI Design']
+skills: ['Dev Front-end', 'UI Design']
 tools: ['Nuxt', 'Vue.js', 'Figma', 'Photoshop', 'Illustrator']
 published: true
 ---

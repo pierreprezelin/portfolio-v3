@@ -8,11 +8,11 @@ export type Post = {
 	published: boolean;
 };
 
-export type Skills = 'Mobile Dev' | 'Front-end Dev' | 'UI Design';
+export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'UI Design';
 
-export type Tags = 'design' | 'dev';
+export type Tags = 'Design' | 'Développement';
 
-export type Tools = 'Next.js' | 'React' | 'React Native' | 'Expo' | 'Vue.js' | 'Nuxt' | 'Figma' | 'Photoshop' | 'Illustrator' | 'PrestaShop';
+export type Tools = 'Expo' | 'Figma' | 'Illustrator' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PrestaShop' | 'React' | 'React Native' | 'Vue.js';
 
 export type Work = {
 	title: string;

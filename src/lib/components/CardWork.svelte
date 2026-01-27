@@ -9,7 +9,7 @@
 	<figure
 		class="h-56 w-full shrink-0 overflow-hidden rounded-xl border mobile:aspect-square mobile:h-full mobile:w-1/3 tablet:aspect-auto tablet:w-75"
 	>
-		<a href={`/works/${work.slug}`} title="Go to Work" aria-label="Go to Work">
+		<a href={`/works/${work.slug}`} title="Aller au projet" aria-label="Aller au projet">
 			{#if work.banner}
 				<enhanced:img
 					src={`/images/works/${work.banner}`}
@@ -37,7 +37,7 @@
 		<p>
 			<a href={`/works/${work.slug}`} class="flex items-center gap-2.5">
 				<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				View Project
+				Voir le projet
 			</a>
 		</p>
 	</div>

@@ -5,10 +5,10 @@
 </script>
 
 <svelte:head>
-	<title>Works · Pierre Prézelin</title>
+	<title>Projets · Pierre Prézelin</title>
 </svelte:head>
 
-<h1 class="mb-16 text-center">Works</h1>
+<h1 class="mb-16 text-center">Projets</h1>
 
 {#if data.works}
 	<ul class="flex flex-col gap-10 mobile:gap-8">
@@ -17,5 +17,5 @@
 		{/each}
 	</ul>
 {:else}
-	<p class="text-center">There are currently no works.</p>
+	<p class="text-center">Il n'y a actuellement aucun projet.</p>
 {/if}

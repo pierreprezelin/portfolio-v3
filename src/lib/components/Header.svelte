@@ -13,8 +13,8 @@
 	};
 
 	const links = [
-		{ href: '/', label: 'About' },
-		{ href: '/works', label: 'Works' },
+		{ href: '/', label: 'À propos' },
+		{ href: '/works', label: 'Projets' },
 		{ href: '/blog', label: 'Blog' }
 	];
 </script>
@@ -49,14 +49,11 @@
 				{/each}
 			</ul>
 			<ul class="z-2">
-				<!-- <li>
-					<button type="button">FR</button>
-				</li> -->
 				<li>
 					<button
 						type="button"
 						onclick={toggleMode}
-						aria-label="Toggle theme"
+						aria-label="Changer de thème"
 						class="theme-toggle flex items-center"
 					>
 						<span class="theme-toggle-sun">
@@ -71,8 +68,8 @@
 		</div>
 		<a
 			href="/"
-			title="Home · About"
-			aria-label="Home · About"
+			title="Retour à l'accueil"
+			aria-label="Retour à l'accueil"
 			aria-current={page.url.pathname === '/'}
 			class="absolute top-0 left-[50%] z-2 -translate-x-[50%] rounded-full border-4 border-pp-beige"
 			onclick={() => (isMenuShown = false)}
