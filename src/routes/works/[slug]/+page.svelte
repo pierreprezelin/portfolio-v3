@@ -13,14 +13,14 @@
 
 <article>
 	<hgroup>
-		<div class="flex items-center justify-between gap-2.5">
-			<div class="flex items-baseline gap-4">
+		<div class="flex flex-col tablet:flex-row tablet:items-baseline justify-between gap-4 tablet:gap-2.5 mb-2.5 tablet:mb-0">
+			<div class="flex flex-col tablet:flex-row tablet:items-baseline gap-2 tablet:gap-4 tablet:pb-0.5">
 				<h1>{data.meta.title}</h1>
-				<span class="h6 -translate-y-0.5 pb-2 font-serif">{data.meta.date}</span>
+				<span class="h6 -translate-y-0.5 font-serif">{data.meta.date}</span>
 			</div>
 			{#if data.meta.logo}
-				<a href={data.meta.slug} title={m.go_to_website()} aria-label={m.go_to_website()} target="_blank">
-					<enhanced:img src={`/images/works/logos/${data.meta.logo}`} alt="" class="max-w-52" />
+				<a href={data.meta.slug} title={m.go_to_website()} aria-label={m.go_to_website()} target="_blank" class="mb-2.5">
+					<enhanced:img src={`/images/works/logos/${data.meta.logo}`} alt="" class="max-w-52 h-12" />
 				</a>
 			{/if}
 		</div>
