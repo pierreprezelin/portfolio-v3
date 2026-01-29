@@ -1,0 +1,21 @@
+---
+title: VoxOffice
+date: '2016'
+dateSort: 20161
+banner: 'voxoffice.webp'
+logo: 'voxoffice.png'
+slug: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mockup-Behance?node-id=0-1&t=HYSAZsTcA6fxHjvH-1'
+preview: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mockup-Behance?node-id=0-1&t=HYSAZsTcA6fxHjvH-1'
+skills: ['UI Design']
+tools: ['PhotoShop']
+published: true
+---
+
+## À propos
+
+VoxOffice est un petit projet réalisé avec mon bon ami [Simon Trichereau](https://simon-tr.com/fr/).
+
+Il s'est chargé du développement en PHP, pendant que j'étais chargé du design.
+
+Le concept est un système de vote entre deux films proposés à l'utilisateur, avant de les classer par ordre de préférence.<br>
+L'utilisateur peut aussi ajouter manuellement des films et suivre le classement au fil de son évolution.

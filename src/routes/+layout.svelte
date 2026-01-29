@@ -12,7 +12,6 @@
 	import Pattern from '$lib/components/Pattern.svelte';
 
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import image from '$lib/assets/images/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
@@ -50,7 +49,8 @@
 	<meta name="twitter:creator" content="@prezelin21995" />
 	<meta name="twitter:widgets:new-embed-design" content="on" />
 
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href="/favicon.ico" sizes="32x32" />
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 	<Canonical />
 </svelte:head>
 

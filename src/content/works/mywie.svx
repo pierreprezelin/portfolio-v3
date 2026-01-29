@@ -1,0 +1,25 @@
+---
+title: MYWIE
+date: '2025 · 2026'
+dateSort: 20262
+banner: 'mywie.webp'
+logo: 'mywie.svg'
+slug: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
+preview: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
+skills: ['UI Design']
+tools: ['Figma']
+published: false
+---
+
+## À propos
+
+MYWIE est un service familial qui propose des fonctionnalités innovantes sur le web et mobile :
+
+- Un arbre généalogique inversé
+- Un journal interactif
+- Des messages posthumes
+- Une carte familiale
+- Un "Coffre des Silences"
+- Les "Vies Inouïes"
+
+J'ai été chargé de concevoir sa charte graphique, son Design System, ainsi que son UX/UI.

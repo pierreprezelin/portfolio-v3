@@ -1,0 +1,27 @@
+---
+title: Portfolio v1
+date: '2013'
+dateSort: 20131
+preview: 'https://v1.pierreprezelin.com'
+skills: ['Intégration Front-end', 'UI Design']
+tools: ['HTML/CSS', 'jQuery', 'PHP', 'Photoshop']
+published: true
+---
+
+La version 1 du site comportait un parallax en JS, avec des bulles représentatant les différents travaux. Ces derniers étaient de domaines plus variés (vidéo, graphisme...), car réalisés pendant mes études.
+
+La plupart se retrouveront également dans la seconde version qui sortira 2 ans plus tard.
+
+## Note
+
+Il peut être parcouru sur [https://v1.pierreprezelin.com/](https://v1.pierreprezelin.com/), mais les images ont malheureusement été perdues.<br>
+Vu que je n'ai actuellement aucun accès à mes sauvegardes, c'est tout ce que je peux en montrer pour le moment.
+
+![Aperçu du site v1](../../lib/assets/images/works/portfolio-v1.webp)
+_En l'état actuel, sans les images et autres ressources_
+
+## Astro (2024)
+
+Pour des raisons de maintenabilité (et éviter d'autres problèmes de perte d'assets comme ici), j'ai migré les deux premières versions de mon portfolio vers [Astro](https://astro.build/) en 2024. Astro est un framework JS comparable à React, Vue.js ou Svelte, donc il peut être déployé très facilement sur des services comme Vercel, Netlify...
+
+Il est facile à apprendre, très performant et tout indiqué pour les sites de contenu comme les blogs ou portfolios. Les migrations ont été faites en une poignée d'heures à peine, avec un score Lighthouse de quasi 100 partout et ce, sans optimisation manuelle !

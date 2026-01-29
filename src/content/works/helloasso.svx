@@ -1,11 +1,107 @@
 ---
 title: HelloAsso
 date: '2016 · 2022'
+dateSort: 20162
 banner: 'helloasso.webp'
-caption: 'helloasso.com'
+caption: 'helloasso.com v3 (2018)'
 logo: 'helloasso.svg'
 slug: 'https://www.helloasso.com'
+preview: 'https://www.helloasso.com/e/recherche'
 skills: ['Dev Front-end', 'UI Design']
 tools: ['Nuxt', 'Vue.js', 'Figma', 'Photoshop', 'Illustrator']
 published: true
 ---
+
+## Avant-propos
+
+Les captures d'écran sont volontairement limitées, car issues de Wayback Machine.
+
+HelloAsso continue de faire évoluer sa direction graphique depuis mon départ, avec le travail du talentueux [Servan Briand](https://www.linkedin.com/in/servanbriand) (leur Brand & Marketing Designer actuel), avec qui j'ai eu le plaisir de travailler pendant ces années.
+
+## Introduction
+
+HelloAsso est une solution qui permet aux associations de créer **100% gratuitement** des billetteries, formulaires de don, d'adhésion et autres services utiles. Un annuaire est également mis à disposition pour que les utilisateurs puissent découvrir plus facilement de nouveaux acteurs de l'économie sociale et solidaire.
+
+Contrairement aux autres solutions, l'intégralité des sommes collectées par les associations leur est reversée. **La seule rémunération d'HelloAsso provient des dons des utilisateurs, suggéré lors du paiement mais jamais obligatoire.**
+
+Ce modèle économique unique est devenu viable avec les années et la montée en volume de transactions.
+
+Il s'agit de mon premier contrat longue durée en sortie d'études et je serai toujours reconnaissant envers l'équipe pour m'avoir donné l'opportunité de faire mes preuves en travaillant sur tellement de sujets plus intéressants les uns que les autres.
+
+## Les débuts
+
+**Outils utilisés :** C#, SCSS (Sass), JS, Photoshop, Illustrator
+
+À mon arrivée, mes missions ont été variées, allant de la réalisation de kakémonos, 
+
+- Améliorer l'apparence du site existant dans sa seconde version
+- Maquetter et intégrer des mini-sites et newsletters, ou juste intégrer des sites B2B pour des partenariats
+- Créer des supports print (kakémonos, stickers et même covering pour la voiture de la première édition du [Tour de France des Campus HelloAsso](https://www.helloasso.com/blog/les-campus-helloasso-echanges-et-rencontres-entre-associations/) !)
+
+## HelloAsso Scan
+
+**Outils utilisés :** Figma
+
+Ce qui était auparavant "l'appli HelloAsso" et qui deviendra "[HelloAsso Scan](https://play.google.com/store/apps/details?id=com.helloasso)" est le premier jet et mise en pratique de la charte graphique v3 d'HelloAsso. C'est aussi - à l'écriture de cette page, début 2026 - l'un des derniers vestiges encore visibles de cette charte v3 chez HelloAsso.
+
+Le vert plus "végétal" d'origine devient plus vif pour donner une touche de modernité et un bleu clair ainsi qu'violet font leur introduction. Par la suite, le bleu secondaire sera délaissé pour des raisons de visibilité et le violet fera sa réapparition dans la charte v4 actuelle en tant que couleur principale.
+
+Il s'agit du premier projet où j'ai été chargé de concevoir l'interface d'une application mobile, donc un certain challenge avec les différences en matière d'ergonomie que ça peut susciter. Le développement a été géré par un collègue développeur mobile et la communication a permis d'ajuster les maquettes en fonctionne des contraintes techniques.
+
+![Présentation Google Play Store](../../lib/assets/images/works/helloasso-scan.webp)
+_L'un des screenshots de la page Google Play Store_
+
+## helloasso.com
+
+**Outils utilisés :** Nuxt, Vue.js, Figma
+
+Réalisé à la base en C#, LESS et JS natif, la décision à été prise courant 2018 de refondre le site vitrine en [Vue.js](https://vuejs.org/) pour sa v3. Plus précisement, c'est son meta-framework [Nuxt](https://nuxt.com/) qui a été choisi, afin de profiter du Server-Side Rendering (SSR) et optimiser ainsi le référencement (SEO).
+
+C'est suite à cette refonte que je suis monté en compétence de simple intégrateur à développeur front-end.
+
+Ce premier projet étant issu d'un nouveau pôle UX/UI crée pour l'occasion, nous avons pu travailer tous ensemble dans une forte cohésion créative entre UI Designers, UX Designers et Graphistes.
+
+![Page Billeterie](../../lib/assets/images/works/helloasso-billetterie.webp)
+_La page de présentation de l'outil Billetterie_
+
+## Espace Utilisateur
+
+**Outils utilisés :** Nuxt, Vue.js, Figma
+
+La partie administrative mélangeait auparavant les pages dédiées aux associations et celles aux particuliers.<br>
+Cela créait beaucoup de duplication technique et problèmes d'ergonomie, donc le choix a été fait de séparer la partie particulier en un espace dédié.
+
+L'idée était que cette partie - plus simple dans sa logique - pourrait être maintenue et optimisée si besoin. Dans la réalité, elle n'a quasi pas bougé depuis sa création, preuve qu'il était judicieux de déplacer ce bloc ailleurs.
+
+Cet espace utilisateur permet de retrouver l'historique de ses paiements, billets, etc, ainsi que de pouvoir modifier ses informations personnelles.
+
+![Espace Utilisateur](../../lib/assets/images/works/helloasso-userspace.webp)
+
+## Annuaire
+
+**Outils utilisés :** Nuxt, Vue.js, Figma
+
+Mon dernier gros projet avant de quitter HelloAsso a été son annuaire.<br>
+
+Il s'agissait de regrouper et afficher tous les événements, campagnes d'adhésion, associations en même endroit pour que le tout soit plus facile à trouver (ou retrouver) pour l'utilisateur.
+
+Parmi les fonctionnalités, il y'avait notamment :
+
+- Des carousels affichant les différentes typologie (billetterie, association)
+- Une recherche par carte, plus visuelle que le moteur de recherche crée aussi pour l'occasion
+- Pouvoir afficher les résultats par géolocalisation
+
+Suite à ce projet, mes missions en tant qu'UI Designer chez HelloAsso se sont achevées, après 6 ans, pour que je puisse me consacrer entièrement au développement.
+
+![Annuaire](../../lib/assets/images/works/helloasso-explore.webp)
+
+## Autres projets
+
+Beaucoup de projets ont vu le jour en quasi 8 ans et je ne pourrais pas tous les citer ici, mais en voici les principaux :
+
+- L'espace administration, qui a été constamment amélioré, optimisé, refondu au fil de ces années...
+- ...et idem pour le parcours de commande !
+- Une page officielle pour les associations, qu'elles puissent regrouper toutes leurs actions au même endroit
+- La refonte et centralisation du tunnel de connexion/inscription, sur un sous-domaine distinct.
+
+![Illustration Abyss 404](../../lib/assets/images/works/helloasso-abyss.webp)

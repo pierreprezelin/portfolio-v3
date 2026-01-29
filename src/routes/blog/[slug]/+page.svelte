@@ -8,6 +8,7 @@
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
+	console.debug("🚀 ~ data:", data)
 </script>
 
 <svelte:head>
@@ -17,11 +18,11 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.image} />
+	<meta property="og:image" content={`/images/blog/${data.meta.banner}`} />
 
 	<meta name="twitter:title" content={data.meta.title} />
 	<meta name="twitter:description" content={data.meta.description} />
-	<meta name="twitter:image:src" content={data.meta.image} />
+	<meta property="og:image" content={`/images/blog/${data.meta.banner}`} />
 </svelte:head>
 
 <article>
