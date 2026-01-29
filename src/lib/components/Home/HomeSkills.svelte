@@ -8,12 +8,13 @@
 			<h3 class="h6 mb-3">{m.skills_webdev()}</h3>
 			<ul>
 				<li>HTML</li>
-				<li>CSS / SCSS / LESS</li>
+				<li>CSS / SCSS (Sass) / LESS</li>
 				<li>Tailwind CSS</li>
 				<li>JavaScript / TypeScript</li>
 				<li>React / Next</li>
 				<li>Vue.js / Nuxt</li>
 				<li>Svelte / SvelteKit</li>
+				<!-- <li>Supabase</li> -->
 				<li>Storybook</li>
 				<li>Jest</li>
 				<li>Node.js</li>

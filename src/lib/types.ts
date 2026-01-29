@@ -1,5 +1,6 @@
 export type Post = {
 	title: string;
+	caption: string;
 	slug: string;
 	description: string;
 	date: string;
@@ -8,16 +9,19 @@ export type Post = {
 	published: boolean;
 };
 
-export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'UI Design';
+export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'Intégration Front-end' | 'UI Design';
 
 export type Tags = 'Design' | 'Développement';
 
-export type Tools = 'Expo' | 'Figma' | 'Illustrator' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PrestaShop' | 'React' | 'React Native' | 'Vue.js';
+export type Tools = 'Astro' | 'Expo' | 'Figma' | 'HTML/CSS' | 'Illustrator' | 'jQuery' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PHP' | 'PrestaShop' | 'React' | 'React Native' | 'Supabase' | 'Svelte' | 'SvelteKit' | 'Tailwind' | 'Vue.js' | 'WordPress';
 
 export type Work = {
 	title: string;
+	caption: string;
 	slug: string;
+	preview: string;
 	date: string;
+	dateSort: number;
 	banner: string;
 	skills: Skills[];
 	tools: Tools[];

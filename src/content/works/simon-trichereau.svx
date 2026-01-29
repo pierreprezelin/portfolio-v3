@@ -1,0 +1,16 @@
+---
+title: Simon Trichereau
+date: '2020'
+dateSort: 20201
+banner: 'simon-trichereau.webp'
+logo: 'simon-trichereau.svg'
+slug: 'https://simon-tr.com/fr/'
+preview: 'https://www.figma.com/design/5LdMJTpNAq0nMfu46Yaif8/ST-Portfolio-2020-%C2%B7-Maquettes?node-id=0-1&t=q1YZEUcIMteaHbbt-1'
+skills: ['UI Design']
+tools: ['Figma']
+published: true
+---
+
+## À propos
+
+En 2020, mon bon ami [Simon Trichereau](https://simon-tr.com/fr/) m'a confié l'UI Design de la prochaine version de son portfolio avec carte blanche. [Une version animée en CSS](https://codepen.io/PierrePrezelin/pen/yyepWzX) du hero est également visible sur mon CodePen !

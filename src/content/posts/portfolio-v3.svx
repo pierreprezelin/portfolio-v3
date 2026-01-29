@@ -1,7 +1,7 @@
 ---
-title: Portfolio v3 - Un jour nouveau
+title: Portfolio v3 - Making-of
 description: 10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du JAMStack et d'un peu de fun avec Svelte !
-date: '2026-01-03'
+date: '2026-01-29'
 banner: 'portfolio-v3.webp'
 caption: 'Un site dans le site !'
 tags:

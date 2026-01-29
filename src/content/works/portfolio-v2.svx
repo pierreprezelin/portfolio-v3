@@ -1,0 +1,28 @@
+---
+title: Portfolio v2
+date: '2015'
+dateSort: 20151
+banner: 'portfolio-v2.webp'
+logo: 'portfolio-v2.svg'
+slug: 'https://v2.pierreprezelin.com'
+preview: 'https://v2.pierreprezelin.com'
+skills: ['Intégration Front-end', 'UI Design']
+tools: ['HTML/CSS', 'jQuery', 'PHP', 'Photoshop', 'Illustrator']
+published: true
+---
+
+La v2 est sortie durant la fin de mes études, sans délais à tenir.<br>
+Cette fois, j'ai pu reprendre les éléments de la v1 (travaux avec filtre, compétences) et me faisant plaisir sur le reste.
+
+**Parmi les nouveautés :**
+
+- Un thème sombre
+- Entièrement responsive, ce qui n'était pas du tout le cas de la v1
+- Entièrement traduit (puis, de nouveau en français uniquement après la migration vers [Astro](https://astro.build/))
+- L'ajout d'une carte [Leaflet](https://leafletjs.com/), retirée lors de la migration vers Astro
+- La disparition du formulaire de contact pour de simples liens
+- Des easters eggs (accessibles dans le menu des options)
+
+## Astro (2024)
+
+Pour les rares mises à jour de contenu, il était devenu contraignant de maintanir le site avec son stack technique de l'époque. Comme pour la première version de mon portfolio, j'ai migré la v2 vers [Astro](https://astro.build/) en 2024 pour facilier sa gestion.

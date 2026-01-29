@@ -1,0 +1,17 @@
+---
+title: Busanté
+date: '2018'
+dateSort: 20181
+banner: 'busante.webp'
+logo: 'busante.png'
+slug: 'https://www.figma.com/design/gY1uDMGNTLxXUvAcDRNaRu/Busant%C3%A9-%C2%B7-Mockup-Behance?node-id=0-1&t=8s11JmQkwuz2ssIp-1'
+preview: 'https://www.figma.com/design/gY1uDMGNTLxXUvAcDRNaRu/Busant%C3%A9-%C2%B7-Mockup-Behance?node-id=0-1&t=8s11JmQkwuz2ssIp-1'
+skills: ['UI Design']
+tools: ['Figma']
+published: false
+---
+
+## À propos
+
+Busanté propose un service de transport pour les personnes isolées dans des déserts médicaux.<br>
+J'ai été chargé de créer un logo et réaliser sa charte graphique, tout en donnant un petit coup de jeune à l'existant.

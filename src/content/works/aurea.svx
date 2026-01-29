@@ -1,0 +1,17 @@
+---
+title: Auréa
+date: '2015'
+dateSort: 20153
+banner: 'aurea.webp'
+logo: 'rc2c.svg'
+slug: 'https://www.rc2c.fr/'
+preview: 'http://aurea.eu/'
+skills: ['Intégration Front-end']
+tools: ['WordPress']
+published: true
+---
+
+## À propos
+
+Auréa AgroSciences est un autre site réalisé par l'agence [RC2C](https://www.rc2c.fr/) pendant mon stage.<br>
+J'ai été chargé d'assister un intégrateur WordPress senior sur sa réalisation.
