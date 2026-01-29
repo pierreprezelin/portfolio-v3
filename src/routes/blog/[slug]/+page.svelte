@@ -8,7 +8,6 @@
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
-	console.debug("🚀 ~ data:", data)
 </script>
 
 <svelte:head>

@@ -36,7 +36,7 @@
 		"prettier-plugin-tailwindcss": "^0.7.2",
 		"sass-embedded": "^1.97.3",
 		"shiki": "^3.21.0",
-		"svelte": "^5.48.5",
+		"svelte": "^5.49.0",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.1.17",
 		"typescript": "^5.9.3",
