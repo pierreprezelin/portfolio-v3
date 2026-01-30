@@ -2,7 +2,8 @@
 	import { page } from '$app/state';
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
-	import { fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 	import { ModeWatcher } from 'mode-watcher';
 
 	import Canonical from '$lib/components/Canonical.svelte';
@@ -21,8 +22,18 @@
 	const description =
 		'Développeur Front-end et UI Designer français, actuellement basé à Montréal, QC, Canada.';
 
+	const duration = 150;
+	const delay = duration + duration / 2;
+	const y = 5;
+
+	const transitionIn = { easing: cubicOut, y, duration, delay };
+	const transitionOut = { easing: cubicIn, y: -y, duration };
+
 	afterNavigate(() => {
 		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away
+		setTimeout(() => {
+			window.scrollTo(0, 0);
+		}, 150);
 	});
 
 	let { children, data } = $props();
@@ -59,14 +70,12 @@
 
 <div class="layout">
 	<Header />
-
-	{#key data.currentRoute}
-		<div
-			class="flex min-h-dvh flex-col"
-			in:fade={{ duration: 150, delay: 150 }}
-			out:fade={{ duration: 150 }}
-		>
-			<main class="container mx-auto grow"><Pattern position="top" />{@render children()}</main>
+	{#key data.pathname}
+		<div class="flex min-h-dvh flex-col" in:fly={transitionIn} out:fly={transitionOut}>
+			<main class="container mx-auto grow">
+				<Pattern position="top" />
+				{@render children()}
+			</main>
 			<Footer />
 		</div>
 	{/key}
