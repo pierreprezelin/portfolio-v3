@@ -2,14 +2,20 @@ import { m } from '$lib/paraglide/messages';
 
 export const timeline = [
 	// {
-	// 	year: '2026 · ...',
-	// 	name: '<projet en cours>',
+	// 	year: '2026',
+	// 	name: 'Keiros',
+	// 	roles: [m.role_frontend_dev()],
+	// 	note: m.freelance()
+	// },
+	// {
+	// 	year: '2026',
+	// 	name: 'L\'Institut des Préventeurs',
 	// 	roles: [m.role_mobile_dev()],
 	// 	note: m.freelance()
 	// },
 	{
-		year: '2025 · ...',
-		name: '<projet en cours>',
+		year: '2025',
+		name: 'MYWIE',
 		roles: [m.role_ui_designer()],
 		note: m.freelance()
 	},

@@ -1,25 +1,58 @@
 ---
 title: MYWIE
-date: '2025 · 2026'
-dateSort: 20262
+date: '2025'
+dateSort: 20252
 banner: 'mywie.webp'
 logo: 'mywie.svg'
 slug: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
 preview: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
 skills: ['UI Design']
 tools: ['Figma']
-published: false
+published: true
 ---
 
 ## À propos
 
-MYWIE est un service familial qui propose des fonctionnalités innovantes sur le web et mobile :
+MYWIE est un service familial qui propose des fonctionnalités innovantes, à la fois sur le web et via son application mobile :
 
-- Un arbre généalogique inversé
-- Un journal interactif
-- Des messages posthumes
-- Une carte familiale
-- Un "Coffre des Silences"
-- Les "Vies Inouïes"
+- Un arbre généalogique inversé, des descendants aux héritieurs
+- Un journal avec textes, photos, vidéos, audio
+- Une carte familiale interative, avec marqueurs de lieux et notifications
+- Des messages posthumes programmables
+- Un "Coffre des Silences", espace sécurisé pour des transmissions conditionnelles de secrets familiaux
+- Les "Vies Inouïes", une bibliothèque de récits de vie
 
 J'ai été chargé de concevoir sa charte graphique, son Design System, ainsi que son UX/UI.
+
+## Réalisation
+
+Le sigle du logo était fourni, mais tout le reste (couleurs, typolographies) a été conçu après le brief.
+
+### Ton
+
+Avec le caractère familial et la dimension de "transmission", le ton du propos a été placé sous le signe de l'humilité.<br>
+
+**Pas de familiarité avec l'utilisateur.**
+
+### Couleurs
+
+Comme demandé, je suis parti sur une combinaison de marron (#8D573F) et de vert, combinée à du beige et blanc.
+Ce n'est pas une couleur que l'on retrouve souvent en dominante dans une charte graphique, donc le challenge était ici de trouver une teinte qui soit suffisamment contrastée tout en restant agréable visuellement.
+
+Au final, j'ai choisi un marron chocolat, avec toutes les teintes plus claires vers le beige qui en résultent.
+
+Le vert tire, lui, vers le vert forêt ou olive (#333D29), afin de garantir un contraste suffisant et ne pas prendre le pas sur le marron - assez léger en soi.
+
+![Couleurs de MYWIE](../../lib/assets/images/works/mywie-colors.webp)
+_La palette de couleurs officielle pour MYWIE_
+
+### Typographie
+
+L'idée était de donner une impression sobre et élégante, mais en restant moderne. Il fallait donc trouver un juste milieu entre un service de startup et ne pas donner l'impression d'un site de luxe ou d'hôtellerie.
+
+Pour un duo serif/sans-serif, j'ai me suis donc arrêté sur :
+
+- [Lora](https://fonts.google.com/specimen/Lora) pour le serif
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3) pour le sans-serif
+
+![Typographies de MYWIE](../../lib/assets/images/works/mywie-fonts.webp)

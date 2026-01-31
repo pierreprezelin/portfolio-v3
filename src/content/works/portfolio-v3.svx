@@ -8,6 +8,6 @@ tools: ['Svelte', 'SvelteKit', 'Tailwind', 'Figma']
 published: true
 ---
 
-10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du JAMStack et d'un peu de fun avec Svelte !
+10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du Jamstack et d'un peu de fun avec Svelte !
 
 Toutes les infos sur ce projet sont disponibles dans [l'article de blog dédié](/blog/portfolio-v3) !

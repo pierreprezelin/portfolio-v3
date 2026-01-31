@@ -55,11 +55,11 @@
 				{/each}
 			</ul>
 			<ul class="z-2">
-				<!-- <li>
+				<li>
 					<a href={localizeHref(page.url.pathname, { locale: otherLocale })} data-sveltekit-reload>
 						{currentLocale}
 					</a>
-				</li> -->
+				</li>
 				<li>
 					<button
 						type="button"

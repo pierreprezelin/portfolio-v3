@@ -97,6 +97,10 @@
 		padding: 0;
 	}
 
+	:global(html) {
+  	scrollbar-color: var(--color-pp-black) var(--color-pp-beige);
+	}
+
 	:global(body) {
 		color: var(--color-pp-black);
 		font-family: 'Libre Franklin Variable', sans-serif;
