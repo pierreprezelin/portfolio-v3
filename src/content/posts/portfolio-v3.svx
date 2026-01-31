@@ -1,6 +1,6 @@
 ---
 title: Portfolio v3 - Making-of
-description: 10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du JAMStack et d'un peu de fun avec Svelte !
+description: 10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du Jamstack et d'un peu de fun avec Svelte !
 date: '2026-01-29'
 banner: 'portfolio-v3.webp'
 caption: 'Un site dans le site !'
@@ -9,3 +9,245 @@ tags:
   - design
 published: true
 ---
+
+## Les origines
+
+### Direction graphique
+
+La base de la direction graphique est partie de la refonte de mon CV il y'a quelques années.
+
+Je voulais donner un ton "late-70s/early 80s tech", d'où les bandes de couleurs pouvant rappeler l'ancien logo d'Apple.<br>
+Ces bandes ont des couleurs douces pour ajouter une touche de modernité au côté rétro, mais sans être trop pastel pour autant.
+
+La typographie est également dans la même vibe, avec [ITC Souvenir Std](https://fontsgeek.com/itc-souvenir-std-font) - un classique parmi les cursives et déjà utilisée à l'époque.
+Elle est combinée avec [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin), un autre classique qui s'y marie bien pour tout ce qui est contenus.
+
+Le logo, lui, est totalement un hommage à celui des Bitmap Brothers - un studio de développement des années 80 (DOS, Amiga, Atari ST).
+
+![Apple & Bitmap Brothers](../../lib/assets/images/blog/portfolio-v3-logos.webp)
+_L'ancien logo d'Apple et celui des Bitman Brothers_
+
+### Jamstack
+
+D'après sa propre définition :
+
+_"[Jamstack](https://jamstack.org/) est une approche architecturale qui sépare l'expérience web de la logique business et des données pour améliorer la flexibilité, scalabilité, performance et maintenabilité. Cela est fait par une structure en composants où la logique et les serviers tiers sont utilisés à travers des API."_
+
+Autrement dit, un site comme celui-ci correspond parfaitement à la définition :
+
+- Statique et généré par un framework JS comme Svelte ;
+- Sans back-office, mais avec un headless CMS
+- Quelques appels API
+
+Simple à mettre en place, simple à déployer.
+
+## Stack
+
+### Svelte & SvelteKit
+
+On rentre dans le territoire de la subjectivité (il s'agit de mon blog, après tout), mais comme Vue, Svelte m'a semblé tellement plus naturel à prendre en main que React. Plus lisibile, plus logique, pas de JSX bizarre... et la liste continue indéfiniment.
+
+**Une sorte de mix parfait entre tous en ne gardant que le meilleur.**
+
+![Bruh.](../../lib/assets/images/blog/portfolio-v3-react.webp)
+_Oof. Et c'était avant le refonte de Svelte 5 avec les $runes (de la chaine YouTube Fireship)_
+
+[SvelteKit](https://svelte.dev/docs/kit/introduction) est son meta-framework, comme Nuxt pour Vue ou Next pour React.<br>
+D'après la documentation de Svelte, SvelteKit apporte là aussi son lot de fonctionnalités bien pratiques :
+
+- Gestion du Server-Side Rendering (SSR), Static Site Generation (SSG, comme ce site), etc.
+- Des optimisations au rendu ou lors du build
+- ...et plein d'autres !
+
+Et je dois dire qu'effectivement, la création de ce site s'est faite sans friction et a été un plaisir - comme Vue/Nuxt a pu l'être pour moi à l'époque ! 10/10, je recommande sans hésiter.
+
+### Typage : TypeScript
+
+On ne présente plus [TypeScript](https://www.typescriptlang.org/), une surcouche à JavaScript pour lui ajouter un typage fort. Il permet de repérer des erreurs en amont qui seraient surement passées inaperçues.
+
+### Styles : Tailwind
+
+[Tailwind](https://tailwindcss.com/) est un framework CSS mettant à disposition des centaines de classes utilitaires. Contrairement à Bootstrap où tout est importé d'un bloc, Tailwind optimise et purge les styles à la compilation pour ne garder que ceux vraiment utilisés.
+
+Il permet d'harmoniser les styles en apprenant les classes une fois, puis en les appliquant à l'identique partout.
+[NativeWind](https://www.nativewind.dev/) propose même une intégration clé-en-main pour les application faites en React Native !
+Les styles peuvent ainsi être plus scalables - surtout si de nouvelles personnes arrivent dans l'équipe - car ils n'auront pas besoin de fouiller l'architecture existante pour la comprendre.
+
+Bon ok, je ne suis pas une équipe, mais ce n'est pas pour cette raison que j'ai choisi d'utiliser Tailwind. C'est tout simplement parce qu'après avoir fait du CSS pendant plus de 10 ans, je suis passé par le BEM, l'Atomic, les CSS Modules - pour ne citer qu'eux - et c'était juste plaisant de ne pas avoir à réfléchir à ma structure CSS pour me concentrer sur le fait de sortir du contenu.
+
+Voici un exemple de composant intégré avec les classes Tailwind :
+
+```html
+<div class="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl">
+  <div>
+    <img class="size-48 shadow-xl rounded-md" alt="" src="/img/cover.png" />
+  </div>
+  <div class="flex items-center md:items-start">
+    <span class="text-2xl font-medium">Titre</span>
+    <span class="font-medium text-sky-500">Sous-titre</span>
+    <span class="flex gap-2 font-medium text-gray-600 dark:text-gray-400">
+      <span>No. 1</span>
+      <span>·</span>
+      <span>2026</span>
+    </span>
+  </div>
+</div>
+```
+
+### Icônes : Lucide Icons
+
+[Lucide Icons](https://lucide.dev/icons/) est un fork de [Feather Icons](https://feathericons.com/), un chouette set open-source, mais malheureusement limité et peu maintenu. Lucide propose plus de 1600 icônes à l'écriture de cet article (vs. 287 pour Feather dans sa version 4.29.0) et propose une implémentation simplifiée via le package `@lucide/svelte` :
+
+```svelte
+<script lang="ts">
+  import { Menu } from '@lucide/svelte';
+</script>
+
+<Menu size="24" color="black" />
+```
+
+### Traductions : Paraglide JS
+
+La documentation officielle de Svelte recommande Paraglide pour une gestion simple et native des traductions. C'est une implémentation basée sur i18n tout ce qu'il y'a de plus classique, comme sur les autres frameworks.
+
+par contre, je n'ai pas encore trouvé de moyen simple et efficace pour traduire les fichiers markdown (.md, .svx) qui composent les projets et articles de blog :
+
+- Soit il faut dupliquer les fichiers, entrainant ainsi des modifications lourdes sur le routing multilangues
+- Soit il faut ajouter des clés de traduction par dizaines pour chaque article, fastidieux à maintenir.
+
+Le reste du site, lui, est déjà traduit.
+
+### Contenu : mdsvex
+
+[mdsvex](https://github.com/pngwn/MDsveX) est un pré-processeur Markdown pour Svelte. Il permet de changer les extensions `.md` en `.svx` (rappelant le `.mdx` de React) pour pouvoir utiliser des composants Svelte dans des fichiers Markdown et autres fonctionnalités avancées.
+
+L'implémentation est également très simple via le fichier principal `svelte.config.js` :
+
+```js
+// svelte.config.js
+import { mdsvex } from 'mdsvex';
+
+const config = {
+	extensions: ['.svelte', '.svx', '.md'],
+	preprocess: [mdsvex(), // vitePreprocess(...)]
+};
+```
+
+### CMS : Sveltia
+
+Il y'a quelques années, [Netlify](https://www.netlify.com/) a sorti [Netlify CMS](https://decapcms.org/) (renommé "Decap CMS" entretemps), un projet permettant le branchement facile à son site d'un CMS headless. Comme ça, pas besoin de gérer un back-end pour ajouter des articles, assets ou autres !
+
+[Sveltia CMS](https://sveltiacms.app/en/) en est un fork récent, davantage maintenu et bourré de corrections de bugs.
+
+Pour l'implémenter, il suffit d'ajouter un dossier `/admin` au dossier existant `/static` (utilisé pour les assets non-optimisés) et d'y placer deux fichiers `index.html` et `config.yml`.
+
+```html
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Sveltia CMS</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  </body>
+</html>
+```
+
+```yml
+# config.yml
+
+backend:
+  name: github
+  repo: user/repo
+
+media_folder: /static/media
+public_folder: /media
+
+collections:
+  - name: posts
+    label: Posts
+    folder: /content/posts
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
+```
+Bien-sûr, il faut tout de même apporter quelques modifications à tout ça pour que ce soit bien branché selon l'arborescence du projet, mais vous voyez l'idée.
+
+Vous avez pouvez maintenant entrer l'url `/admin/index.html` sur votre site pour accéder à une page de connexion GitHub, puis le fameux admin qui vous permettra l'ajout d'articles !
+Chaque ajout ou mise à jour entrainera un commit sur la branche `main` du repo GitHub.
+
+![Connexion Sveltia](../../lib/assets/images/blog/portfolio-v3-sveltia.webp)
+_La page de connexion à l'admin headless de Sveltia_
+
+### Déploiement : Cloudflare Pages
+
+Pas besoin de présenter Cloudflare, un acteur majeur du web proposant moult services dont l'hébergement et déploiement automatisé de sites basés sur des frameworks JS comme ceux abordés en amont. Vercel et Netlify permettent la même chose, mais Cloudflare Pages a le tier gratuit le plus généreux.
+
+Une fois le repo GitHub branché à l'aide du package dédié `@sveltejs/adapter-cloudflare` et un peu de configuration dans l'admin Cloudflare, il ne suffit plus qu'à merger sur la branche `main` pour avoir un site déployé en 2min !
+
+## Fonctionnalités
+
+### Thème
+
+Je n'utilise pas la class `:dark` de Tailwind au profit d'une simple classe CSS `dark` sur la balise `<html>`.<br>
+En plus de ça, j'utilise le package [mode-watcher](https://github.com/svecosystem/mode-watcher) pour le switch et après une implémentation en 2min, voilà !
+
+_Un thème sombre._
+
+Les couleurs de ce dernier viennent du thème [gruvbox]([gruvbox](https://github.com/morhetz/gruvbox)), comme pour la mise en forme du code.
+
+### Mise en forme du code
+
+L'aperçu de la syntaxe est gérée par [Shiki](https://shiki.style/).<br>
+Le thème utilisé est [gruvbox](https://github.com/morhetz/gruvbox), un thème bien connu et proche de l'esprit de ma charte.
+
+Pour l'implémenter, il suffit d'ajouter un objet `highlight` à la configuration mdsvex existante dans le fichier principal `svelte.config.js` :
+
+```js
+// svelte.config.js
+import { mdsvex, escapeSvelte } from 'mdsvex';
+import { getSingletonHighlighter } from 'shiki';
+
+const config = {
+  // ...
+  preprocess: [mdsvex({
+    highlight: {
+      highlighter: async (code, lang) => {
+        const highlighter = await getSingletonHighlighter({
+          themes: ['gruvbox-dark-medium'],
+          langs: [lang]
+        });
+        const html = escapeSvelte(
+          highlighter.codeToHtml(code, { lang: lang, theme: 'gruvbox-dark-medium' })
+        );
+        return `{@html \`${html}\`}`;
+      }
+    }
+  }),
+  // vitePreprocess(...)
+  ],
+}
+```
+
+### Rendu
+
+En tant que simple site vitrine - doublé d'un blog -, il n'y que du contenu statique qui est rarement mis à jour et surtout, sans chargement dynamique du contenu selon l'utilisateur. Pas besoin de SSR, donc.
+
+L'intégralité du site est donc compilée et optimisée en amont, ce qu'on appelle Static Site Generation (SSG).
+
+En Svelte, c'est accompli en une ligne dans le layout principal :
+
+```ts
+// /src/routes/+layout.ts
+export const prerender = true;
+```
+
+## Conclusion
+
+Je suis franchement bien content de ce stack, lisible, efficace, facile à prendre en main et à maintenir.
+
+**Est-ce-qu'il me convient tellement que ce site sera toujours dans sa v3 dans 10 ans ? On verra bien ;)**
