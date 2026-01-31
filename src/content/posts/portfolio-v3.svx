@@ -25,7 +25,7 @@ Elle est combinée avec [Libre Franklin](https://fonts.google.com/specimen/Libre
 Le logo, lui, est totalement un hommage à celui des Bitmap Brothers - un studio de développement des années 80 (DOS, Amiga, Atari ST).
 
 ![Apple & Bitmap Brothers](../../lib/assets/images/blog/portfolio-v3-logos.webp)
-_L'ancien logo d'Apple et celui des Bitman Brothers_
+_L'ancien logo d'Apple et celui des Bitmap Brothers_
 
 ### Jamstack
 
