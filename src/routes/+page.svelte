@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { m } from '$lib/paraglide/messages';
 	import { socials } from '$lib/data/socials';
 
 	import HomeIntro from '$lib/components/Home/HomeIntro.svelte';
@@ -9,7 +10,7 @@
 	let headerHeight = 0;
 </script>
 
-<h1 class="mb-6 tablet:mb-12">Hi, I'm Pierre Prézelin!</h1>
+<h1 class="mb-6 tablet:mb-12">{m.greeting({name: "Pierre Prézelin"})}</h1>
 
 <div class="grid grid-cols-3 tablet:grid-cols-4 gap-5">
 	<div class="hidden tablet:block tablet:sticky self-start z-1 col-span-1" bind:clientHeight={headerHeight} style="top: calc({headerHeight}px + 1.25rem)">

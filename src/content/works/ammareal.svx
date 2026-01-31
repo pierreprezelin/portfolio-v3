@@ -1,11 +1,164 @@
 ---
 title: Ammareal
 date: '2022 · 2026'
+dateSort: 20221
 banner: 'ammareal.webp'
-caption: 'ammareal.fr'
+caption: 'ammareal.fr v3, en version maquette'
 logo: 'ammareal.svg'
 slug: 'https://www.ammareal.fr'
-skills: ['Mobile Dev', 'Front-end Dev', 'UI Design']
-tools: ['Next.js', 'React', 'React Native', 'Expo', 'PrestaShop', 'Figma']
+preview: 'https://reprise.ammareal.com/'
+skills: ['Dev Mobile', 'Dev Front-end', 'UI Design']
+tools: ['Next.js', 'React', 'Expo', 'React Native', 'PrestaShop', 'Figma']
 published: true
 ---
+
+## Introduction
+
+Ammareal propose un service d'achat et don de produits culturels d'occasion (livres, CD, DVD, vinyles...).
+
+Ces produits culturels proviennent essentiellement de dons de la part de différents acteurs de l'économie circulaire (associations, bibliothèques) ou de particuliers qui souhaitent faire de la place chez eux sans jeter. Ammareal reverse 10 à 15% du montant de ses ventes à des oeuvres caritatives favorisant l'alphabétisme et l'éducation dans le monde.
+
+## ammareal.fr
+
+**Outils utilisés :** PrestaShop, Figma
+
+L'une de mes premières missions en arrivant chez Ammareal était de moderniser l'apparence du site [ammareal.fr](https://www.ammareal.fr/).<br>
+C'est un site [PrestaShop](https://prestashop.fr/), un outil qui permet de mettre en place des boutiques en ligne facilement.
+
+![ammareal.fr v2](../../lib/assets/images/works/ammareal-before.webp)
+_ammareal.fr v2 (2022)_
+
+### Maquettage
+
+La charte graphique - refondue en 2020 - est adéquate pour une application print, mais présente de multiples problèmes à corriger pour une application web et mobile :
+
+- 3 couleurs dominantes en conflit, impossible à départager côte à côte pour l'utilisateur
+- Des couleurs trop agressives pour l'oeil de l'utilisateur (comme du noir pur #000)
+- De problèmes de contrastes, d'espacements et autres
+
+Le but était donc de réinterpréter cette charte graphique pour qu'elle soit plus conforme à une application cross-platform moderne, tout en respectant au maximum ses guidelines initiales.
+
+### Intégration
+
+Après le maquettage complet de la refonte visuelle est venue l'intégration de la v3 sur le site.<br>
+
+En tant que site Prestashop v8, le choix a été fait de partir du thème utilisateur [Falcon](https://github.com/Oksydan/falcon), pour ses différentes optimisations en matière de performances et SEO.
+Pour le reste, c'est une intégration PrestaShop classique en partant de Bootstrap, avec du SCSS (Sass), jQuery et PHP.
+
+## WebApp
+
+**Outils utilisés :** Next.js, React, Figma
+
+Mon second projet a été le design UX/UI, puis développement en Next.js (un meta-framework de React) d'une webapp.<br>
+
+Après avoir établi ses caractéristiques et le cahier des charges initial avec la cheffe de projet, j'ai utilisé majoritairement du Client-Side Rendering (CSR) pour les requêtes - via [Tanstack Query](https://tanstack.com/query/latest). Les traductions sont gérées par [i18next](https://www.i18next.com/), un système de traduction universel, et les styles en SCSS (Sass) avec [CSS Modules](https://github.com/css-modules/css-modules).
+
+![Partie Reprise de la webapp](../../lib/assets/images/works/ammareal-webapp.webp)
+_Partie Reprise de la webapp_
+
+### Cas d'usage
+
+Cette webapp serait utilisée par plusieurs typologies d'utilisateur, avec autant de cas d'usage à prévoir :
+
+**Particuliers :**<br>
+Vendre (puis seulement donner à partir de 2025) des livres plutôt que les jeter, dans le but de favoriser l'économie circulaire. Le service était gratuit à l'écriture de cette page.
+
+**Librairies & Bibliothèques :**<br>
+Avoir un domaine dédié à la gestion des reprises directement en magasin - avant d'envoyer les articles à Ammareal.<br>
+_(ex : "monmagasin.ammareal.com" au lieu du domaine initial "reprise.ammareal.com")._
+
+**Employés Ammareal (support, trieurs) :**<br>
+Pouvoir modifier en direct des reprises, s'il y'a besoin de résoudre certains problèmes côté client.
+
+### Découpage et fonctionnalités
+
+#### Partie Reprise
+
+Elle est utilisée par les particuliers qui souhaitent donner des livres. Il s'agit d'un parcours avec :
+
+- Scan du code-barre ou saisie manuelle de la référence
+- Formulaire avec saisie des coordonnées du client
+- Communication d'un bon d'envoi en point relais
+
+#### Partie Administrative
+
+Elle est utilisée par :
+
+- Les librairies et bibliothèques qui utilisent leur domaine dédié.
+- Les employés Ammareal qui ont besoin de modifier certaines reprises pour résoudre des problèmes.
+
+C'est un dashboard avec de multiples pages sur la même base (facturation, reprises, magasins, administrateurs...).
+
+#### Partie Partenaires
+
+Déclinaison sur la webapp de l'app mobile crée en amont pour l'occasion, elle permet aux partenaires qui envoient des articles à Ammareal de scanner rapidement un code-barre produit pour savoir si Ammareal peut le reprendre ou non.
+
+Pour plus d'informations, [voir la section dédiée](#ammareal-partners) ci-dessous.
+
+## Applications mobile
+
+**Outils utilisés :** Expo, React Native, Figma
+
+### Stack
+
+Après conception UX/UI, le choix a été fait de partir sur du [React Native](https://reactnative.dev/) vu que le reste des apps Ammareal - hors ammareal.fr - sont déjà en React (Next.js). Étant donné que la documentation de React Native conseille fortement dès la page 1 d'utiliser [Expo](https://expo.dev/), leur meta-framework, c'est le choix que j'ai fait.
+
+Comme pour Next.js avec React ou Nuxt avec Vue.js, Expo apporte son lot d'amélioration appréciables pour l'expérience de développement (DX) :
+
+- File-based routing
+- Upgrade de version React Native simplifiée pour moins de friction
+- Des dizaines de bibliothèques officielles pour aider (gestion des fichiers internes, notifications, GPS...)
+- Compilation cloud-based et déploiement sur les stores automatisées (payant, mais entièrement facultatif)
+- ...et bien plus.
+
+### Ammareal Partners
+
+Mon tout premier projet d'application mobile était une base - un peu comme un Proof of Concept - pour l'app plus complexe qui viendrait par la suite (voir ci-dessous).
+
+Comme la partie Partenaires de la webapp - qui est venue après -, cette application est simple dans son principe : permettre aux partenaires d'Ammareal de vérifier facilement et rapidement une référence produit si celle-ci peut être reprise.
+Le scan (ou entrée manuelle d'un ISBN/EAN) renvoie simplement "accepté" ou "refusé".
+
+Parmi les critères de rejet :
+
+- La valeur de l'article est trop faible pour qu'il soit revendable
+- L'article est trop endommagé
+- Certaines collections spécifiques
+
+Contrairement à l'application de reprise qui viendra juste après, les CD et DVD peuvent également être scannés en plus des livres.
+
+![Présentation Google Play Store](../../lib/assets/images/works/ammareal-partners.webp)
+_Des screenshots de la page Google Play Store_
+
+### Ammareal Reprise
+
+L'application de reprise Ammareal est un peu un mélange entre la webapp et Ammareal Partners :
+
+- Permettre aux particuliers de donner leurs livres...
+- ...tout en scannant rapidement des références
+
+En plus de ça, certaines fonctionnalités font également leur apparaition :
+
+- Un onboarding dédié
+- Suivre l'avancement des reprises en cours
+- Retrouver toutes ses précédentes reprises
+- Re-télécharger ses bons d'envoi (anciennement dans le mail de confirmation initial)
+
+Ces fonctionnalités seront d'ailleurs déclinées après coup dans un espace utilisateur dédié sur la webapp.
+
+![Vues d'Ammareal Reprise](../../lib/assets/images/works/ammareal-app.webp)
+_Différentes vues de l'application_
+
+## Design System
+
+Même si j'étais le seul développeur front-end et UI Designer, il était judicieux de centraliser les composants UI réutilisés régulièrement dans un "Design System" commun, réalisé sur Figma également.
+
+Ainsi, il est possible de modifier un composant sur toutes les maquettes où il est utilisé en le modifiant à un seul endroit.<br>
+C'est un temps infini de gagné par rapport à du maquettage à l'ancienne sous Photoshop.
+
+![Design System](../../lib/assets/images/works/ammareal-design-system.webp)
+
+## Bannières
+
+J'ai eu aussi l'occasion de réaliser des bannières promotionnelles d'après la nouvelle direction graphique :
+
+![Bannière](../../lib/assets/images/works/ammareal-banner.webp)

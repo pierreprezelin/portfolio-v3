@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="%lang%">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +9,10 @@
 		<div style="display: contents">%sveltekit.body%</div>
 		<script>
 			const theme = localStorage.getItem('mode-watcher-mode');
-			if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			if (
+				theme === 'dark' ||
+				(!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
 				document.documentElement.classList.add('dark');
 			} else {
 				document.documentElement.classList.remove('dark');

@@ -1,14 +1,15 @@
 <script lang="ts">
+	import { m } from '$lib/paraglide/messages';
 	import CardWork from '$lib/components/CardWork.svelte';
 
 	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>Works · Pierre Prézelin</title>
+	<title>{m.title_works()} · Pierre Prézelin</title>
 </svelte:head>
 
-<h1 class="mb-16 text-center">Works</h1>
+<h1 class="mb-16 text-center">{m.title_works()}</h1>
 
 {#if data.works}
 	<ul class="flex flex-col gap-10 mobile:gap-8">
@@ -17,5 +18,5 @@
 		{/each}
 	</ul>
 {:else}
-	<p class="text-center">There are currently no works.</p>
+	<p class="text-center">{m.no_works()}</p>
 {/if}

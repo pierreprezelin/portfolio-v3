@@ -1,0 +1,28 @@
+---
+title: Audrey Lecuona
+date: '2024'
+dateSort: 20241
+banner: 'audrey-lecuona.webp'
+logo: 'audrey-lecuona.svg'
+slug: 'https://www.audreylecuona.com/'
+preview: 'https://www.audreylecuona.com/'
+skills: ['Dev Front-end']
+tools: ['Astro, Tailwind']
+published: true
+---
+
+Audrey Lecuona est une développeuse front-end, spécialisée en PrestaShop depuis plus de 10 ans.
+
+Pour faciliter la gestion de son portfolio, [audreylecuona.com](https://www.audreylecuona.com) a été migré en [Astro](https://astro.build/) en 2024. C'était l'occasion pour moi de tester de nouveau framework JS dont tout le monde parlait.
+
+## Astro
+
+Astro est comparable à React, Vue.js ou Svelte, donc il peut être déployé très facilement sur des services comme Vercel, Netlify... Il est facile à apprendre, très performant et tout indiqué pour les sites de contenu comme les blogs ou portfolios.
+
+## Tailwind
+
+[Tailwind](https://tailwindcss.com/) est un framework CSS "utility-first". Il permet de mettre en place des styles très rapidement et de manière uniforme, via des centaines de classes CSS pré-faites.
+Contrairement à Bootstrap qui fournit tout d'un bloc, Tailwind purge les styles non-utilisés à la compilation, d'où de meilleures performances - surtout combiné à Astro...
+
+![Audit de performances Lighthouse](../../lib/assets/images/works/audrey-lecuona-lighthouse.webp)
+_...et les performances sont là !_

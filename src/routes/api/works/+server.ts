@@ -12,11 +12,13 @@ async function getWorks() {
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Work, 'slug'>;
-			const work = { ...metadata, slug } satisfies Work;
-			work.published && works.push(work);
+			if (metadata.published) {
+				const work = { ...metadata, slug } satisfies Work;
+				works.push(work);
+			}
 		}
 	}
-	return works;
+	return works.sort((first, second) => Number(second.dateSort) - Number(first.dateSort));
 }
 
 export async function GET() {

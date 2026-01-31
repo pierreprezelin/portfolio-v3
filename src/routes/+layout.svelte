@@ -1,27 +1,39 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { page } from '$app/state';
+	import { afterNavigate, disableScrollHandling } from '$app/navigation';
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
+	import { fly } from 'svelte/transition';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 	import { ModeWatcher } from 'mode-watcher';
 
-	import { afterNavigate, disableScrollHandling } from '$app/navigation';
-
+	import Canonical from '$lib/components/Canonical.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import MouseCursor from '$lib/components/MouseCursor.svelte';
 	import Pattern from '$lib/components/Pattern.svelte';
 
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import image from '$lib/assets/images/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/styles/fonts.css';
 
-	const title = 'Pierre Prézelin · Front-end Developer & UI Designer';
+	const title = 'Pierre Prézelin · Développeur Front-end & UI Designer';
 	const description =
-		'Front-end Developer & UI Designer from France, currently based in Montréal, QC, Canada.';
+		'Développeur Front-end et UI Designer français, actuellement basé à Montréal, QC, Canada.';
+
+	const duration = 150;
+	const delay = duration + duration / 2;
+	const y = 5;
+
+	const transitionIn = { easing: cubicOut, y, duration, delay };
+	const transitionOut = { easing: cubicIn, y: -y, duration };
 
 	afterNavigate(() => {
 		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away
+		setTimeout(() => {
+			window.scrollTo(0, 0);
+		}, 150);
 	});
 
 	let { children, data } = $props();
@@ -48,7 +60,9 @@
 	<meta name="twitter:creator" content="@prezelin21995" />
 	<meta name="twitter:widgets:new-embed-design" content="on" />
 
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href="/favicon.ico" sizes="32x32" />
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	<Canonical />
 </svelte:head>
 
 <MouseCursor />
@@ -56,12 +70,8 @@
 
 <div class="layout">
 	<Header />
-	{#key data.currentRoute}
-		<div
-			class="flex min-h-dvh flex-col"
-			in:fade={{ duration: 150, delay: 150 }}
-			out:fade={{ duration: 150 }}
-		>
+	{#key data.pathname}
+		<div class="flex min-h-dvh flex-col" in:fly={transitionIn} out:fly={transitionOut}>
 			<main class="container mx-auto grow">
 				<Pattern position="top" />
 				{@render children()}
@@ -71,12 +81,24 @@
 	{/key}
 </div>
 
+<div style="display:none">
+	{#each locales as locale}
+		<a href={localizeHref(page.url.pathname, { locale })}>
+			{locale}
+		</a>
+	{/each}
+</div>
+
 <style lang="scss">
 	:global(html, body) {
 		width: 100%;
 		min-height: 100svh;
 		margin: 0;
 		padding: 0;
+	}
+
+	:global(html) {
+  	scrollbar-color: var(--color-pp-black) var(--color-pp-beige);
 	}
 
 	:global(body) {
@@ -96,18 +118,23 @@
 		font-size: var(--text-5xl);
 		line-height: var(--leading-tight);
 	}
+
 	:global(h2, .h2) {
 		font-size: var(--text-4xl);
 	}
+
 	:global(h3, .h3) {
 		font-size: var(--text-3xl);
 	}
+
 	:global(h4, .h4) {
 		font-size: var(--text-2xl);
 	}
+
 	:global(h5, .h5) {
 		font-size: var(--text-xl);
 	}
+
 	:global(h6, .h6) {
 		font-size: var(--text-lg);
 	}
@@ -123,6 +150,7 @@
 		transition: text-decoration var(--default-transition-duration)
 			var(--default-transition-timing-function);
 	}
+
 	:global(p > a:hover) {
 		text-decoration-color: transparent;
 	}
@@ -132,9 +160,7 @@
 		padding: 0 1.25rem;
 	}
 
-	.btn:hover {
-		svg {
-			color: var(--text-pp-beige);
-		}
+	:global(.btn:hover svg) {
+		color: var(--text-pp-beige);
 	}
 </style>

@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { socials } from '$lib/data/socials';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <section id="contact" class="mt-20">
-	<h2 class="h4 mb-6">Where to find me:</h2>
+	<h2 class="h4 mb-6">{m.where_to_find_me()}</h2>
 	<ul class="flex flex-col mobile:grid mobile:grid-cols-2 tablet:grid-cols-3 gap-5">
 		{#each socials as social}
 			<li class="first:col-span-2">

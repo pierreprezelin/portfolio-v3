@@ -1,21 +1,27 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
+	import { m } from '$lib/paraglide/messages';
 	import { BarChart2, Moon, Sun } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 
-	let isMenuShown = false;
+	const currentLocale = $state(getLocale());
+	let otherLocale = $derived(locales.find((l) => l !== currentLocale) || locales[0]);
+
+	let isMenuShown = $state(false);
 
 	const isActiveLink = (path: string) => {
+		const normalizedPathname = page.url.pathname.replace(/^\/[a-z]{2}(\/|$)/, '/');
 		if (path === '/') {
-			return page.url.pathname === '/';
+			return normalizedPathname === '/';
 		}
-		return page.url.pathname.startsWith(path);
+		return normalizedPathname.startsWith(path);
 	};
 
 	const links = [
-		{ href: '/', label: 'About' },
-		{ href: '/works', label: 'Works' },
-		{ href: '/blog', label: 'Blog' }
+		{ href: '/', label: m.title_about() },
+		{ href: '/works', label: m.title_works() },
+		{ href: '/blog', label: m.title_blog() }
 	];
 </script>
 
@@ -38,7 +44,7 @@
 				{#each links as link}
 					<li>
 						<a
-							href={link.href}
+							href={localizeHref(link.href, { locale: currentLocale })}
 							class:active={isActiveLink(link.href)}
 							aria-current={page.url.pathname === link.href}
 							onclick={() => (isMenuShown = false)}
@@ -49,14 +55,16 @@
 				{/each}
 			</ul>
 			<ul class="z-2">
-				<!-- <li>
-					<button type="button">FR</button>
-				</li> -->
+				<li>
+					<a href={localizeHref(page.url.pathname, { locale: otherLocale })} data-sveltekit-reload>
+						{currentLocale}
+					</a>
+				</li>
 				<li>
 					<button
 						type="button"
 						onclick={toggleMode}
-						aria-label="Toggle theme"
+						aria-label="Changer de thème"
 						class="theme-toggle flex items-center"
 					>
 						<span class="theme-toggle-sun">
@@ -70,9 +78,9 @@
 			</ul>
 		</div>
 		<a
-			href="/"
-			title="Home · About"
-			aria-label="Home · About"
+			href={localizeHref('/', { locale: currentLocale })}
+			title={m.back_to_home()}
+			aria-label={m.back_to_home()}
 			aria-current={page.url.pathname === '/'}
 			class="absolute top-0 left-[50%] z-2 -translate-x-[50%] rounded-full border-4 border-pp-beige"
 			onclick={() => (isMenuShown = false)}

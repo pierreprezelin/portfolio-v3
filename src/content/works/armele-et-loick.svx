@@ -1,0 +1,20 @@
+---
+title: Armèle & Loick
+date: '2015'
+dateSort: 20152
+banner: 'armele-et-loick.webp'
+logo: 'rc2c.svg'
+slug: 'https://www.rc2c.fr/'
+preview: 'http://armele-loick.rc2c.fr/index.html'
+skills: ['Intégration Front-end']
+tools: ['HTML/CSS', 'jQuery']
+published: true
+---
+
+## À propos
+
+Armèle & Loick est un mini-site réalisé par l'agence [RC2C](https://www.rc2c.fr/) pour les [Jeunes Agriculteurs de Bretagne](https://www.jeunes-agriculteurs.fr/reseau/jeunes-agriculteurs-de-bretagne/).
+
+J'ai été chargé lors de mon stage à l'agence de l'intégrer, la difficulté principale étant son grand nombre d'animations.<br>
+Il y'a en réalité peu d'éléments qui n'en comportent _pas_, donc ça s'est révélé bien plus chronophage qu'en apparence.
+
