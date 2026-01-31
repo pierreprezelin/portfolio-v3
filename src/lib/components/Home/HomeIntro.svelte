@@ -21,7 +21,7 @@
 				{m.download_my_cv()}
 			</a>
 		</p>
-		<p class="hidden text-pp-black/60 italic mobile:text-right tablet:inline-flex">
+		<p class="hidden text-pp-black/75 italic mobile:text-right tablet:inline-flex">
 			{m.dont_worry()}
 		</p>
 	</div>

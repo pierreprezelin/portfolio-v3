@@ -42,7 +42,7 @@
 			<div class="my-1">{data.meta.skills.join(' · ')}</div>
 		{/if}
 		{#if data.meta.tools}
-			<div class="text-pp-black/60 italic">{data.meta.tools.join(', ')}</div>
+			<div class="text-pp-black/75 italic">{data.meta.tools.join(', ')}</div>
 		{/if}
 		{#if data.meta.preview}
 			<a href={data.meta.preview} class="btn group mt-6" target="_blank">
@@ -64,7 +64,7 @@
 					class="rounded-xl border border-pp-black object-cover"
 				/>
 				{#if data.meta.caption}
-					<figcaption class="mt-5 text-center text-pp-black/60 italic">
+					<figcaption class="mt-5 text-center text-pp-black/75 italic">
 						{data.meta.caption}
 					</figcaption>
 				{/if}

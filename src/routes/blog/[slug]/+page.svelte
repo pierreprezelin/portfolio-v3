@@ -73,7 +73,7 @@
 					class="rounded-xl border border-pp-black object-cover"
 				/>
 				{#if data.meta.caption}
-					<figcaption class="mt-5 text-center text-pp-black/60 italic">
+					<figcaption class="mt-5 text-center text-pp-black/75 italic">
 						{data.meta.caption}
 					</figcaption>
 				{/if}

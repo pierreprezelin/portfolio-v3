@@ -39,7 +39,7 @@
 			<span class="h6 font-serif">{work.date}</span>
 		</div>
 		<span>{work.skills.join(' · ')}</span>
-		<span class="mt-4 mb-5 inline-flex text-pp-black/60 italic">{work.tools.join(', ')}</span>
+		<span class="mt-4 mb-5 inline-flex text-pp-black/75 italic">{work.tools.join(', ')}</span>
 		<p>
 			<a
 				href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}
