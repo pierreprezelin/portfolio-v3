@@ -1,9 +1,5 @@
 # Portfolio v3
 
-```md
-🧪 Work in progress
-```
-
 ## Made with
 
 - 🧡 [SvelteKit](https://github.com/sveltejs/kit) · SSG, file-based routing, enhanced Markdown with [mdsvex](https://github.com/pngwn/MDsveX), etc.
