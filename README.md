@@ -1,6 +1,6 @@
 # Portfolio v3
 
-## Made with
+Made with:
 
 - 🧡 [SvelteKit](https://github.com/sveltejs/kit) · SSG, file-based routing, enhanced Markdown with [mdsvex](https://github.com/pngwn/MDsveX), etc.
   
