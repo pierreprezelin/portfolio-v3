@@ -17,11 +17,11 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={`/images/blog/${data.meta.banner}`} />
+	<meta property="og:image" content={data.meta.cover} />
 
 	<meta name="twitter:title" content={data.meta.title} />
 	<meta name="twitter:description" content={data.meta.description} />
-	<meta property="og:image" content={`/images/blog/${data.meta.banner}`} />
+	<meta property="og:image" content={data.meta.cover} />
 </svelte:head>
 
 <article>
@@ -65,10 +65,10 @@
 	<p class="mt-8 mb-8">{data.meta.description}</p>
 	<hr />
 	<div class="mt-10">
-		{#if data.meta.banner}
+		{#if data.meta.cover}
 			<figure class="mx-auto mb-10 h-full w-full max-w-200">
 				<enhanced:img
-					src={`/images/blog/${data.meta.banner}`}
+					src={data.meta.cover}
 					alt=""
 					class="rounded-xl border border-pp-black object-cover"
 				/>

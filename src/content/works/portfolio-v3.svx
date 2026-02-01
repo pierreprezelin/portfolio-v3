@@ -2,7 +2,7 @@
 title: Portfolio v3
 date: '2026'
 dateSort: 20261
-banner: 'portfolio-v3.webp'
+cover: 'portfolio-v3.webp'
 skills: ['Dev Front-end', 'UI Design']
 tools: ['Svelte', 'SvelteKit', 'Tailwind', 'Figma']
 published: true

@@ -2,7 +2,7 @@
 title: HelloAsso
 date: '2016 · 2022'
 dateSort: 20162
-banner: 'helloasso.webp'
+cover: 'helloasso.webp'
 caption: 'helloasso.com v3 (2018)'
 logo: 'helloasso.svg'
 slug: 'https://www.helloasso.com'

@@ -17,11 +17,11 @@
 					{/each}
 					{#if experience.note}
 						<br />
-						<em class="text-pp-black/60 italic">({experience.note})</em>
+						<em class="text-pp-black/75 italic">({experience.note})</em>
 					{/if}
 				</span>
 			</li>
 		{/each}
 	</ul>
-	<p class="text-pp-black/60 italic">Ainsi que de multiples projets personnels ou étudiants...</p>
+	<p class="text-pp-black/75 italic">Ainsi que de multiples projets personnels ou étudiants...</p>
 </section>

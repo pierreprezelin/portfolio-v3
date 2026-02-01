@@ -2,7 +2,7 @@
 title: Auréa
 date: '2015'
 dateSort: 20153
-banner: 'aurea.webp'
+cover: 'aurea.webp'
 logo: 'rc2c.svg'
 slug: 'https://www.rc2c.fr/'
 preview: 'http://aurea.eu/'

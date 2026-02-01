@@ -16,9 +16,9 @@
 			title={m.go_to_project()}
 			aria-label={m.go_to_project()}
 		>
-			{#if work.banner}
+			{#if work.cover}
 				<enhanced:img
-					src={`/images/works/${work.banner}`}
+					src={`/images/works/${work.cover}`}
 					alt=""
 					class="h-full w-full object-cover tablet:h-49"
 				/>

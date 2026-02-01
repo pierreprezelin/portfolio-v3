@@ -3,8 +3,8 @@ export type Post = {
 	caption: string;
 	slug: string;
 	description: string;
-	date: string;
-	banner: string;
+	date: Date;
+	cover: string;
 	tags: Tags[];
 	published: boolean;
 };
@@ -22,7 +22,7 @@ export type Work = {
 	preview: string;
 	date: string;
 	dateSort: number;
-	banner: string;
+	cover: string;
 	skills: Skills[];
 	tools: Tools[];
 	published: boolean;

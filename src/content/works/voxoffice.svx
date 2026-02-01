@@ -2,7 +2,7 @@
 title: VoxOffice
 date: '2016'
 dateSort: 20161
-banner: 'voxoffice.webp'
+cover: 'voxoffice.webp'
 logo: 'voxoffice.png'
 slug: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mockup-Behance?node-id=0-1&t=HYSAZsTcA6fxHjvH-1'
 preview: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mockup-Behance?node-id=0-1&t=HYSAZsTcA6fxHjvH-1'

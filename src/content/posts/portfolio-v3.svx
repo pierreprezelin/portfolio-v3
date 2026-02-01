@@ -1,13 +1,13 @@
 ---
 title: Portfolio v3 - Making-of
 description: 10 ans après la v2 et il était plus que temps pour du changement, avec une direction graphique inspirée des années 1970. C'est l'heure du Jamstack et d'un peu de fun avec Svelte !
-date: '2026-01-29'
-banner: 'portfolio-v3.webp'
-caption: 'Un site dans le site !'
+date: Jan 29, 2026 12:17 AM
 tags:
   - dev
   - design
 published: true
+cover: /uploads/blog/portfolio-v3.webp
+caption: Un site dans le site !
 ---
 
 ## Les origines
@@ -24,8 +24,9 @@ Elle est combinée avec [Libre Franklin](https://fonts.google.com/specimen/Libre
 
 Le logo, lui, est totalement un hommage à celui des Bitmap Brothers - un studio de développement des années 80 (DOS, Amiga, Atari ST).
 
-![Apple & Bitmap Brothers](../../lib/assets/images/blog/portfolio-v3-logos.webp)
-_L'ancien logo d'Apple et celui des Bitman Brothers_
+![Apple & Bitmap Brothers](/uploads/blog/portfolio-v3-logos.webp)
+
+_L'ancien logo d'Apple et celui des Bitmap Brothers_
 
 ### Jamstack
 
@@ -43,13 +44,13 @@ Simple à mettre en place, simple à déployer.
 
 ## Stack
 
-### Svelte & SvelteKit
+### Framework : Svelte & SvelteKit
 
 On rentre dans le territoire de la subjectivité (il s'agit de mon blog, après tout), mais comme Vue, Svelte m'a semblé tellement plus naturel à prendre en main que React. Plus lisibile, plus logique, pas de JSX bizarre... et la liste continue indéfiniment.
+  **Une sorte de mix parfait entre tous en ne gardant que le meilleur.**
 
-**Une sorte de mix parfait entre tous en ne gardant que le meilleur.**
+![Bruh.](/uploads/blog/portfolio-v3-react.webp)
 
-![Bruh.](../../lib/assets/images/blog/portfolio-v3-react.webp)
 _Oof. Et c'était avant le refonte de Svelte 5 avec les $runes (de la chaine YouTube Fireship)_
 
 [SvelteKit](https://svelte.dev/docs/kit/introduction) est son meta-framework, comme Nuxt pour Vue ou Next pour React.<br>
@@ -61,11 +62,31 @@ D'après la documentation de Svelte, SvelteKit apporte là aussi son lot de fonc
 
 Et je dois dire qu'effectivement, la création de ce site s'est faite sans friction et a été un plaisir - comme Vue/Nuxt a pu l'être pour moi à l'époque ! 10/10, je recommande sans hésiter.
 
+### Dev : Vite
+
+[Vite](https://vite.dev/) est un outil de développement front-end qui consiste en deux parties principales :
+
+- Un serveur de dev rapide, grace à son Hot Module Replacement (HMR)
+- Une commande de compilation, qui bundle le code en une version optimisée
+
+Pour ceux qui ont l'habitude de [Webpack](https://webpack.js.org/), Vite en est un substitut plus performant.
+
+### Packages : Bun
+
+[Bun](https://bun.com/) est une boite à outils JavaScript, TypeScript et JSX toute-en-un.<br>
+Étant écrit en [Zig](https://ziglang.org/), ses performances sont jusqu'à 30x supérieures à [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/).
+
+Je m'en sers principalement à la place d'npm pour gérer les packages, mais c'est aussi :
+
+- Un runtime, pour remplacer [Node.js](https://nodejs.org/en)
+- Un bundler, mais j'ai choisi de garder Vite pour ce projet
+- Un test runner, à la place outils comme [Vitest](https://vitest.dev/)
+
 ### Typage : TypeScript
 
 On ne présente plus [TypeScript](https://www.typescriptlang.org/), une surcouche à JavaScript pour lui ajouter un typage fort. Il permet de repérer des erreurs en amont qui seraient surement passées inaperçues.
 
-### Styles : Tailwind
+### Styles : Tailwind CSS
 
 [Tailwind](https://tailwindcss.com/) est un framework CSS mettant à disposition des centaines de classes utilitaires. Contrairement à Bootstrap où tout est importé d'un bloc, Tailwind optimise et purge les styles à la compilation pour ne garder que ceux vraiment utilisés.
 
@@ -168,19 +189,21 @@ media_folder: /static/media
 public_folder: /media
 
 collections:
-  - name: posts
+    - name: posts
     label: Posts
     folder: /content/posts
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Body, name: body, widget: markdown }
+            - { label: Title, name: title, widget: string }
+            - { label: Body, name: body, widget: markdown }
 ```
+
 Bien-sûr, il faut tout de même apporter quelques modifications à tout ça pour que ce soit bien branché selon l'arborescence du projet, mais vous voyez l'idée.
 
 Vous avez pouvez maintenant entrer l'url `/admin/index.html` sur votre site pour accéder à une page de connexion GitHub, puis le fameux admin qui vous permettra l'ajout d'articles !
 Chaque ajout ou mise à jour entrainera un commit sur la branche `main` du repo GitHub.
 
-![Connexion Sveltia](../../lib/assets/images/blog/portfolio-v3-sveltia.webp)
+![Connexion Sveltia](/uploads/blog/portfolio-v3-sveltia.webp)
+
 _La page de connexion à l'admin headless de Sveltia_
 
 ### Déploiement : Cloudflare Pages
@@ -249,5 +272,4 @@ export const prerender = true;
 ## Conclusion
 
 Je suis franchement bien content de ce stack, lisible, efficace, facile à prendre en main et à maintenir.
-
-**Est-ce-qu'il me convient tellement que ce site sera toujours dans sa v3 dans 10 ans ? On verra bien ;)**
+  **Est-ce-qu'il me convient tellement que ce site sera toujours dans sa v3 dans 10 ans ? On verra bien ;)**

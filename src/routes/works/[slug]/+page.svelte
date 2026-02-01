@@ -56,10 +56,10 @@
 		{/if}
 	</hgroup>
 	<div class="mt-10">
-		{#if data.meta.banner}
+		{#if data.meta.cover}
 			<figure class="d-flex mx-auto mb-10 h-full w-full">
 				<enhanced:img
-					src={`/images/works/${data.meta.banner}`}
+					src={`/images/works/${data.meta.cover}`}
 					alt=""
 					class="rounded-xl border border-pp-black object-cover"
 				/>

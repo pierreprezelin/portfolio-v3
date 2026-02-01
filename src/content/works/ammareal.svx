@@ -2,7 +2,7 @@
 title: Ammareal
 date: '2022 · 2026'
 dateSort: 20221
-banner: 'ammareal.webp'
+cover: 'ammareal.webp'
 caption: 'ammareal.fr v3, en version maquette'
 logo: 'ammareal.svg'
 slug: 'https://www.ammareal.fr'
