@@ -221,7 +221,7 @@ En plus de ça, j'utilise le package [mode-watcher](https://github.com/svecosyst
 
 _Un thème sombre._
 
-Les couleurs de ce dernier viennent du thème [gruvbox]([gruvbox](https://github.com/morhetz/gruvbox)), comme pour la mise en forme du code.
+Les couleurs de ce dernier viennent du thème [gruvbox](https://github.com/morhetz/gruvbox), comme pour la mise en forme du code.
 
 ### Mise en forme du code
 
