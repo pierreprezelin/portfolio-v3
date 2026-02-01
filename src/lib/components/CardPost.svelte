@@ -17,9 +17,9 @@
 			title={m.go_to_post()}
 			aria-label={m.go_to_post()}
 		>
-			{#if post.banner}
+			{#if post.cover}
 				<enhanced:img
-					src={`/images/blog/${post.banner}`}
+					src={post.cover}
 					alt=""
 					class="h-full w-full object-cover tablet:h-49"
 				/>
@@ -33,9 +33,9 @@
 		</a>
 	</figure>
 	<div class="flex flex-col">
-		<span class="mb-1.5 flex font-serif text-sm"
-			>{formatDate(post.date, 'medium', getLocale())}</span
-		>
+		<span class="mb-1.5 flex font-serif text-sm">
+			{formatDate(post.date, "medium", getLocale())}
+		</span>
 		<h2 class="h5 mb-0.5">
 			<a href={localizeHref(`/blog/${post.slug}`, { locale: getLocale() })}>{post.title}</a>
 		</h2>

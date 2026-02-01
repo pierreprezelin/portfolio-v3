@@ -2,7 +2,7 @@
 title: Le Comptoir Irlandais
 date: '2025 · 2026'
 dateSort: 20251
-banner: 'lcir.webp'
+cover: 'lcir.webp'
 caption: 'comptoir-irlandais.com v3'
 logo: 'lcir.svg'
 slug: 'https://www.comptoir-irlandais.com/'

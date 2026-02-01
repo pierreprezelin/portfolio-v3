@@ -2,7 +2,7 @@
 title: Audrey Lecuona
 date: '2024'
 dateSort: 20241
-banner: 'audrey-lecuona.webp'
+cover: 'audrey-lecuona.webp'
 logo: 'audrey-lecuona.svg'
 slug: 'https://www.audreylecuona.com/'
 preview: 'https://www.audreylecuona.com/'
@@ -22,7 +22,7 @@ Astro est comparable à React, Vue.js ou Svelte, donc il peut être déployé tr
 ## Tailwind
 
 [Tailwind](https://tailwindcss.com/) est un framework CSS "utility-first". Il permet de mettre en place des styles très rapidement et de manière uniforme, via des centaines de classes CSS pré-faites.
-Contrairement à Bootstrap qui fournit tout d'un bloc, Tailwind purge les styles non-utilisés à la compilation, d'où de meilleures performances - surtout combiné à Astro...
+Contrairement à Bootstrap qui fournit tout d'un bloc, Tailwind purge les styles non-utilisés à de la compilation, d'où de meilleures performances - surtout combiné à Astro...
 
 ![Audit de performances Lighthouse](../../lib/assets/images/works/audrey-lecuona-lighthouse.webp)
 _...et les performances sont là !_

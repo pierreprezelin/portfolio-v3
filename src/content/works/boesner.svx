@@ -2,7 +2,7 @@
 title: Boesner
 date: '2025 · 2026'
 dateSort: 20252
-banner: 'boesner.webp'
+cover: 'boesner.webp'
 caption: 'boesner.fr v3'
 logo: 'boesner.svg'
 slug: 'https://www.boesner.fr/'

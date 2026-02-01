@@ -2,7 +2,7 @@
 title: Portfolio v2
 date: '2015'
 dateSort: 20151
-banner: 'portfolio-v2.webp'
+cover: 'portfolio-v2.webp'
 logo: 'portfolio-v2.svg'
 slug: 'https://v2.pierreprezelin.com'
 preview: 'https://v2.pierreprezelin.com'

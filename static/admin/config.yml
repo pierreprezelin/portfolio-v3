@@ -2,8 +2,8 @@ backend:
   name: github
   repo: pierreprezelin/portfolio-v3
 
-media_folder: /static/media
-public_folder: /media
+media_folder: /static/uploads
+public_folder: /uploads
 
 media_libraries:
   default:
@@ -13,7 +13,7 @@ media_libraries:
       transformations:
         raster_image:
           format: webp
-          quality: 85
+          quality: 100
           width: 944
           height: 944
         svg:
@@ -23,10 +23,15 @@ collections:
   - name: posts
     label: Posts
     folder: /src/content/posts
-    path: '{{slug}}/index'
-    media_folder: 'images'
-    public_folder: 'images'
+    media_folder: '{{media_folder}}/blog'
+    public_folder: '{{public_folder}}/blog'
+    extension: "svx"
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Cover Image, name: cover, widget: image }
-      - { label: Body, name: body, widget: markdown }
+      - { label: Description, name: description, widget: string }
+      - { label: Date, name: date, widget: datetime, date_format: "DD/MM/YYYY", time_format: "HH:mm", format: "lll", picker_utc: true, default: '{{now}}' }
+      - { label: Tags, name: tags, widget: list, required: false}
+      - { label: Published, name: published, widget: boolean}
+      - { label: Cover Image, name: cover, widget: image, required: false }
+      - { label: Caption, name: caption, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }

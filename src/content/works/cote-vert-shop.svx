@@ -2,7 +2,7 @@
 title: Côté Vert Shop
 date: '2022'
 dateSort: 20222
-banner: 'cote-vert-shop.webp'
+cover: 'cote-vert-shop.webp'
 logo: 'cote-vert-shop.png'
 slug: 'https://www.figma.com/design/VqaTmJWyESOCYtW6T56uEC/C%C3%B4t%C3%A9-Vert-Shop-%C2%B7-Maquettes?node-id=0-1&t=rw8HGa3OQMz56J9b-1'
 preview: 'https://www.figma.com/design/VqaTmJWyESOCYtW6T56uEC/C%C3%B4t%C3%A9-Vert-Shop-%C2%B7-Maquettes?node-id=0-1&t=rw8HGa3OQMz56J9b-1'

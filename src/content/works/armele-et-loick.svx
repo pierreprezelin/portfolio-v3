@@ -2,7 +2,7 @@
 title: Armèle & Loick
 date: '2015'
 dateSort: 20152
-banner: 'armele-et-loick.webp'
+cover: 'armele-et-loick.webp'
 logo: 'rc2c.svg'
 slug: 'https://www.rc2c.fr/'
 preview: 'http://armele-loick.rc2c.fr/index.html'

@@ -2,7 +2,7 @@
 title: Simon Trichereau
 date: '2020'
 dateSort: 20201
-banner: 'simon-trichereau.webp'
+cover: 'simon-trichereau.webp'
 logo: 'simon-trichereau.svg'
 slug: 'https://simon-tr.com/fr/'
 preview: 'https://www.figma.com/design/5LdMJTpNAq0nMfu46Yaif8/ST-Portfolio-2020-%C2%B7-Maquettes?node-id=0-1&t=q1YZEUcIMteaHbbt-1'

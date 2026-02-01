@@ -2,7 +2,7 @@
 title: MouseShapes
 date: '2026'
 dateSort: 20262
-# banner: 'mouseshapes.webp'
+# cover: 'mouseshapes.webp'
 # logo: 'mouseshapes.svg'
 slug: 'https://mouseshapes.pierreprezelin.com'
 preview: 'https://mouseshapes.pierreprezelin.com'
