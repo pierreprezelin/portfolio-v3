@@ -25,7 +25,6 @@ Elle est combinée avec [Libre Franklin](https://fonts.google.com/specimen/Libre
 Le logo, lui, est totalement un hommage à celui des Bitmap Brothers - un studio de développement des années 80 (DOS, Amiga, Atari ST).
 
 ![Apple & Bitmap Brothers](/uploads/blog/portfolio-v3-logos.webp)
-
 _L'ancien logo d'Apple et celui des Bitmap Brothers_
 
 ### Jamstack
@@ -50,7 +49,6 @@ On rentre dans le territoire de la subjectivité (il s'agit de mon blog, après 
   **Une sorte de mix parfait entre tous en ne gardant que le meilleur.**
 
 ![Bruh.](/uploads/blog/portfolio-v3-react.webp)
-
 _Oof. Et c'était avant le refonte de Svelte 5 avec les $runes (de la chaine YouTube Fireship)_
 
 [SvelteKit](https://svelte.dev/docs/kit/introduction) est son meta-framework, comme Nuxt pour Vue ou Next pour React.<br>
@@ -201,9 +199,7 @@ Bien-sûr, il faut tout de même apporter quelques modifications à tout ça pou
 
 Vous avez pouvez maintenant entrer l'url `/admin/index.html` sur votre site pour accéder à une page de connexion GitHub, puis le fameux admin qui vous permettra l'ajout d'articles !
 Chaque ajout ou mise à jour entrainera un commit sur la branche `main` du repo GitHub.
-
 ![Connexion Sveltia](/uploads/blog/portfolio-v3-sveltia.webp)
-
 _La page de connexion à l'admin headless de Sveltia_
 
 ### Déploiement : Cloudflare Pages
@@ -217,9 +213,7 @@ Une fois le repo GitHub branché à l'aide du package dédié `@sveltejs/adapter
 ### Thème
 
 Je n'utilise pas la class `:dark` de Tailwind au profit d'une simple classe CSS `dark` sur la balise `<html>`.<br>
-En plus de ça, j'utilise le package [mode-watcher](https://github.com/svecosystem/mode-watcher) pour le switch et après une implémentation en 2min, voilà !
-
-_Un thème sombre._
+En plus de ça, j'utilise le package [mode-watcher](https://github.com/svecosystem/mode-watcher) pour le switch et après une implémentation en 2min, voilà, un thème sombre !
 
 Les couleurs de ce dernier viennent du thème [gruvbox]([gruvbox](https://github.com/morhetz/gruvbox)), comme pour la mise en forme du code.
 
