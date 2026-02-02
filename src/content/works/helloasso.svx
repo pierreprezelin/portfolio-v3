@@ -42,9 +42,9 @@ Il s'agit de mon premier contrat longue durée en sortie d'études et je serai t
 
 **Outils utilisés :** Figma
 
-Ce qui était auparavant "l'appli HelloAsso" et qui deviendra "[HelloAsso Scan](https://play.google.com/store/apps/details?id=com.helloasso)" est le premier jet et mise en pratique de la charte graphique v3 d'HelloAsso. C'est aussi - à l'écriture de cette page, début 2026 - l'un des derniers vestiges encore visibles de cette charte v3 chez HelloAsso.
+Ce qui était auparavant "l'appli HelloAsso" et qui deviendra "[HelloAsso Scan](https://play.google.com/store/apps/details?id=com.helloasso)" est la première mise en pratique de la charte graphique v3 d'HelloAsso. C'est aussi - à l'écriture de cette page, début 2026 - l'un des derniers vestiges encore visible de cette charte v3 à HelloAsso.
 
-Le vert plus "végétal" d'origine devient plus vif pour donner une touche de modernité et un bleu clair ainsi qu'violet font leur introduction. Par la suite, le bleu secondaire sera délaissé pour des raisons de visibilité et le violet fera sa réapparition dans la charte v4 actuelle en tant que couleur principale.
+Le vert plus "végétal" d'origine (#7CB342) devient plus vif pour donner une touche de modernité et un bleu clair ainsi qu'violet font leur introduction. Par la suite, le bleu secondaire sera délaissé pour des raisons de visibilité et le violet fera sa réapparition dans la charte v4 actuelle en tant que couleur principale plus contrastée.
 
 Il s'agit du premier projet où j'ai été chargé de concevoir l'interface d'une application mobile, donc un certain challenge avec les différences en matière d'ergonomie que ça peut susciter. Le développement a été géré par un collègue développeur mobile et la communication a permis d'ajuster les maquettes en fonctionne des contraintes techniques.
 
@@ -59,19 +59,19 @@ Réalisé à la base en C#, LESS et JS natif, la décision à été prise couran
 
 C'est suite à cette refonte que je suis monté en compétence de simple intégrateur à développeur front-end.
 
-Ce premier projet étant issu d'un nouveau pôle UX/UI crée pour l'occasion, nous avons pu travailer tous ensemble dans une forte cohésion créative entre UI Designers, UX Designers et Graphistes.
+Ce premier projet étant issu d'un nouveau groupe UX/UI crée pour l'occasion, nous avons pu travailer tous ensemble dans une forte cohésion créative entre UI Designers, UX Designers et Graphistes.
 
-![Page Billeterie](../../lib/assets/images/works/helloasso-billetterie.webp)
-_La page de présentation de l'outil Billetterie_
+![HelloAsso v2](../../lib/assets/images/works/helloasso-before.webp)
+_helloasso.com v2, à mon arrivée en 2016_
 
 ## Espace Utilisateur
 
 **Outils utilisés :** Nuxt, Vue.js, Figma
 
 La partie administrative mélangeait auparavant les pages dédiées aux associations et celles aux particuliers.<br>
-Cela créait beaucoup de duplication technique et problèmes d'ergonomie, donc le choix a été fait de séparer la partie particulier en un espace dédié.
+Cela créait beaucoup de duplication technique et soucis de clarté au niveau de l'ergonomie, donc le choix a été fait de séparer la partie particulier en un espace dédié.
 
-L'idée était que cette partie - plus simple dans sa logique - pourrait être maintenue et optimisée si besoin. Dans la réalité, elle n'a quasi pas bougé depuis sa création, preuve qu'il était judicieux de déplacer ce bloc ailleurs.
+L'idée était que cette partie - plus simple dans sa logique - pourrait être maintenue et optimisée si besoin. Dans la réalité, elle n'a quasi pas bougé depuis sa création, donc il était surement judicieux de déplacer ce bloc ailleurs.
 
 Cet espace utilisateur permet de retrouver l'historique de ses paiements, billets, etc, ainsi que de pouvoir modifier ses informations personnelles.
 
@@ -81,17 +81,17 @@ Cet espace utilisateur permet de retrouver l'historique de ses paiements, billet
 
 **Outils utilisés :** Nuxt, Vue.js, Figma
 
-Mon dernier gros projet avant de quitter HelloAsso a été son annuaire.<br>
+Mon dernier gros projet avant de quitter HelloAsso pour d'autres horizons a été son annuaire.<br>
 
 Il s'agissait de regrouper et afficher tous les événements, campagnes d'adhésion, associations en même endroit pour que le tout soit plus facile à trouver (ou retrouver) pour l'utilisateur.
 
 Parmi les fonctionnalités, il y'avait notamment :
 
-- Des carousels affichant les différentes typologie (billetterie, association)
-- Une recherche par carte, plus visuelle que le moteur de recherche crée aussi pour l'occasion
+- Des carousels affichant les différentes typologies (billetteries, associations)
+- Une recherche par carte, plus visuelle que le moteur de recherche crée lui aussi pour l'occasion
 - Pouvoir afficher les résultats par géolocalisation
 
-Suite à ce projet, mes missions en tant qu'UI Designer chez HelloAsso se sont achevées, après 6 ans, pour que je puisse me consacrer entièrement au développement.
+La conception UX/UI de ce projet en amont fut également ma dernière mission en matière de design chez HelloAsso, après 6 ans, pour que je puisse me consacrer entièrement au développement par la suite.
 
 ![Annuaire](../../lib/assets/images/works/helloasso-explore.webp)
 
@@ -105,3 +105,4 @@ Beaucoup de projets ont vu le jour en quasi 8 ans et je ne pourrais pas tous les
 - La refonte et centralisation du tunnel de connexion/inscription, sur un sous-domaine distinct.
 
 ![Illustration Abyss 404](../../lib/assets/images/works/helloasso-abyss.webp)
+_Une illustration vectorielle pour certaines pages d'erreur_

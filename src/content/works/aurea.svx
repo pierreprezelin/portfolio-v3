@@ -8,7 +8,7 @@ slug: 'https://www.rc2c.fr/'
 preview: 'http://aurea.eu/'
 skills: ['Intégration Front-end']
 tools: ['WordPress']
-published: true
+published: false
 ---
 
 ## À propos

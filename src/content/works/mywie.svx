@@ -1,7 +1,7 @@
 ---
 title: MYWIE
 date: '2025'
-dateSort: 20252
+dateSort: 20253
 cover: 'mywie.webp'
 logo: 'mywie.svg'
 slug: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
