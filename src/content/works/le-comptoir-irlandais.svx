@@ -9,13 +9,14 @@ slug: 'https://www.comptoir-irlandais.com/'
 preview: 'https://www.comptoir-irlandais.com/'
 skills: ['Dev Front-end']
 tools: ['PrestaShop']
-published: false
+published: true
 ---
 
 ## Introduction
 
-Le Comptoir Irlandais est un réseau de boutiques spécialisées dans les articles de culture celtique : épicerie, alcool, mode...<br>
-J'ai assisté l'agence [Evolutive](https://www.evolutive.com/) en prenant en charge l'intégration PrestaShop de ce projet.
+Le Comptoir Irlandais est un réseau de boutiques spécialisées dans les articles de culture celtique : épicerie, alcool, mode...
+
+Dans le cadre d'une mission pour l'agence [Evolutive](https://www.evolutive.com/), j'ai pris en charge l'intégration PrestaShop de ce projet.
 
 ![comptoir-irlandais.com v2](../../lib/assets/images/works/lcir-before.webp)
 _comptoir-irlandais.com v2 (2025)_

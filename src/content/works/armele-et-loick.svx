@@ -8,7 +8,7 @@ slug: 'https://www.rc2c.fr/'
 preview: 'http://armele-loick.rc2c.fr/index.html'
 skills: ['Intégration Front-end']
 tools: ['HTML/CSS', 'jQuery']
-published: true
+published: false
 ---
 
 ## À propos

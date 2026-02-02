@@ -8,7 +8,7 @@ slug: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mock
 preview: 'https://www.figma.com/design/umVuOF8D8x5arfR64PhduA/VoxOffice-%C2%B7-Mockup-Behance?node-id=0-1&t=HYSAZsTcA6fxHjvH-1'
 skills: ['UI Design']
 tools: ['PhotoShop']
-published: true
+published: false
 ---
 
 ## À propos

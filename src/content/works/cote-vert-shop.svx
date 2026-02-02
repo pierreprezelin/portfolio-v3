@@ -13,5 +13,5 @@ published: true
 
 ## À propos
 
-Côté Vert Shop est un site e-commerce spécialisé dans les fournitures d'extérieur (jardin, outil, etc).<br>
-On m'a chargé de créer une charte graphique à partir de ce thème, le logo étant fourni.
+Côté Vert Shop est un petit projet de site e-commerce spécialisé dans les fournitures d'extérieur (jardin, outil, etc).<br>
+On m'a chargé de créer une charte graphique et quelques maquettes à partir de ce thème, le logo étant fourni.

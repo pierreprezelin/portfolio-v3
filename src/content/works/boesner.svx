@@ -9,14 +9,14 @@ slug: 'https://www.boesner.fr/'
 preview: 'https://www.boesner.fr/'
 skills: ['Dev Front-end']
 tools: ['PrestaShop']
-published: false
+published: true
 ---
 
 ## Introduction
 
 Boesner est un fournisseur d'articles d'art, présent notamment en Allemagne mais aussi en France.
 
-Le site Boesner v2 a été initialement crée par l'agence [Bulko](https://www.bulko.net/), aujourd'hui disparue. Pour sa troisième version, Boesner a fait appel à l'agence [Evolutive](https://www.evolutive.com/) qui m'a alors appelé en renfort après Le Comptoir Irlandais pour gérer également l'intégration PrestaShop sur ce projet.
+Le site Boesner v2 a été initialement crée par l'agence [Bulko](https://www.bulko.net/), aujourd'hui disparue. Pour sa troisième version, Boesner a fait appel à l'agence [Evolutive](https://www.evolutive.com/) qui m'a alors sollicité après Le Comptoir Irlandais pour gérer également l'intégration PrestaShop de ce projet.
 
 ![boesner.fr v2](../../lib/assets/images/works/boesner-before.webp)
 _boesner.fr v2 (2025)_
