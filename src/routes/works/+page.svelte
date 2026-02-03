@@ -13,8 +13,8 @@
 
 {#if data.works}
 	<ul class="flex flex-col gap-10 mobile:gap-8">
-		{#each data.works as work}
-			<CardWork {work} />
+		{#each data.works as work, i}
+			<CardWork {work} displayedIndex={data.works.length - i} />
 		{/each}
 	</ul>
 {:else}

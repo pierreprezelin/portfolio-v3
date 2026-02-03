@@ -13,7 +13,6 @@
 	import Pattern from '$lib/components/Pattern.svelte';
 
 	import './layout.css';
-	import image from '$lib/assets/images/og-image.webp';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/styles/fonts.css';
@@ -50,11 +49,11 @@
 	<meta name="og:site_name" content="Pierre Prézelin" />
 	<meta name="og:title" content={title} />
 	<meta name="og:description" content={description} />
-	<meta name="og:image" content={image} />
+	<meta name="og:image" content="/images/og-image.webp" />
 
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={image} />
+	<meta name="twitter:image" content="/images/og-image.webp" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@prezelin21995" />
 	<meta name="twitter:creator" content="@prezelin21995" />
