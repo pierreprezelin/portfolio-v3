@@ -1,13 +1,10 @@
 <script lang="ts">
+	import { m } from '$lib/paraglide/messages';
+
 	import CardPost from '$lib/components/CardPost.svelte';
-	import { m } from '$lib/paraglide/messages.js';
 
 	let { data } = $props();
 </script>
-
-<svelte:head>
-	<title>{m.title_blog()} · Pierre Prézelin</title>
-</svelte:head>
 
 <h1 class="mb-16 text-center">{m.title_blog()}</h1>
 

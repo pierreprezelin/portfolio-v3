@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages';
+	
 	import CardWork from '$lib/components/CardWork.svelte';
 
 	let { data } = $props();
 </script>
-
-<svelte:head>
-	<title>{m.title_works()} · Pierre Prézelin</title>
-</svelte:head>
 
 <h1 class="mb-16 text-center">{m.title_works()}</h1>
 

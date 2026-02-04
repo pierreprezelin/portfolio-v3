@@ -4,9 +4,9 @@
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { fly } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
+	import { MetaTags, deepMerge } from 'svelte-meta-tags';
 	import { ModeWatcher } from 'mode-watcher';
 
-	import Canonical from '$lib/components/Canonical.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import MouseCursor from '$lib/components/MouseCursor.svelte';
@@ -16,10 +16,6 @@
 
 	import '@fontsource-variable/libre-franklin/wght.css';
 	import '$lib/styles/fonts.css';
-
-	const title = 'Pierre Prézelin · Développeur Front-end & UI Designer';
-	const description =
-		'Développeur Front-end et UI Designer français, actuellement basé à Montréal, QC, Canada.';
 
 	const duration = 150;
 	const delay = duration + duration / 2;
@@ -35,33 +31,15 @@
 		}, 150);
 	});
 
-	let { children, data } = $props();
+	let { data, children } = $props();
+	let metaTags = $derived(deepMerge(data.baseMetaTags, page.data.pageMetaTags));
 </script>
 
+<MetaTags {...metaTags} />
+
 <svelte:head>
-	<title>{title}</title>
-	<meta name="description" content={description} />
-	<meta
-		name="keywords"
-		content="Pierre, Prézelin, portfolio, blog, france, front-end, developer, dev, development, ui, ux, webdesign"
-	/>
-
-	<meta name="og:site_name" content="Pierre Prézelin" />
-	<meta name="og:title" content={title} />
-	<meta name="og:description" content={description} />
-	<meta name="og:image" content="/images/og-image.jpg" />
-
-	<meta name="twitter:title" content={title} />
-	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content="/images/og-image.jpg" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@prezelin21995" />
-	<meta name="twitter:creator" content="@prezelin21995" />
-	<meta name="twitter:widgets:new-embed-design" content="on" />
-
 	<link rel="icon" href="/favicon.ico" sizes="32x32" />
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-	<Canonical />
 </svelte:head>
 
 <MouseCursor />
@@ -97,7 +75,7 @@
 	}
 
 	:global(html) {
-  	scrollbar-color: var(--color-pp-black) var(--color-pp-beige);
+		scrollbar-color: var(--color-pp-black) var(--color-pp-beige);
 	}
 
 	:global(body) {

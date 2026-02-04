@@ -5,24 +5,11 @@
 	import { shares } from '$lib/data/shares';
 	import { capitalize, formatDate } from '$lib/utils';
 	import '$lib/styles/prose.scss';
+
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
 </script>
-
-<svelte:head>
-	<title>{data.meta.title} · Blog · Pierre Prézelin</title>
-	<meta name="description" content={data.meta.description} />
-
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.cover} />
-
-	<meta name="twitter:title" content={data.meta.title} />
-	<meta name="twitter:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.cover} />
-</svelte:head>
 
 <article>
 	<hgroup>

@@ -2,15 +2,12 @@
 	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import { m } from '$lib/paraglide/messages';
 	import { capitalize } from '$lib/utils';
+
 	import CardPost from '$lib/components/CardPost.svelte';
 	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
 </script>
-
-<svelte:head>
-	<title>{m.meta_title_blog_category({ tag: capitalize(data.tag) })}</title>
-</svelte:head>
 
 <h1 class="mb-16 text-center">{capitalize(data.tag)}</h1>
 

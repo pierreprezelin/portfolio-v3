@@ -2,14 +2,11 @@
 	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import { m } from '$lib/paraglide/messages';
 	import '$lib/styles/prose.scss';
+
 	import { ArrowLeft, ExternalLink } from '@lucide/svelte';
 
 	let { data } = $props();
 </script>
-
-<svelte:head>
-	<title>{data.meta.title} · Works · Pierre Prézelin</title>
-</svelte:head>
 
 <article>
 	<hgroup>
