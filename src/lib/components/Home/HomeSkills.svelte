@@ -14,8 +14,9 @@
 				<li>React / Next</li>
 				<li>Vue.js / Nuxt</li>
 				<li>Svelte / SvelteKit</li>
-				<li>Storybook</li>
+				<li>Supabase</li>
 				<li>Jest</li>
+				<li>Storybook</li>
 				<li>Node.js</li>
 				<li>MySQL</li>
 				<li>REST API</li>

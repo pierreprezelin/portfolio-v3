@@ -2,21 +2,24 @@
 title: MouseShapes
 date: '2026'
 dateSort: 20262
-# cover: 'mouseshapes.webp'
-# logo: 'mouseshapes.svg'
+cover: 'mouse-shapes.webp'
 slug: 'https://mouseshapes.pierreprezelin.com'
 preview: 'https://mouseshapes.pierreprezelin.com'
 skills: ['Dev Front-end']
 tools: ['Nuxt', 'Vue.js', 'Supabase', 'Tailwind']
-published: false
+published: true
 ---
 
 ## À propos
 
-J'aime les souris et comme toute personne du hobby après la découverte de ce site, je vais sur [EloShapes](https://www.eloshapes.com/) pour comparer et trouver ma prochaine. Ce site m'est vraiment utile et quand j'ai vu qu'il était fait en Nuxt, ça m'a rappelé le bon vieux temps chez HelloAsso - avant de passer à du React (désolé les fans de React, Vue et Svelte m'ont trop convaincu).
+J'aime tester des souris pour trouver celle qui me convient parfaitement et comme toute personne du hobby après la découverte de ce site, je vais sur [EloShapes](https://www.eloshapes.com/) pour comparer les formes et trouver ma prochaine. Il m'est vraiment utile et quand j'ai vu qu'il était fait en Nuxt, ça m'a motivé à me mettre à jour sur Vue 3.
 
-Donc je me suis dit que ça serait un exercice intéressant de me remettre à Nuxt avec un peu de reverse-engineering.
+Je me suis donc dit que ça serait un exercice intéressant de me remettre à Nuxt avec un peu de reverse-engineering.
 
 ## Stack
 
 Pour la base de données, j'ai pu tester [Supabase](https://supabase.com/), l'alternative open-source au [Firebase](https://firebase.google.com/) de Google. Cela me permet d'avoir un back-end pré-fait, des points API auto-générés et de pouvoir gérer une éventuelle authentification out-of-the-box.
+
+Pour l'UI, je me suis basé sur [Nuxt UI](https://ui.nuxt.com/) pour avoir un boilerplate simple et pouvoir me concentrer sur la logique. C'est la librairie officielle de Nuxt, basée sur [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) pour les classes utilitaires et [Reka UI](https://reka-ui.com/) pour la gestion de l'accessibilité.
+
+Enfin, les déploiements sont gérés par [Cloudflare Pages](https://pages.cloudflare.com/) comme pour le reste de mes sites.
