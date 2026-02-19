@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { browser } from '$app/environment';
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { fly } from 'svelte/transition';
@@ -41,6 +42,10 @@
 	<link rel="icon" href="/favicon.ico" sizes="32x32" />
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </svelte:head>
+
+{#if browser}
+	<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+{/if}
 
 <MouseCursor />
 <ModeWatcher />
