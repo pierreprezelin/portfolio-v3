@@ -13,7 +13,7 @@ export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'Intégration Front-end' |
 
 export type Tags = 'Design' | 'Développement';
 
-export type Tools = 'Astro' | 'Expo' | 'Figma' | 'HTML/CSS' | 'Illustrator' | 'jQuery' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PHP' | 'PrestaShop' | 'React' | 'React Native' | 'Supabase' | 'Svelte' | 'SvelteKit' | 'Tailwind' | 'Vue.js' | 'WordPress';
+export type Tools = 'Astro' | 'Expo' | 'Figma' | 'HTML/CSS' | 'Illustrator' | 'jQuery' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PHP' | 'PrestaShop' | 'React' | 'React Native' | 'SCSS' | 'Smarty' | 'Supabase' | 'Svelte' | 'SvelteKit' | 'Tailwind' | 'Vue.js' | 'WordPress';
 
 export type Work = {
 	title: string;

@@ -1,10 +1,10 @@
 ---
 title: MYWIE
-date: '2025'
+date: '2025 · 2026'
 dateSort: 20253
 cover: 'mywie.webp'
 logo: 'mywie.svg'
-slug: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
+slug: 'https://mywie.com/'
 preview: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
 skills: ['UI Design']
 tools: ['Figma']

@@ -9,12 +9,12 @@
 			<ul>
 				<li>HTML</li>
 				<li>CSS / SCSS (Sass) / LESS</li>
-				<li>Tailwind CSS</li>
 				<li>JavaScript / TypeScript</li>
 				<li>React / Next</li>
 				<li>Vue.js / Nuxt</li>
 				<li>Svelte / SvelteKit</li>
 				<li>Supabase</li>
+				<li>Tailwind</li>
 				<li>Jest</li>
 				<li>Storybook</li>
 				<li>Node.js</li>
@@ -23,7 +23,7 @@
 				<li>Git</li>
 				<li>Docker</li>
 				<li>CI/CD</li>
-				<li>PHP</li>
+				<li>PHP / Smarty</li>
 				<li>PrestaShop</li>
 				<li>WordPress</li>
 			</ul>
