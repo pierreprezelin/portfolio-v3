@@ -1,0 +1,75 @@
+---
+title: Keiros
+date: '2026'
+dateSort: 20263
+cover: 'keiros.webp'
+logo: 'keiros.svg'
+slug: 'https://keiros.pro/'
+preview: 'https://keiros.pro/'
+skills: ['UI Design', 'Dev Front-end']
+tools: ['Figma', 'Smarty', 'SCSS', 'jQuery']
+published: true
+---
+
+## Introduction
+
+Keiros est une solution crée pour faciliter les opérations des agents d'assurance. Avec une interface ergonomique et des fonctionnalités dédiées à l'optimisation du temps passé sur l'administratif, l'objectif de Keiros et de redonner plus de temps aux équipes pour le conseil, la relation humaine et les opportunités commerciales.
+
+Un travail de branding m'a donc été commandé pour créer une image de marque qui reflète cet objectif.
+
+## Réalisation
+
+### Brief
+
+L'image de marque devait renvoyer une impression globale :
+
+- d'accessibilité
+- de confiance
+- d'efficacité
+- d'optimisation
+- de réactivité
+- de stabilité
+
+### Logo
+
+Différentes pistes ont été réalisées, toutes avec des styles différents et en accord avec le brief initial. Elles devaient évidemment fonctionner de près ou loin, en version verticale ou horizontale, et enfin sur fond clair ou sombre :
+
+![5 essais de logos](../../lib/assets/images/works/keiros-logotests.webp)
+_Les 5 essais de logo pour Keiros_
+
+- La 1ère n'a pas de sigle, pour le démarquer des autres et une petite variation dans le O a été introduite. La police est plus orientée "antique", car c'est un thème récurrent des outils institutionnels censés renvoyer une image de solidité et de sérieux.
+- La 2nde comporte une police sans-serif très large, contrairement aux autres, pour un côté "tech" davantage mis en avant. Le sigle est un K stylisé, représentant les différentes fonctionnalités et leur lien en un ensemble cohérent.
+- La 3ème a une police cursive très fine pour maximiser une impression "premium". Le sigle est un tesseract, un cube en 4 dimensions pour symboliser la solidité partout à toute échelle.
+- La 4ème est plus arrondie, plus dans l'esprit "accessible" des SaaS modernes. Le sigle est un cadran solaire stylisé, symbolisant la stabilité et le temps gagné.
+- La 5ème va à l'opposé des sigles avec sens pour une pure stylisation graphique du K de Keiros. La typographie est là aussi la plus travaillée, afin de donner davantage de personnalité.
+
+Après quelques ajustements, c'est la piste 4 qui a été retenue : **le cadran solaire stylisé** - affichée en haut de page.
+
+La typographie utilisée pour le nom est celle de la proposition 2, **League Spartan**, en Extrabold. Son caractère géométrique et droit inspire une image de robutesse et technologie.
+
+Elle comporte aussi un espacement supplémentaire de 5% entre les lettres pour maximiser la lisibilité. Le crénage initial a été harmonisé sur certaines lettres, ainsi que la hauteur de ces dernières. Un  léger radius a été ajouté aux lettres afin d’atteindre ce juste milieu entre solidité et accessibilité.
+
+### Typographies
+
+2 familles de police - toutes deux sans-serif (ou "linéales", en français) - sont utilisées avec Keiros :
+
+- [Manrope](https://fonts.google.com/specimen/Manrope) pour les titres, une police géométrique et professionnelle, lisible en toute circonstance.
+- [Lato](https://fonts.google.com/specimen/Lato) pour les contenus, une police ronde et chaleureuse, offrant une balance parfaite entre le sérieux et l’amical.
+
+![Typographies](../../lib/assets/images/works/keiros-fonts.webp)
+
+### Couleurs
+
+Pour finaliser ce travail initial de branding et accompagner le reste, il restait à déterminer les couleurs de Keiros.
+Après être parti sur des nuances de bleu, couleur utilisée traditionnellement chez les acteurs institutionnels, nous nous sommes finalement arrêté sur un indigo profond, renvoyant l'image de sérieux, d'efficacité, et de sérénité recherchée.
+
+Les nuances de gris sont directement déclinées du bleu marine "Nuit", lui-même décliné du indigo princial.
+
+Pour les fonds, un gris léger ou un blanc tirant vers le crème complètent cette palette.
+
+![Palette](../../lib/assets/images/works/keiros-colors.webp)
+_La palette définie et validée après le travail de recherche_
+
+## Développement
+
+Le développement est en cours, donc les éventuelles captures seront ajoutées une fois celui-ci suffisamment avancé !
