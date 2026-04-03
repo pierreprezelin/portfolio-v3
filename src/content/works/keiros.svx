@@ -21,6 +21,8 @@ Un travail de branding m'a donc été commandé pour créer une image de marque 
 
 ### Brief
 
+Keiros est une variation du terme "kairos" (καιρός), un concept grec ancien désignant le moment opportun, propice ou décisif pour agir, souvent traduit par "le bon moment".
+
 L'image de marque devait renvoyer une impression globale :
 
 - d'accessibilité
@@ -72,4 +74,4 @@ _La palette définie et validée après le travail de recherche_
 
 ## Développement
 
-Le développement est en cours, donc les éventuelles captures seront ajoutées une fois celui-ci suffisamment avancé !
+Le développement est en cours, donc des captures seront éventuellement ajoutées une fois celui-ci avancé !
