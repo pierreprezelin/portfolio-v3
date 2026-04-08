@@ -105,4 +105,4 @@ Beaucoup de projets ont vu le jour en quasi 8 ans et je ne pourrais pas tous les
 - La refonte et centralisation du tunnel de connexion/inscription, sur un sous-domaine distinct.
 
 ![Illustration Abyss 404](../../lib/assets/images/works/helloasso-abyss.webp)
-_Une illustration vectorielle pour certaines pages d'erreur_
+_Une illustration vectorielle utilisée sur certaines pages d'erreur_

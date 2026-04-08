@@ -7,7 +7,7 @@ logo: 'keiros.svg'
 slug: 'https://keiros.pro/'
 preview: 'https://keiros.pro/'
 skills: ['UI Design', 'Dev Front-end']
-tools: ['Figma', 'Smarty', 'SCSS', 'jQuery']
+tools: ['Figma', 'Smarty', 'SCSS', 'JavaScript']
 published: true
 ---
 
