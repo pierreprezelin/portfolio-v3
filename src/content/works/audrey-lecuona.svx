@@ -13,7 +13,7 @@ published: true
 
 Audrey Lecuona est une développeuse front-end, spécialisée en PrestaShop depuis plus de 10 ans.
 
-Pour faciliter la gestion de son portfolio, [audreylecuona.com](https://www.audreylecuona.com) a été migré en [Astro](https://astro.build/) en 2024. C'était l'occasion pour moi de tester de nouveau framework JS dont tout le monde parlait.
+Pour faciliter la gestion de son portfolio, [audreylecuona.com](https://www.audreylecuona.com) a été migré en [Astro](https://astro.build/) en 2024. C'était l'occasion pour moi de tester ce nouveau framework JS dont tout le monde parlait.
 
 ## Astro
 
