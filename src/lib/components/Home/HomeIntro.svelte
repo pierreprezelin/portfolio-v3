@@ -5,14 +5,10 @@
 </script>
 
 <section id="intro">
-	<p class="mb-4">
-		{m.intro_1()}<br />
-		{m.intro_2()}
-	</p>
-	<p class="mb-4">{m.intro_3()}</p>
+	<p class="mb-4 tablet:pr-48">{m.intro_1()}</p>
+	<p class="mb-4 tablet:pr-48">{m.intro_2()}</p>
 	<p class="mb-5 tablet:pr-48">
-		{m.intro_4()}{#if getLocale() === "en"}<br />{/if}
-		{m.intro_5()}
+		{m.intro_3()}
 	</p>
 	<div class="flex flex-col justify-between gap-5 mobile:flex-row">
 		<p>
