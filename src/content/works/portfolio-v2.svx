@@ -6,7 +6,7 @@ cover: 'portfolio-v2.webp'
 logo: 'portfolio-v2.svg'
 slug: 'https://v2.pierreprezelin.com'
 preview: 'https://v2.pierreprezelin.com'
-skills: ['Intégration Front-end', 'UI Design']
+skills: ['Intégration Web', 'UI Design']
 tools: ['HTML/CSS', 'jQuery', 'PHP', 'Photoshop', 'Illustrator']
 published: true
 ---

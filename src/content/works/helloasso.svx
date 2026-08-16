@@ -7,8 +7,8 @@ caption: 'helloasso.com v3 (2018)'
 logo: 'helloasso.svg'
 slug: 'https://www.helloasso.com'
 preview: 'https://www.helloasso.com/e/recherche'
-skills: ['Dev Front-end', 'UI Design']
-tools: ['Nuxt', 'Vue.js', 'Figma', 'Photoshop', 'Illustrator']
+skills: ['Dev Front-end', 'Intégration Web', UI Design']
+tools: ['Vue.js', 'Nuxt', 'Figma', 'Photoshop', 'Illustrator']
 published: true
 ---
 

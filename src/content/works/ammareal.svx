@@ -7,8 +7,8 @@ caption: 'ammareal.fr v3, en version maquette'
 logo: 'ammareal.svg'
 slug: 'https://www.ammareal.fr'
 preview: 'https://reprise.ammareal.com/'
-skills: ['Dev Mobile', 'Dev Front-end', 'UI Design']
-tools: ['Next.js', 'React', 'Expo', 'React Native', 'PrestaShop', 'Figma']
+skills: ['Dev Mobile', 'Dev Front-end', 'UX/UI Design']
+tools: ['React', 'Next.js', 'React Native', 'Expo', 'PrestaShop', 'Figma']
 published: true
 ---
 

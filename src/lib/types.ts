@@ -9,7 +9,7 @@ export type Post = {
 	published: boolean;
 };
 
-export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'Intégration Front-end' | 'UI Design';
+export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'Intégration Web' | 'UI Design' | 'UX/UI Design';
 
 export type Tags = 'Design' | 'Développement';
 
