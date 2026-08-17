@@ -15,7 +15,6 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "single",
 			"trailingCommas": "none"
 		}
 	},
@@ -23,6 +22,9 @@
 		"parser": {
 			"tailwindDirectives": true
 		},
+		"formatter": {
+			"quoteStyle": "double"
+		}
 	},
 	"html": {
 		"experimentalFullSupportEnabled": true
