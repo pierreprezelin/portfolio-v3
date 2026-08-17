@@ -8,11 +8,14 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
+		"prepare:hooks": "simple-git-hooks",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "biome format --write .",
-		"lint": "biome check .",
-		"lint:fix": "biome check --write ."
+		"lint": "biome check . --write"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "bunx lint-staged"
 	},
 	"dependencies": {
 		"@fontsource-variable/jetbrains-mono": "^5.3.0",
@@ -33,10 +36,12 @@
 		"@tailwindcss/typography": "^0.5.20",
 		"@tailwindcss/vite": "^4.3.3",
 		"@types/node": "^26.2.0",
+		"lint-staged": "^17.3.0",
 		"mdsvex": "^0.12.8",
 		"mdsvex-relative-images": "^2.0.0",
 		"sass-embedded": "^1.102.0",
 		"shiki": "^4.4.3",
+		"simple-git-hooks": "^2.13.1",
 		"svelte": "^5.56.9",
 		"svelte-check": "^4.7.6",
 		"svelte-meta-tags": "^5.0.2",

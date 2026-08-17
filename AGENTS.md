@@ -158,7 +158,10 @@ src/
 ### Git & Commits
 
 - Use conventional commit messages: `feat:`, `fix:`, `chore:`, `docs:`
-- Run `bun lint` and `bun check` before committing
+- A `pre-commit` hook (simple-git-hooks + lint-staged, see `lint-staged.config.js`)
+  automatically runs `prepare`, `check`, `format`, and `lint` on every commit.
+  Hooks are (re)installed by `bun run prepare:hooks` (run it once after cloning).
+  To bypass it for a single commit: `SKIP_SIMPLE_GIT_HOOKS=1 git commit …`
 - Do not commit node_modules, .svelte-kit, or build outputs
 
 ### Running Lint/Typecheck Before Commit
