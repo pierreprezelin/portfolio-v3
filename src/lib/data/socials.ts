@@ -1,4 +1,6 @@
-import { Codepen, Dribbble, Github, Linkedin, Mail } from "@lucide/svelte";
+import { Mail } from "@lucide/svelte";
+
+import { Codepen, Dribbble, Github, Linkedin } from "$lib/components/icons";
 
 export const socials = [
 	{

@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Twitter } from "@lucide/svelte";
+import { Facebook, Linkedin, Twitter } from "$lib/components/icons";
 
 export const shares = [
 	{
