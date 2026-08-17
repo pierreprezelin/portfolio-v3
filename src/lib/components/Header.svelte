@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
+
 	import { BarChart2, Moon, Sun } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
+
+	import { m } from '$lib/paraglide/messages';
+	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
 
 	const currentLocale = $state(getLocale());
 	let otherLocale = $derived(locales.find((l) => l !== currentLocale) || locales[0]);

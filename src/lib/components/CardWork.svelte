@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
-	import type { Work } from '$lib/types';
 	import { FolderSearch } from '@lucide/svelte';
+
+	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+	import type { Work } from '$lib/types';
 
 	let { work, displayedIndex }: { work: Work; displayedIndex: number } = $props();
 </script>

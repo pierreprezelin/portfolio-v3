@@ -38,11 +38,16 @@
 
 <svelte:document
 	on:mousemove={handleCursorMove}
-	on:mouseenter={() => isDesktop && (isVisible = true)}
-	on:mouseleave={() => (isVisible = false)}
+	on:mouseenter={() => {
+		if (isDesktop) isVisible = true;
+	}}
+	on:mouseleave={() => {
+		isVisible = false;
+	}}
 />
 
 <svg
+	aria-hidden="true"
 	class="pointer-events-none fixed top-0 left-0 z-9999 hidden tablet:block"
 	style="shape-rendering: crispEdges; image-rendering: pixelated; width: 100vw; height: 100vh;"
 	style:opacity={isVisible ? 1 : 0}

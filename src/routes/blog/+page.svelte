@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import { m } from '$lib/paraglide/messages';
 
 	import CardPost from '$lib/components/CardPost.svelte';

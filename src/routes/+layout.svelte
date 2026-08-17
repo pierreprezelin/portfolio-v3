@@ -1,15 +1,17 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import { browser } from '$app/environment';
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
-	import { locales, localizeHref } from '$lib/paraglide/runtime';
-	import { fly } from 'svelte/transition';
-	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { MetaTags, deepMerge } from 'svelte-meta-tags';
-	import { ModeWatcher } from 'mode-watcher';
+	import { page } from '$app/state';
 
-	import Header from '$lib/components/Header.svelte';
+	import { ModeWatcher } from 'mode-watcher';
+	import { cubicIn, cubicOut } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
+	import { deepMerge, MetaTags } from 'svelte-meta-tags';
+
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
+
 	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import MouseCursor from '$lib/components/MouseCursor.svelte';
 	import Pattern from '$lib/components/Pattern.svelte';
 

@@ -1,17 +1,18 @@
-import { json } from '@sveltejs/kit';
-import type { Post } from '$lib/types';
+import { json } from "@sveltejs/kit";
+
+import type { Post } from "$lib/types";
 
 async function getPosts() {
 	let posts: Post[] = [];
 
-	const paths = import.meta.glob('/src/content/posts/*.svx', { eager: true });
+	const paths = import.meta.glob("/src/content/posts/*.svx", { eager: true });
 
 	for (const path in paths) {
 		const file = paths[path];
-		const slug = path.split('/').at(-1)?.replace('.svx', '');
+		const slug = path.split("/").at(-1)?.replace(".svx", "");
 
-		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			const metadata = file.metadata as Omit<Post, 'slug'>;
+		if (file && typeof file === "object" && "metadata" in file && slug) {
+			const metadata = file.metadata as Omit<Post, "slug">;
 			if (metadata.published) {
 				const post = { ...metadata, slug } satisfies Post;
 				posts.push(post);

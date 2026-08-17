@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+	import { ArrowLeft } from '@lucide/svelte';
+
 	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import { capitalize } from '$lib/utils';
 
 	import CardPost from '$lib/components/CardPost.svelte';
-	import { ArrowLeft } from '@lucide/svelte';
 
 	let { data } = $props();
 </script>

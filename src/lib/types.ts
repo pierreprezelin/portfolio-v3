@@ -9,11 +9,38 @@ export type Post = {
 	published: boolean;
 };
 
-export type Skills = 'Dev Front-end' | 'Dev Mobile' | 'Intégration Web' | 'UI Design' | 'UX/UI Design';
+export type Skills =
+	| "Dev Front-end"
+	| "Dev Mobile"
+	| "Intégration Web"
+	| "UI Design"
+	| "UX/UI Design";
 
-export type Tags = 'Design' | 'Développement';
+export type Tags = "Design" | "Développement";
 
-export type Tools = 'Astro' | 'Expo' | 'Figma' | 'HTML/CSS' | 'Illustrator' | 'Javascript' | 'jQuery' | 'Next.js' | 'Nuxt' | 'Photoshop' | 'PHP' | 'PrestaShop' | 'React' | 'React Native' | 'SCSS' | 'Smarty' | 'Supabase' | 'Svelte' | 'SvelteKit' | 'Tailwind' | 'Vue.js' | 'WordPress';
+export type Tools =
+	| "Astro"
+	| "Expo"
+	| "Figma"
+	| "HTML/CSS"
+	| "Illustrator"
+	| "Javascript"
+	| "jQuery"
+	| "Next.js"
+	| "Nuxt"
+	| "Photoshop"
+	| "PHP"
+	| "PrestaShop"
+	| "React"
+	| "React Native"
+	| "SCSS"
+	| "Smarty"
+	| "Supabase"
+	| "Svelte"
+	| "SvelteKit"
+	| "Tailwind"
+	| "Vue.js"
+	| "WordPress";
 
 export type Work = {
 	title: string;

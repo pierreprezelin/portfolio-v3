@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
-	import { formatDate } from '$lib/utils';
-	import type { Post } from '$lib/types';
 	import { FolderSearch } from '@lucide/svelte';
+
+	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+	import type { Post } from '$lib/types';
+	import { formatDate } from '$lib/utils';
 
 	let { post }: { post: Post } = $props();
 </script>

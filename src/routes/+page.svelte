@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { m } from '$lib/paraglide/messages';
 	import { socials } from '$lib/data/socials';
+	import { m } from '$lib/paraglide/messages';
 
-	import HomeIntro from '$lib/components/Home/HomeIntro.svelte';
-	import HomeTimeline from '$lib/components/Home/HomeTimeline.svelte';
-	import HomeSkills from '$lib/components/Home/HomeSkills.svelte';
 	import HomeContact from '$lib/components/Home/HomeContact.svelte';
+	import HomeIntro from '$lib/components/Home/HomeIntro.svelte';
+	import HomeSkills from '$lib/components/Home/HomeSkills.svelte';
+	import HomeTimeline from '$lib/components/Home/HomeTimeline.svelte';
 
 	let headerHeight = 0;
 </script>

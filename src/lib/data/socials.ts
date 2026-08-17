@@ -1,39 +1,39 @@
-import { Mail, Linkedin, Github, Codepen, Dribbble } from '@lucide/svelte';
+import { Codepen, Dribbble, Github, Linkedin, Mail } from "@lucide/svelte";
 
 export const socials = [
 	{
-		label: 'Email',
-		href: 'mailto:contact@pierreprezelin.com',
-		pseudo: 'contact@pierreprezelin.com',
+		label: "Email",
+		href: "mailto:contact@pierreprezelin.com",
+		pseudo: "contact@pierreprezelin.com",
 		icon: Mail,
-		color: 'pp-red'
+		color: "pp-red"
 	},
 	{
-		label: 'LinkedIn',
-		href: 'https://www.linkedin.com/in/pierre-prezelin/',
-		pseudo: 'Pierre Prézelin',
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/pierre-prezelin/",
+		pseudo: "Pierre Prézelin",
 		icon: Linkedin,
-		color: 'social-linkedin'
+		color: "social-linkedin"
 	},
 	{
-		label: 'GitHub',
-		href: 'https://github.com/pierreprezelin',
-		pseudo: '@pierreprezelin',
+		label: "GitHub",
+		href: "https://github.com/pierreprezelin",
+		pseudo: "@pierreprezelin",
 		icon: Github,
-		color: 'social-github'
+		color: "social-github"
 	},
 	{
-		label: 'CodePen',
-		href: 'https://codepen.io/PierrePrezelin',
-		pseudo: '@PierrePrezelin',
+		label: "CodePen",
+		href: "https://codepen.io/PierrePrezelin",
+		pseudo: "@PierrePrezelin",
 		icon: Codepen,
-		color: 'pp-black'
+		color: "pp-black"
 	},
 	{
-		label: 'Dribbble',
-		href: 'https://dribbble.com/pierre-prezelin',
-		pseudo: '@pierre-prezelin',
+		label: "Dribbble",
+		href: "https://dribbble.com/pierre-prezelin",
+		pseudo: "@pierre-prezelin",
 		icon: Dribbble,
-		color: 'social-dribbble'
-	},
-]
+		color: "social-dribbble"
+	}
+];
