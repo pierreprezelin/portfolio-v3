@@ -36,7 +36,7 @@
 		"@tailwindcss/typography": "^0.5.20",
 		"@tailwindcss/vite": "^4.3.3",
 		"@types/node": "^26.2.0",
-		"lint-staged": "^17.3.0",
+		"lint-staged": "16.4.0",
 		"mdsvex": "^0.12.8",
 		"mdsvex-relative-images": "^2.0.0",
 		"sass-embedded": "^1.102.0",
