@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
+
 	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 </script>
 
 <div class="text-center">

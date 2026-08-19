@@ -1,0 +1,67 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"includes": ["**", "!**/static", "!**/*.scss", "!**/*.svg", "!**/*.svx", "!bun.lock"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"javascript": {
+		"formatter": {
+			"trailingCommas": "none"
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		},
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"html": {
+		"experimentalFullSupportEnabled": true
+	},
+	"linter": {
+		"enabled": true
+	},
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": {
+					"level": "on",
+					"options": {
+						"groups": [
+							["$app/**", "$env/**", "@sveltejs/**"],
+							":BLANK_LINE:",
+							[":NODE:", ":PACKAGE:"],
+							":BLANK_LINE:",
+							["$lib/**", "!$lib/components/**", ":PATH:"],
+							":BLANK_LINE:",
+							["$lib/components/**"]
+						]
+					}
+				}
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["src/app.html"],
+			"linter": {
+				"rules": {
+					"a11y": {
+						"useValidLang": "off"
+					}
+				}
+			}
+		}
+	]
+}

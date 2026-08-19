@@ -6,7 +6,7 @@ cover: 'aurea.webp'
 logo: 'rc2c.svg'
 slug: 'https://www.rc2c.fr/'
 preview: 'http://aurea.eu/'
-skills: ['Intégration Front-end']
+skills: ['Intégration Web']
 tools: ['WordPress']
 published: false
 ---

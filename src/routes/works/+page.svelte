@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages';
+
 	
 	import CardWork from '$lib/components/CardWork.svelte';
 

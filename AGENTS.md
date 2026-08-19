@@ -33,9 +33,17 @@ bun check:watch     # Watch mode for type checking
 ### Formatting & Linting
 
 ```bash
-bun format      # Format all files with Prettier
-bun lint        # Run ESLint + Prettier check
+bun format      # Format all files with Biome
+bun lint        # Run Biome check (format + lint + import order)
+bun lint:fix    # Same, applying safe fixes
 ```
+
+Biome (`biome.json`) replaces Prettier and ESLint. Notes:
+
+- Svelte support is experimental (`html.experimentalFullSupportEnabled`)
+- `.scss` and `.svx` files are excluded — Biome does not support them
+- There is **no Tailwind class sorting** (Biome's `useSortedClasses` is nursery and
+  does not understand Tailwind v4 CSS config). Order classes by hand, visually.
 
 ### Single Test Commands
 
@@ -61,7 +69,7 @@ bun prepare     # Runs svelte-kit sync (generates types)
 ### General
 
 - Use **ES modules** (`"type": "module"` in package.json)
-- Use **tabs** for indentation (configured in .prettierrc)
+- Use **tabs** for indentation (configured in biome.json)
 - Use **single quotes** for strings
 - Use **Trailing commas**: none
 - **Print width**: 100 characters
@@ -107,7 +115,7 @@ bun prepare     # Runs svelte-kit sync (generates types)
 - Use **TailwindCSS** utility classes first
 - Use **SCSS** in `<style lang="scss">` blocks for component-specific styles
 - Use CSS custom properties for theme values (e.g., `var(--color-pp-black)`)
-- Follow TailwindCSS class ordering (visual order)
+- Follow TailwindCSS class ordering (visual order) — not enforced by tooling, see Biome notes
 - Define responsive breakpoints as variables in SCSS (see Header.svelte)
 
 ### SvelteKit Conventions
@@ -150,13 +158,16 @@ src/
 ### Git & Commits
 
 - Use conventional commit messages: `feat:`, `fix:`, `chore:`, `docs:`
-- Run `bun lint` and `bun check` before committing
+- A `pre-commit` hook (simple-git-hooks + lint-staged, see `lint-staged.config.js`)
+  automatically runs `prepare`, `check`, `format`, and `lint` on every commit.
+  Hooks are (re)installed by `bun run prepare:hooks` (run it once after cloning).
+  To bypass it for a single commit: `SKIP_SIMPLE_GIT_HOOKS=1 git commit …`
 - Do not commit node_modules, .svelte-kit, or build outputs
 
 ### Running Lint/Typecheck Before Commit
 
 ```bash
-bun && bun check
+bun lint && bun check
 ```
 
 ### Adding Dependencies

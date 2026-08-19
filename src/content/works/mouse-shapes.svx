@@ -6,7 +6,7 @@ cover: 'mouse-shapes.webp'
 slug: 'https://mouseshapes.pierreprezelin.com'
 preview: 'https://mouseshapes.pierreprezelin.com'
 skills: ['Dev Front-end']
-tools: ['Nuxt', 'Vue.js', 'Supabase', 'Tailwind']
+tools: ['Vue.js', 'Nuxt', 'Supabase', 'Tailwind']
 published: true
 ---
 

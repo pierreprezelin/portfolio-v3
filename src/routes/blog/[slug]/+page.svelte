@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
+
 	import { shares } from '$lib/data/shares';
+	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import { capitalize, formatDate } from '$lib/utils';
 	import '$lib/styles/prose.scss';
 

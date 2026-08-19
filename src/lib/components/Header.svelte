@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
-	import { m } from '$lib/paraglide/messages';
-	import { BarChart2, Moon, Sun } from '@lucide/svelte';
+
+	import { ChartNoAxesColumn, Moon, Sun } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
+
+	import { m } from '$lib/paraglide/messages';
+	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
 
 	const currentLocale = $state(getLocale());
 	let otherLocale = $derived(locales.find((l) => l !== currentLocale) || locales[0]);
@@ -38,7 +40,7 @@
 				class="z-2 flex -scale-x-100 rotate-90 items-center justify-center p-2.5 transition-transform tablet:hidden"
 				onclick={() => (isMenuShown = !isMenuShown)}
 			>
-				<BarChart2 size="24" color="var(--color-pp-black)" />
+				<ChartNoAxesColumn size="24" color="var(--color-pp-black)" />
 			</button>
 			<ul class="{isMenuShown ? 'opacity-100' : 'opacity-0'} z-1 tablet:opacity-100">
 				{#each links as link}
@@ -82,7 +84,7 @@
 			title={m.back_to_home()}
 			aria-label={m.back_to_home()}
 			aria-current={page.url.pathname === '/'}
-			class="absolute top-0 left-[50%] z-2 -translate-x-[50%] rounded-full border-4 border-pp-beige"
+			class="absolute top-0 left-[50%] z-2 translate-x-[-50%] rounded-full border-4 border-pp-beige"
 			onclick={() => (isMenuShown = false)}
 		>
 			<enhanced:img src="$lib/assets/logo.svg" alt="Logo" />

@@ -10,7 +10,7 @@
 				<li>HTML</li>
 				<li>CSS / SCSS (Sass) / LESS</li>
 				<li>JavaScript / TypeScript</li>
-				<li>React / Next</li>
+				<li>React / Next.s</li>
 				<li>Vue.js / Nuxt</li>
 				<li>Svelte / SvelteKit</li>
 				<li>Supabase</li>
@@ -18,11 +18,11 @@
 				<li>Jest</li>
 				<li>Storybook</li>
 				<li>Node.js</li>
-				<li>MySQL</li>
-				<li>REST API</li>
+				<li>API</li>
 				<li>Git</li>
 				<li>Docker</li>
 				<li>CI/CD</li>
+				<li>SQL</li>
 				<li>PHP / Smarty</li>
 				<li>PrestaShop</li>
 				<li>WordPress</li>
@@ -45,9 +45,9 @@
 			<ul>
 				<li>UX/UI</li>
 				<li>{m.skills_a11y()}</li>
+				<li>Design Systems</li>
 				<li>Figma</li>
 				<li>Photoshop</li>
-				<li>Illustrator</li>
 			</ul>
 		</div>
 	</div>

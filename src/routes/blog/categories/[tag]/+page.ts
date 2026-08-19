@@ -1,8 +1,10 @@
-import { error } from '@sveltejs/kit';
-import { definePageMetaTags } from 'svelte-meta-tags';
-import { m } from '$lib/paraglide/messages';
-import { capitalize } from '$lib/utils';
-import type { Tags, Post } from '$lib/types';
+import { error } from "@sveltejs/kit";
+
+import { definePageMetaTags } from "svelte-meta-tags";
+
+import { m } from "$lib/paraglide/messages";
+import type { Post, Tags } from "$lib/types";
+import { capitalize } from "$lib/utils";
 
 export const load = async ({ fetch, params }) => {
 	const { tag } = params;
@@ -28,18 +30,7 @@ export const load = async ({ fetch, params }) => {
 			tag,
 			posts
 		};
-	} catch (e) {
+	} catch {
 		error(404, `Could not find any post for category: "${tag}"`);
 	}
 };
-
-
-const pageTags = definePageMetaTags({
-		title: m.title_blog() + ' · Pierre Prézelin',
-		openGraph: {
-			title: m.title_blog() + ' · Pierre Prézelin'
-		},
-		twitter: {
-			title: m.title_blog() + ' · Pierre Prézelin'
-		}
-	});

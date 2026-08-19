@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import { m } from '$lib/paraglide/messages';
+	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	import '$lib/styles/prose.scss';
 
 	import { ArrowLeft, ExternalLink } from '@lucide/svelte';

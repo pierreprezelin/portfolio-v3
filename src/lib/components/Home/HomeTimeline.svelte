@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { m } from '$lib/paraglide/messages';
 	import { timeline } from '$lib/data/timeline';
+	import { m } from '$lib/paraglide/messages';
 </script>
 
 <section id="projects" class="mt-20">

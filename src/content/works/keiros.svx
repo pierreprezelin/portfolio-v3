@@ -6,8 +6,8 @@ cover: 'keiros.webp'
 logo: 'keiros.svg'
 slug: 'https://keiros.pro/'
 preview: 'https://keiros.pro/'
-skills: ['UI Design', 'Dev Front-end']
-tools: ['Figma', 'Smarty', 'SCSS', 'JavaScript']
+skills: ['Dev Front-end', 'UX/UI Design']
+tools: ['Smarty', 'JavaScript', 'Figma']
 published: true
 ---
 

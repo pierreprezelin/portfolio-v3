@@ -3,7 +3,7 @@ title: Portfolio v1
 date: '2013'
 dateSort: 20131
 preview: 'https://v1.pierreprezelin.com'
-skills: ['Intégration Front-end', 'UI Design']
+skills: ['Intégration Web', 'UI Design']
 tools: ['HTML/CSS', 'jQuery', 'PHP', 'Photoshop']
 published: true
 ---

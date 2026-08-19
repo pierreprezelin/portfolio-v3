@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Pattern from "./Pattern.svelte";
+
 	
 	const year = new Date().getFullYear();
 </script>

@@ -1,22 +1,23 @@
-import adapter from '@sveltejs/adapter-cloudflare';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { mdsvex, escapeSvelte } from 'mdsvex';
-import relativeImages from 'mdsvex-relative-images';
-import { getSingletonHighlighter } from 'shiki';
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import adapter from "@sveltejs/adapter-cloudflare";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+
+import { escapeSvelte, mdsvex } from "mdsvex";
+import relativeImages from "mdsvex-relative-images";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeSlug from "rehype-slug";
+import { getSingletonHighlighter } from "shiki";
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.svx', '.md'],
+	extensions: [".svx", ".md"],
 	highlight: {
 		highlighter: async (code, lang) => {
 			const highlighter = await getSingletonHighlighter({
-				themes: ['gruvbox-dark-medium'],
+				themes: ["gruvbox-dark-medium"],
 				langs: [lang]
 			});
 			const html = escapeSvelte(
-				highlighter.codeToHtml(code, { lang: lang, theme: 'gruvbox-dark-medium' })
+				highlighter.codeToHtml(code, { lang: lang, theme: "gruvbox-dark-medium" })
 			);
 			return `{@html \`${html}\`}`;
 		}
@@ -27,7 +28,7 @@ const mdsvexOptions = {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', '.svx', '.md'],
+	extensions: [".svelte", ".svx", ".md"],
 	preprocess: [mdsvex(mdsvexOptions), vitePreprocess()],
 	kit: {
 		adapter: adapter({
@@ -37,8 +38,8 @@ const config = {
 				environment: undefined,
 				persist: undefined
 			},
-			fallback: 'plaintext',
-			routes: { include: ['/*'], exclude: ['<all>'] }
+			fallback: "plaintext",
+			routes: { include: ["/*"], exclude: ["<all>"] }
 		})
 	}
 };

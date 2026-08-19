@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite';
-import { sveltekit } from '@sveltejs/kit/vite';
-import { enhancedImages } from '@sveltejs/enhanced-img';
-import tailwindcss from '@tailwindcss/vite';
-import { paraglideVitePlugin } from '@inlang/paraglide-js';
+import { enhancedImages } from "@sveltejs/enhanced-img";
+import { sveltekit } from "@sveltejs/kit/vite";
+
+import { paraglideVitePlugin } from "@inlang/paraglide-js";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
 	plugins: [
@@ -10,9 +11,9 @@ export default defineConfig({
 		enhancedImages(),
 		tailwindcss(),
 		paraglideVitePlugin({
-			project: './project.inlang',
-			outdir: './src/lib/paraglide',
-			strategy: ['url', 'cookie', 'baseLocale']
+			project: "./project.inlang",
+			outdir: "./src/lib/paraglide",
+			strategy: ["url", "cookie", "baseLocale"]
 		})
 	]
 });
