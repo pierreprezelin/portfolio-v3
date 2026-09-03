@@ -42,7 +42,7 @@
 			>
 				<ChartNoAxesColumn size="24" color="var(--color-pp-black)" />
 			</button>
-			<ul class="{isMenuShown ? 'opacity-100' : 'opacity-0'} z-1 tablet:opacity-100">
+			<ul class="{isMenuShown ? 'opacity-100 flex' : 'opacity-0 hidden'} z-1 tablet:opacity-100 tablet:flex">
 				{#each links as link}
 					<li>
 						<a
@@ -56,7 +56,7 @@
 					</li>
 				{/each}
 			</ul>
-			<ul class="z-2">
+			<ul class="flex z-2">
 				<li>
 					<a href={localizeHref(page.url.pathname, { locale: otherLocale })} data-sveltekit-reload>
 						{currentLocale}
@@ -168,7 +168,6 @@
 	ul {
 		position: relative;
 		z-index: 1;
-		display: flex;
 		align-items: center;
 		text-transform: uppercase;
 
