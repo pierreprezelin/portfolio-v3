@@ -4,7 +4,7 @@ date: '2025 · 2026'
 dateSort: 20253
 cover: 'mywie.webp'
 logo: 'mywie.svg'
-slug: 'https://mywie.com/'
+slug: 'https://mywie.fr/'
 preview: 'https://www.figma.com/design/Qulc6RMZCUW7Fo6jYaA9OK/Mywie---Maquettes?node-id=1-2&t=HGWCpdpE6CYAWZ2g-1'
 skills: ['UI Design']
 tools: ['Figma']

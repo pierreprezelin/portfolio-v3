@@ -21,7 +21,13 @@ export const timeline = [
 	},
 	{
 		year: "2025",
-		name: "Evolutive",
+		name: "Boesner",
+		roles: [m.role_frontend_dev()],
+		note: m.freelance()
+	},
+	{
+		year: "2025",
+		name: "Le Comptoir Irlandais",
 		roles: [m.role_frontend_dev()],
 		note: m.freelance()
 	},

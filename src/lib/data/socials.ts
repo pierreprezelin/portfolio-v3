@@ -13,7 +13,7 @@ export const socials = [
 	{
 		label: "LinkedIn",
 		href: "https://www.linkedin.com/in/pierre-prezelin/",
-		pseudo: "Pierre Prézelin",
+		pseudo: "@pierre-prezelin",
 		icon: Linkedin,
 		color: "social-linkedin"
 	},
@@ -26,8 +26,8 @@ export const socials = [
 	},
 	{
 		label: "CodePen",
-		href: "https://codepen.io/PierrePrezelin",
-		pseudo: "@PierrePrezelin",
+		href: "https://codepen.io/pierreprezelin",
+		pseudo: "@pierreprezelin",
 		icon: Codepen,
 		color: "pp-black"
 	},
