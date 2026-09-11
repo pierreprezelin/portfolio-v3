@@ -1,14 +1,11 @@
 ---
-title: Keiros
+title: Projet en cours (sous NDA)
 date: '2026'
 dateSort: 20263
-cover: 'keiros.webp'
-logo: 'keiros.svg'
-slug: 'https://keiros.pro/'
-preview: 'https://keiros.pro/'
 skills: ['Dev Front-end', 'UX/UI Design']
-tools: ['Smarty', 'JavaScript', 'Figma']
+tools: ['JavaScript', 'PHP', 'Figma']
 published: true
+hideLink: true
 ---
 
 ## Introduction

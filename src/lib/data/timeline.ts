@@ -9,7 +9,7 @@ export const timeline = [
 	// },
 	{
 		year: "2026",
-		name: "Keiros",
+		name: m.current_project(),
 		roles: [m.role_frontend_dev(), m.role_uxui_designer()],
 		note: m.freelance()
 	},

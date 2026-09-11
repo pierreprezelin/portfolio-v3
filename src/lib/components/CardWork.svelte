@@ -13,7 +13,7 @@
 		class="h-56 w-full shrink-0 overflow-hidden rounded-xl border mobile:aspect-square mobile:h-full mobile:w-1/3 tablet:aspect-auto tablet:w-75"
 	>
 		<a
-			href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}
+			href={work.hideLink ? "#" : localizeHref(`/works/${work.slug}`, { locale: getLocale() })}
 			title={m.go_to_project()}
 			aria-label={m.go_to_project()}
 		>
@@ -35,20 +35,31 @@
 	<div class="relative z-1 flex w-full grow flex-col">
 		<div class="flex items-center justify-between gap-2.5">
 			<h2 class="h5 mb-0.5">
-				<a href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}>{work.title}</a>
+				{#if work.hideLink}
+					{work.title}
+				{:else}
+					<a href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}>{work.title}</a>
+				{/if}
 			</h2>
 			<span class="h6 font-serif">{work.date}</span>
 		</div>
 		<span>{work.skills.join(' · ')}</span>
 		<span class="mt-4 mb-5 inline-flex text-pp-black/60 italic">{work.tools.join(', ')}</span>
 		<p>
-			<a
-				href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}
-				class="flex items-center gap-2.5"
-			>
-				<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
-				{m.view_project()}
-			</a>
+			{#if work.hideLink}
+				<span class="flex items-center gap-2.5">
+					<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
+					{m.coming_soon()}
+				</span>
+			{:else}
+				<a
+					href={localizeHref(`/works/${work.slug}`, { locale: getLocale() })}
+					class="flex items-center gap-2.5"
+				>
+					<FolderSearch size="24" strokeWidth="1" color="var(--color-pp-black)" />
+					{m.view_project()}
+				</a>
+			{/if}
 		</p>
 	</div>
 	<span

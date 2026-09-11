@@ -23,7 +23,7 @@
 				<li>Docker</li>
 				<li>CI/CD</li>
 				<li>SQL</li>
-				<li>PHP / Smarty</li>
+				<li>PHP</li>
 				<li>PrestaShop</li>
 				<li>WordPress</li>
 			</ul>

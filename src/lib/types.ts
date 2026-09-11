@@ -34,7 +34,6 @@ export type Tools =
 	| "React"
 	| "React Native"
 	| "SCSS"
-	| "Smarty"
 	| "Supabase"
 	| "Svelte"
 	| "SvelteKit"
@@ -45,12 +44,13 @@ export type Tools =
 export type Work = {
 	title: string;
 	caption: string;
-	slug: string;
-	preview: string;
+	slug?: string;
+	preview?: string;
 	date: string;
 	dateSort: number;
-	cover: string;
+	cover?: string;
 	skills: Skills[];
 	tools: Tools[];
 	published: boolean;
+	hideLink?: boolean;
 };
