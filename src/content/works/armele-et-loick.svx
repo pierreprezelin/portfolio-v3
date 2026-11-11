@@ -16,5 +16,5 @@ published: false
 Armèle & Loick est un mini-site réalisé par l'agence [RC2C](https://www.rc2c.fr/) pour les [Jeunes Agriculteurs de Bretagne](https://www.jeunes-agriculteurs.fr/reseau/jeunes-agriculteurs-de-bretagne/).
 
 J'ai été chargé lors de mon stage à l'agence de l'intégrer, la difficulté principale étant son grand nombre d'animations.<br>
-Il y'a en réalité peu d'éléments qui n'en comportent _pas_, donc ça s'est révélé bien plus chronophage qu'en apparence.
+Il y a en réalité peu d'éléments qui n'en comportent _pas_, donc ça s'est révélé bien plus chronophage qu'en apparence.
 

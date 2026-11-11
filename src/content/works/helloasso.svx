@@ -22,7 +22,7 @@ HelloAsso continue de faire évoluer sa direction graphique depuis mon départ, 
 
 HelloAsso est une solution qui permet aux associations de créer **100% gratuitement** des billetteries, formulaires de don, d'adhésion et autres services utiles. Un annuaire est également mis à disposition pour que les utilisateurs puissent découvrir plus facilement de nouveaux acteurs de l'économie sociale et solidaire.
 
-Contrairement aux autres solutions, l'intégralité des sommes collectées par les associations leur est reversée. **La seule rémunération d'HelloAsso provient des dons des utilisateurs, suggéré lors du paiement mais jamais obligatoire.**
+Contrairement aux autres solutions, l'intégralité des sommes collectées par les associations leur est reversée. **La seule rémunération d'HelloAsso provient des dons des utilisateurs, suggérés lors du paiement mais jamais obligatoire.**
 
 Ce modèle économique unique est devenu viable avec les années et la montée en volume de transactions.
 
@@ -32,7 +32,7 @@ Il s'agit de mon premier contrat longue durée en sortie d'études et je serai t
 
 **Outils utilisés :** C#, SCSS (Sass), JS, Photoshop, Illustrator
 
-À mon arrivée, mes missions ont été variées, allant de la réalisation de kakémonos, 
+À mon arrivée, mes missions ont été variées, allant de la réalisation de kakémonos à la modernisation visuelle de l'admin, en passant par de l'emailing.
 
 - Améliorer l'apparence du site existant dans sa seconde version
 - Maquetter et intégrer des mini-sites et newsletters, ou juste intégrer des sites B2B pour des partenariats
@@ -44,9 +44,9 @@ Il s'agit de mon premier contrat longue durée en sortie d'études et je serai t
 
 Ce qui était auparavant "l'appli HelloAsso" et qui deviendra "[HelloAsso Scan](https://play.google.com/store/apps/details?id=com.helloasso)" est la première mise en pratique de la charte graphique v3 d'HelloAsso. C'est aussi - à l'écriture de cette page, début 2026 - l'un des derniers vestiges encore visible de cette charte v3 à HelloAsso.
 
-Le vert plus "végétal" d'origine (#7CB342) devient plus vif pour donner une touche de modernité et un bleu clair ainsi qu'violet font leur introduction. Par la suite, le bleu secondaire sera délaissé pour des raisons de visibilité et le violet fera sa réapparition dans la charte v4 actuelle en tant que couleur principale plus contrastée.
+Le vert plus "végétal" d'origine (#7CB342) devient plus vif pour donner une touche de modernité et un bleu clair ainsi qu'un violet font leur introduction. Par la suite, le bleu secondaire sera délaissé pour des raisons de visibilité et le violet fera sa réapparition dans la charte v4 actuelle en tant que couleur principale plus contrastée.
 
-Il s'agit du premier projet où j'ai été chargé de concevoir l'interface d'une application mobile, donc un certain challenge avec les différences en matière d'ergonomie que ça peut susciter. Le développement a été géré par un collègue développeur mobile et la communication a permis d'ajuster les maquettes en fonctionne des contraintes techniques.
+Il s'agit du premier projet où j'ai été chargé de concevoir l'interface d'une application mobile, donc un certain challenge avec les différences en matière d'ergonomie que ça peut susciter. Le développement a été géré par un collègue développeur mobile et la communication a permis d'ajuster les maquettes en fonction des contraintes techniques.
 
 ![Présentation Google Play Store](../../lib/assets/images/works/helloasso-scan.webp)
 _L'un des screenshots de la page Google Play Store_
@@ -55,11 +55,11 @@ _L'un des screenshots de la page Google Play Store_
 
 **Outils utilisés :** Nuxt, Vue.js, Figma
 
-Réalisé à la base en C#, LESS et JS natif, la décision à été prise courant 2018 de refondre le site vitrine en [Vue.js](https://vuejs.org/) pour sa v3. Plus précisement, c'est son meta-framework [Nuxt](https://nuxt.com/) qui a été choisi, afin de profiter du Server-Side Rendering (SSR) et optimiser ainsi le référencement (SEO).
+Réalisé à la base en C#, LESS et JS natif, la décision a été prise courant 2018 de refondre le site vitrine en [Vue.js](https://vuejs.org/) pour sa v3. Plus précisément, c'est son meta-framework [Nuxt](https://nuxt.com/) qui a été choisi, afin de profiter du Server-Side Rendering (SSR) et optimiser ainsi le référencement (SEO).
 
 C'est suite à cette refonte que je suis monté en compétence de simple intégrateur à développeur front-end.
 
-Ce premier projet étant issu d'un nouveau groupe UX/UI crée pour l'occasion, nous avons pu travailer tous ensemble dans une forte cohésion créative entre UI Designers, UX Designers et Graphistes.
+Ce premier projet étant issu d'un nouveau groupe UX/UI créé pour l'occasion, nous avons pu travailler tous ensemble dans une forte cohésion créative entre UI Designers, UX Designers et Graphistes.
 
 ![HelloAsso v2](../../lib/assets/images/works/helloasso-before.webp)
 _helloasso.com v2, à mon arrivée en 2016_
@@ -83,12 +83,12 @@ Cet espace utilisateur permet de retrouver l'historique de ses paiements, billet
 
 Mon dernier gros projet avant de quitter HelloAsso pour d'autres horizons a été son annuaire.<br>
 
-Il s'agissait de regrouper et afficher tous les événements, campagnes d'adhésion, associations en même endroit pour que le tout soit plus facile à trouver (ou retrouver) pour l'utilisateur.
+Il s'agissait de regrouper et afficher tous les événements, campagnes d'adhésion, associations au même endroit pour que le tout soit plus facile à trouver (ou retrouver) pour l'utilisateur.
 
-Parmi les fonctionnalités, il y'avait notamment :
+Parmi les fonctionnalités, il y avait notamment :
 
 - Des carousels affichant les différentes typologies (billetteries, associations)
-- Une recherche par carte, plus visuelle que le moteur de recherche crée lui aussi pour l'occasion
+- Une recherche par carte, plus visuelle que le moteur de recherche créé lui aussi pour l'occasion
 - Pouvoir afficher les résultats par géolocalisation
 
 La conception UX/UI de ce projet en amont fut également ma dernière mission en matière de design chez HelloAsso, après 6 ans, pour que je puisse me consacrer entièrement au développement par la suite.

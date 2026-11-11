@@ -10,7 +10,7 @@ hideLink: true
 
 ## Introduction
 
-Keiros est une solution crée pour faciliter les opérations des agents d'assurance. Avec une interface ergonomique et des fonctionnalités dédiées à l'optimisation du temps passé sur l'administratif, l'objectif de Keiros et de redonner plus de temps aux équipes pour le conseil, la relation humaine et les opportunités commerciales.
+Keiros est une solution créée pour faciliter les opérations des agents d'assurance. Avec une interface ergonomique et des fonctionnalités dédiées à l'optimisation du temps passé sur l'administratif, l'objectif de Keiros est de redonner plus de temps aux équipes pour le conseil, la relation humaine et les opportunités commerciales.
 
 Un travail de branding m'a donc été commandé pour créer une image de marque qui reflète cet objectif.
 
@@ -44,9 +44,9 @@ _Les 5 essais de logo pour Keiros_
 
 Après quelques ajustements, c'est la piste 4 qui a été retenue : **le cadran solaire stylisé** - affichée en haut de page.
 
-La typographie utilisée pour le nom est celle de la proposition 2, **League Spartan**, en Extrabold. Son caractère géométrique et droit inspire une image de robutesse et technologie.
+La typographie utilisée pour le nom est celle de la proposition 2, **League Spartan**, en Extrabold. Son caractère géométrique et droit inspire une image de robustesse et technologie.
 
-Elle comporte aussi un espacement supplémentaire de 5% entre les lettres pour maximiser la lisibilité. Le crénage initial a été harmonisé sur certaines lettres, ainsi que la hauteur de ces dernières. Un  léger radius a été ajouté aux lettres afin d’atteindre ce juste milieu entre solidité et accessibilité.
+Elle comporte aussi un espacement supplémentaire de 5% entre les lettres pour maximiser la lisibilité. Le crénage initial a été harmonisé sur certaines lettres, ainsi que la hauteur de ces dernières. Un léger radius a été ajouté aux lettres afin d’atteindre ce juste milieu entre solidité et accessibilité.
 
 ### Typographies
 
@@ -60,9 +60,9 @@ Elle comporte aussi un espacement supplémentaire de 5% entre les lettres pour m
 ### Couleurs
 
 Pour finaliser ce travail initial de branding et accompagner le reste, il restait à déterminer les couleurs de Keiros.
-Après être parti sur des nuances de bleu, couleur utilisée traditionnellement chez les acteurs institutionnels, nous nous sommes finalement arrêté sur un indigo profond, renvoyant l'image de sérieux, d'efficacité, et de sérénité recherchée.
+Après être parti sur des nuances de bleu, couleur utilisée traditionnellement chez les acteurs institutionnels, nous nous sommes finalement arrêtés sur un indigo profond, renvoyant l'image de sérieux, d'efficacité, et de sérénité recherchée.
 
-Les nuances de gris sont directement déclinées du bleu marine "Nuit", lui-même décliné du indigo princial.
+Les nuances de gris sont directement déclinées du bleu marine "Nuit", lui-même décliné du indigo principal.
 
 Pour les fonds, un gris léger ou un blanc tirant vers le crème complètent cette palette.
 

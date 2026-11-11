@@ -16,7 +16,7 @@ published: true
 
 Ammareal propose un service d'achat et don de produits culturels d'occasion (livres, CD, DVD, vinyles...).
 
-Ces produits culturels proviennent essentiellement de dons de la part de différents acteurs de l'économie circulaire (associations, bibliothèques) ou de particuliers qui souhaitent faire de la place chez eux sans jeter. Ammareal reverse 10 à 15% du montant de ses ventes à des oeuvres caritatives favorisant l'alphabétisme et l'éducation dans le monde.
+Ces produits culturels proviennent essentiellement de dons de la part de différents acteurs de l'économie circulaire (associations, bibliothèques) ou de particuliers qui souhaitent faire de la place chez eux sans jeter. Ammareal reverse 10 à 15% du montant de ses ventes à des œuvres caritatives favorisant l'alphabétisme et l'éducation dans le monde.
 
 ## ammareal.fr
 
@@ -33,8 +33,8 @@ _ammareal.fr v2 (2022)_
 La charte graphique - refondue en 2020 - est adéquate pour une application print, mais présente de multiples problèmes à corriger pour une application web et mobile :
 
 - 3 couleurs dominantes en conflit, impossible à départager côte à côte pour l'utilisateur
-- Des couleurs trop agressives pour l'oeil de l'utilisateur (comme du noir pur #000)
-- De problèmes de contrastes, d'espacements et autres
+- Des couleurs trop agressives pour l'œil de l'utilisateur (comme du noir pur #000)
+- Des problèmes de contrastes, d'espacements et autres
 
 Le but était donc de réinterpréter cette charte graphique pour qu'elle soit plus conforme à une application cross-platform moderne, tout en respectant au maximum ses guidelines initiales.
 
@@ -42,7 +42,7 @@ Le but était donc de réinterpréter cette charte graphique pour qu'elle soit p
 
 Après le maquettage complet de la refonte visuelle est venue l'intégration de la v3 sur le site.<br>
 
-En tant que site Prestashop v8, le choix a été fait de partir du thème utilisateur [Falcon](https://github.com/Oksydan/falcon), pour ses différentes optimisations en matière de performances et SEO.
+En tant que site PrestaShop v8, le choix a été fait de partir du thème utilisateur [Falcon](https://github.com/Oksydan/falcon), pour ses différentes optimisations en matière de performances et SEO.
 Pour le reste, c'est une intégration PrestaShop classique en partant de Bootstrap, avec du SCSS (Sass), jQuery et PHP.
 
 ## WebApp
@@ -68,7 +68,7 @@ Avoir un domaine dédié à la gestion des reprises directement en magasin - ava
 _(ex : "monmagasin.ammareal.com" au lieu du domaine initial "reprise.ammareal.com")._
 
 **Employés Ammareal (support, trieurs) :**<br>
-Pouvoir modifier en direct des reprises, s'il y'a besoin de résoudre certains problèmes côté client.
+Pouvoir modifier en direct des reprises, s'il y a besoin de résoudre certains problèmes côté client.
 
 ### Découpage et fonctionnalités
 
@@ -91,11 +91,11 @@ C'est un dashboard avec de multiples pages sur la même base (facturation, repri
 
 #### Partie Partenaires
 
-Déclinaison sur la webapp de l'app mobile crée en amont pour l'occasion, elle permet aux partenaires qui envoient des articles à Ammareal de scanner rapidement un code-barre produit pour savoir si Ammareal peut le reprendre ou non.
+Déclinaison sur la webapp de l'app mobile créée en amont pour l'occasion, elle permet aux partenaires qui envoient des articles à Ammareal de scanner rapidement un code-barre produit pour savoir si Ammareal peut le reprendre ou non.
 
 Pour plus d'informations, [voir la section dédiée](#ammareal-partners) ci-dessous.
 
-## Applications mobile
+## Applications mobiles
 
 **Outils utilisés :** Expo, React Native, Figma
 
@@ -103,7 +103,7 @@ Pour plus d'informations, [voir la section dédiée](#ammareal-partners) ci-dess
 
 Après conception UX/UI, le choix a été fait de partir sur du [React Native](https://reactnative.dev/) vu que le reste des apps Ammareal - hors ammareal.fr - sont déjà en React (Next.js). Étant donné que la documentation de React Native conseille fortement dès la page 1 d'utiliser [Expo](https://expo.dev/), leur meta-framework, c'est le choix que j'ai fait.
 
-Comme pour Next.js avec React ou Nuxt avec Vue.js, Expo apporte son lot d'amélioration appréciables pour l'expérience de développement (DX) :
+Comme pour Next.js avec React ou Nuxt avec Vue.js, Expo apporte son lot d'améliorations appréciables pour l'expérience de développement (DX) :
 
 - File-based routing
 - Upgrade de version React Native simplifiée pour moins de friction
@@ -136,7 +136,7 @@ L'application de reprise Ammareal est un peu un mélange entre la webapp et Amma
 - Permettre aux particuliers de donner leurs livres...
 - ...tout en scannant rapidement des références
 
-En plus de ça, certaines fonctionnalités font également leur apparaition :
+En plus de ça, certaines fonctionnalités font également leur apparition :
 
 - Un onboarding dédié
 - Suivre l'avancement des reprises en cours

@@ -33,7 +33,7 @@
 			<ul>
 				<li>React Native / Expo</li>
 				<li>Android Studio</li>
-				<li>XCode</li>
+				<li>Xcode</li>
 			</ul>
 			<h3 class="h6 mt-6 mb-3">{m.skills_systems()}</h3>
 			<ul>

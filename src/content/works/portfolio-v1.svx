@@ -8,7 +8,7 @@ tools: ['HTML/CSS', 'jQuery', 'PHP', 'Photoshop']
 published: true
 ---
 
-La version 1 du site comportait un parallax en JS, avec des bulles représentatant les différents travaux. Ces derniers étaient de domaines plus variés (vidéo, graphisme...), car réalisés pendant mes études.
+La version 1 du site comportait un parallax en JS, avec des bulles représentant les différents travaux. Ces derniers étaient de domaines plus variés (vidéo, graphisme...), car réalisés pendant mes études.
 
 La plupart se retrouveront également dans la seconde version qui sortira 2 ans plus tard.
 

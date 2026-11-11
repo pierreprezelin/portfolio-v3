@@ -15,9 +15,9 @@ published: true
 
 MYWIE est un service familial qui propose des fonctionnalités innovantes, à la fois sur le web et via son application mobile :
 
-- Un arbre généalogique inversé, des descendants aux héritieurs
+- Un arbre généalogique inversé, des descendants aux héritiers
 - Un journal avec textes, photos, vidéos, audio
-- Une carte familiale interative, avec marqueurs de lieux et notifications
+- Une carte familiale interactive, avec marqueurs de lieux et notifications
 - Des messages posthumes programmables
 - Un "Coffre des Silences", espace sécurisé pour des transmissions conditionnelles de secrets familiaux
 - Les "Vies Inouïes", une bibliothèque de récits de vie
@@ -26,7 +26,7 @@ J'ai été chargé de concevoir sa charte graphique, son Design System, ainsi qu
 
 ## Réalisation
 
-Le sigle du logo était fourni, mais tout le reste (couleurs, typolographies) a été conçu après le brief.
+Le sigle du logo était fourni, mais tout le reste (couleurs, typographies) a été conçu après le brief.
 
 ### Ton
 
@@ -50,7 +50,7 @@ _La palette de couleurs officielle pour MYWIE_
 
 L'idée était de donner une impression sobre et élégante, mais en restant moderne. Il fallait donc trouver un juste milieu entre un service de startup et ne pas donner l'impression d'un site de luxe ou d'hôtellerie.
 
-Pour un duo serif/sans-serif, j'ai me suis donc arrêté sur :
+Pour un duo serif/sans-serif, je me suis donc arrêté sur :
 
 - [Lora](https://fonts.google.com/specimen/Lora) pour le serif
 - [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3) pour le sans-serif
