@@ -10,7 +10,7 @@
 				<li>HTML</li>
 				<li>CSS / SCSS (Sass) / LESS</li>
 				<li>JavaScript / TypeScript</li>
-				<li>React / Next.s</li>
+				<li>React / Next.js</li>
 				<li>Vue.js / Nuxt</li>
 				<li>Svelte / SvelteKit</li>
 				<li>Supabase</li>
@@ -32,6 +32,8 @@
 			<h3 class="h6 mb-3">Mobile</h3>
 			<ul>
 				<li>React Native / Expo</li>
+				<li>Android Studio</li>
+				<li>XCode</li>
 			</ul>
 			<h3 class="h6 mt-6 mb-3">{m.skills_systems()}</h3>
 			<ul>

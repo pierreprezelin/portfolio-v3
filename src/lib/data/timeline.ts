@@ -44,6 +44,12 @@ export const timeline = [
 		note: m.fulltime()
 	},
 	{
+		year: "2016",
+		name: "Gingerminds",
+		roles: [m.role_web_dev()],
+		note: m.short_term()
+	},
+	{
 		year: "2015",
 		name: "RC2C",
 		roles: [m.role_web_dev()],
@@ -51,7 +57,7 @@ export const timeline = [
 	},
 	{
 		year: "2014",
-		name: "BRANDMARKE",
+		name: "brand:marke GmbH",
 		roles: [m.role_web_dev()],
 		note: m.intern()
 	}
