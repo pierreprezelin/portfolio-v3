@@ -1,5 +1,15 @@
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Node.js
 node_modules
-.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Output
 .output
@@ -9,20 +19,16 @@ node_modules
 /.svelte-kit
 /build
 
-# OS
-.DS_Store
-Thumbs.db
+# Paraglide
+src/lib/paraglide
+project.inlang/cache/
 
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+# Testing
+.playwright-mcp
 
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Paraglide
-src/lib/paraglide
-project.inlang/cache/
+# VS Code
+.vscode/extensions.json
