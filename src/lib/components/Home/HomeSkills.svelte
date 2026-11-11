@@ -1,5 +1,5 @@
 <script>
-	import { m } from "$lib/paraglide/messages";
+	import { m } from "#lib/paraglide/messages.js";
 </script>
 <section id="skills" class="mt-20">
 	<h2 class="h4 mb-6">{m.what_i_worked_with()}</h2>

@@ -91,8 +91,8 @@ bun prepare     # Runs svelte-kit sync (generates types)
 
 ### Imports
 
-- Use **$lib** alias for internal imports (e.g., `import { foo } from '$lib/utils'`)
-- Use **$app** for SvelteKit imports (e.g., `$app/stores`, `$app/state`)
+- Use **#lib** subpath imports with explicit `.js` extensions (e.g., `import { foo } from '#lib/utils.js'`)
+- Use **$app** for SvelteKit imports (e.g., `$app/state`, `$app/env`)
 - Group imports: SvelteKit → External → Internal → Components
 - Use named exports, avoid default exports when possible
 
@@ -125,13 +125,14 @@ bun prepare     # Runs svelte-kit sync (generates types)
 - **Layouts**: Use `+layout.svelte` for shared UI
 - **Error pages**: Use `+error.svelte` in route directories
 - Use `+layout.ts` with ` prerender = true` for static pages
+- Config lives in `vite.config.ts` (`sveltekit({...})`), there is no `svelte.config.js`
 - Use `definePageMetaTags` from svelte-meta-tags for SEO
 
 ### Internationalization (i18n)
 
-- Use Paraglide (`$lib/paraglide/messages`) for translations
+- Use Paraglide (`#lib/paraglide/messages.js`) for translations
 - Use `m.function_name()` pattern for messages
-- Use `getLocale()`, `locales`, `localizeHref` from `$lib/paraglide/runtime`
+- Use `getLocale()`, `locales`, `localizeHref` from `#lib/paraglide/runtime.js`
 
 ### Image Handling
 

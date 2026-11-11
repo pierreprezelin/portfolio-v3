@@ -2,9 +2,9 @@ import { error } from "@sveltejs/kit";
 
 import { definePageMetaTags } from "svelte-meta-tags";
 
-import { m } from "$lib/paraglide/messages";
-import type { Post, Tags } from "$lib/types";
-import { capitalize } from "$lib/utils";
+import { m } from "#lib/paraglide/messages.js";
+import type { Post, Tags } from "#lib/types.js";
+import { capitalize } from "#lib/utils.js";
 
 export const load = async ({ fetch, params }) => {
 	const { tag } = params;

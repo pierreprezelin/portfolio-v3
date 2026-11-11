@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { socials } from '$lib/data/socials';
-	import { m } from '$lib/paraglide/messages';
+	import { socials } from '#lib/data/socials.js';
+	import { m } from '#lib/paraglide/messages.js';
 </script>
 
 <section id="contact" class="mt-20">

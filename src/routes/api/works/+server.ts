@@ -1,6 +1,4 @@
-import { json } from "@sveltejs/kit";
-
-import type { Work } from "$lib/types";
+import type { Work } from "#lib/types.js";
 
 async function getWorks() {
 	const works: Work[] = [];
@@ -24,5 +22,5 @@ async function getWorks() {
 
 export async function GET() {
 	const works = await getWorks();
-	return json(works);
+	return Response.json(works);
 }

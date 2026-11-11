@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { timeline } from '$lib/data/timeline';
-	import { m } from '$lib/paraglide/messages';
+	import { timeline } from '#lib/data/timeline.js';
+	import { m } from '#lib/paraglide/messages.js';
 </script>
 
 <section id="projects" class="mt-20">

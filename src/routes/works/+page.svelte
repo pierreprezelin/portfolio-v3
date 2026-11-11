@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { m } from '$lib/paraglide/messages';
+	import { m } from '#lib/paraglide/messages.js';
 
 	
-	import CardWork from '$lib/components/CardWork.svelte';
+	import CardWork from '#lib/components/CardWork.svelte';
 
 	let { data } = $props();
 </script>

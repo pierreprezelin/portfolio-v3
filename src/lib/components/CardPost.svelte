@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { FolderSearch } from '@lucide/svelte';
 
-	import { m } from '$lib/paraglide/messages';
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
-	import type { Post } from '$lib/types';
-	import { formatDate } from '$lib/utils';
+	import { m } from '#lib/paraglide/messages.js';
+	import { getLocale, localizeHref } from '#lib/paraglide/runtime.js';
+	import type { Post } from '#lib/types.js';
+	import { formatDate } from '#lib/utils.js';
 
 	let { post }: { post: Post } = $props();
 </script>
@@ -26,7 +26,7 @@
 				/>
 			{:else}
 				<enhanced:img
-					src="$lib/assets/images/background-fallback.webp"
+					src="#lib/assets/images/background-fallback.webp"
 					alt=""
 					class="h-full w-full object-cover tablet:h-49"
 				/>

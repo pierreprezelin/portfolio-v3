@@ -3,7 +3,7 @@
 Made with:
 
 - 🧡 [SvelteKit](https://github.com/sveltejs/kit) · SSG, file-based routing, enhanced Markdown with [mdsvex](https://github.com/pngwn/MDsveX), etc.
-  
+
 - ⚡️ [Vite](https://github.com/vitejs/vite) · Instant Hot Module Replacement (HMR) for lightning-fast development.
 
 - 🥟 [Bun](https://bun.com/) · For near-instant package installation and update (yes, it's a gyoza emoji)

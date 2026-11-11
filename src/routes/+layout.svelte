@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
+	import { browser } from '$app/env';
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
 	import { page } from '$app/state';
 
@@ -8,17 +8,17 @@
 	import { fly } from 'svelte/transition';
 	import { deepMerge, MetaTags } from 'svelte-meta-tags';
 
-	import { locales, localizeHref } from '$lib/paraglide/runtime';
+	import { locales, localizeHref } from '#lib/paraglide/runtime.js';
 
-	import Footer from '$lib/components/Footer.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import MouseCursor from '$lib/components/MouseCursor.svelte';
-	import Pattern from '$lib/components/Pattern.svelte';
+	import Footer from '#lib/components/Footer.svelte';
+	import Header from '#lib/components/Header.svelte';
+	import MouseCursor from '#lib/components/MouseCursor.svelte';
+	import Pattern from '#lib/components/Pattern.svelte';
 
 	import './layout.css';
 
 	import '@fontsource-variable/libre-franklin/wght.css';
-	import '$lib/styles/fonts.css';
+	import '#lib/styles/fonts.css';
 
 	const duration = 150;
 	const delay = duration + duration / 2;
@@ -27,7 +27,9 @@
 	const transitionIn = { easing: cubicOut, y, duration, delay };
 	const transitionOut = { easing: cubicIn, y: -y, duration };
 
-	afterNavigate(() => {
+	afterNavigate(({ shallow, type }) => {
+		if (shallow && type === 'goto') return;
+
 		disableScrollHandling(); // Fix unwanted scroll back to top while page is fading away
 		setTimeout(() => {
 			window.scrollTo(0, 0);

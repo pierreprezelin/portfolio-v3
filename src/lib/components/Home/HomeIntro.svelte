@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { FileDown, FolderSearch } from '@lucide/svelte';
 
-	import { m } from '$lib/paraglide/messages';
+	import { m } from '#lib/paraglide/messages.js';
 
 	const yearsOfExp = new Date().getFullYear() - 2020;
 </script>

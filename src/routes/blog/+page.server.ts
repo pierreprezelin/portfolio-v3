@@ -1,7 +1,7 @@
 import { definePageMetaTags } from "svelte-meta-tags";
 
-import { m } from "$lib/paraglide/messages";
-import type { Post } from "$lib/types";
+import { m } from "#lib/paraglide/messages.js";
+import type { Post } from "#lib/types.js";
 
 export async function load({ fetch }) {
 	const pageTags = definePageMetaTags({

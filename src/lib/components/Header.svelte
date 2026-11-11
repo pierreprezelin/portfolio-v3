@@ -4,8 +4,8 @@
 	import { ChartNoAxesColumn, Moon, Sun } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 
-	import { m } from '$lib/paraglide/messages';
-	import { getLocale, locales, localizeHref } from '$lib/paraglide/runtime';
+	import { m } from '#lib/paraglide/messages.js';
+	import { getLocale, locales, localizeHref } from '#lib/paraglide/runtime.js';
 
 	const currentLocale = $state(getLocale());
 	let otherLocale = $derived(locales.find((l) => l !== currentLocale) || locales[0]);
@@ -87,7 +87,7 @@
 			class="absolute top-0 left-[50%] z-2 translate-x-[-50%] rounded-full border-4 border-pp-beige"
 			onclick={() => (isMenuShown = false)}
 		>
-			<enhanced:img src="$lib/assets/logo.svg" alt="Logo" />
+			<enhanced:img src="#lib/assets/logo.svg" alt="Logo" />
 		</a>
 	</nav>
 </header>

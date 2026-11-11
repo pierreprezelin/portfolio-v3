@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Twitter } from "$lib/components/icons";
+import { Facebook, Linkedin, Twitter } from "#lib/components/icons/index.js";
 
 export const shares = [
 	{

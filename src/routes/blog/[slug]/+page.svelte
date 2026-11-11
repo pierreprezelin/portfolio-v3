@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
 
-	import { shares } from '$lib/data/shares';
-	import { m } from '$lib/paraglide/messages';
-	import { getLocale, localizeHref } from '$lib/paraglide/runtime';
-	import { capitalize, formatDate } from '$lib/utils';
-	import '$lib/styles/prose.scss';
+	import { shares } from '#lib/data/shares.js';
+	import { m } from '#lib/paraglide/messages.js';
+	import { getLocale, localizeHref } from '#lib/paraglide/runtime.js';
+	import { capitalize, formatDate } from '#lib/utils.js';
+	import '#lib/styles/prose.scss';
 
 	import { ArrowLeft } from '@lucide/svelte';
 

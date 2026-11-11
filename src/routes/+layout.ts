@@ -1,7 +1,7 @@
 import { defineBaseMetaTags } from "svelte-meta-tags";
 
-import { m } from "$lib/paraglide/messages";
-import { getLocale } from "$lib/paraglide/runtime";
+import { m } from "#lib/paraglide/messages.js";
+import { getLocale } from "#lib/paraglide/runtime.js";
 
 export const load = ({ url }) => {
 	const { pathname } = url;

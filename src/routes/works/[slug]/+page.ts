@@ -2,7 +2,7 @@ import { error } from "@sveltejs/kit";
 
 import { definePageMetaTags } from "svelte-meta-tags";
 
-import { m } from "$lib/paraglide/messages";
+import { m } from "#lib/paraglide/messages.js";
 
 export async function load({ url, params }) {
 	try {

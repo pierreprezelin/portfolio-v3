@@ -39,13 +39,13 @@
 					"level": "on",
 					"options": {
 						"groups": [
-							["$app/**", "$env/**", "@sveltejs/**"],
+							["$app/**", "@sveltejs/**"],
 							":BLANK_LINE:",
 							[":NODE:", ":PACKAGE:"],
 							":BLANK_LINE:",
-							["$lib/**", "!$lib/components/**", ":PATH:"],
+							["#lib/**", "!#lib/components/**", ":PATH:"],
 							":BLANK_LINE:",
-							["$lib/components/**"]
+							["#lib/components/**"]
 						]
 					}
 				}
@@ -53,6 +53,16 @@
 		}
 	},
 	"overrides": [
+		{
+			"includes": ["**/*.svelte"],
+			"linter": {
+				"rules": {
+					"a11y": {
+						"useAnchorContent": "off"
+					}
+				}
+			}
+		},
 		{
 			"includes": ["src/app.html"],
 			"linter": {
